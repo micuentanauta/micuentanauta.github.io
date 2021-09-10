@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Última actualización**  
-Julio 1 2021
+Julio 15 2021
 
 # Política de privacidad
 Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un ambiente más seguro a la hora de conectarse a internet.

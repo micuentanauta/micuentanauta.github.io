@@ -8,26 +8,70 @@ include_in_header: true
 
 <br>
 
-### `Latest`
-# **Version 2.0**
-This is the first update to our app. Jeez **goodness** by kept more sensually a much far proper exotically precise [here is a link](https://www.google.com) and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
+### `Última versión disponible`
+# **Version 2.0.2021.0819b**
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+## ¿Qué hay de nuevo?
++ Implementada una función para detectar la existencia de nuevas versiones de la aplicación.
++ Mejoras en la interfaz gráfica.
+* Modificación de íconos para una señalización más apropiada de la funcionalidad de cada sección.
 
-#### Bug Fixes
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+## Bugs corregidos.
+* Corrección de un bug que no permitía cerrar apropiadamente la aplicación en el primer inicio.
+* Corrección de un bug que asignaba de forma no apropiada los temas al inicio de la aplicación.
 
 <br>
 
-## **Version 2.0.2021.0705 alpha**
+## **Version 2.0.2021.0718b**
 
 ### ¿Qué hay de nuevo?
++ Primeras pruebas para implementar un instalador automatizado.
+* Mejora en la detección de errores relacionados con los archivos de configuración.
 
+### Bugs corregidos.
+* Corrección de un bug que no permitía usar cuentas cuyo nombre de usuario y/o contraseña tuvieran caracteres no válidos para peticiones web.
+
+<br>
+
+## **Version 2.0.2021.0715b**
+
+### ¿Qué hay de nuevo?
++ Implementación de diálogos personalizados preparados para combinar con el tema actual de la aplicación.
++ Implementación de conexiones a través de proxy y posibilidad de configurar sus ajustes. 
++ Ahora la aplicación carga automáticamente los ajustes de versiones antiguas.
++ Implementación de detección de certificados de ETECSA _(Se evita iniciar sesión en portales cautivos falsos y relacionados con el robo de cuentas)_
+* Mejorados los diálogos de respuesta ante errores, algunos se les añadió la posibilidad de reintentar la operación.
+* Deprecación del comando ping.
+- Cambios sustanciales en las [políticas de privacidad](/privacypolicy).
+* Refactorización de los últimos componentes.
+* Corrección de bugs con la animación de ocultar la ventana de sesión.
+* Fase beta del proyecto.
+
+### Bugs corregidos.
+* Corrección de bugs relacionados con la forma que se mostraba el tiempo restante. **(Aún en pruebas)**
+
+<br>
+
+## **Version 2.0.2021.0708a**
+
+### Bugs corregidos.
+- Solución de un bug al calcular el saldo diponible en la cuenta luego de recargar.
+- Solución de un bug relacionado con el cierre la ventana de sesión abierta.
+
+<br>
+
+## **Version 2.0.2021.0707a**
+
+### Bugs corregidos.
+- Solución de varios bugs relacionados con el inicio de sesión.
+
+<br>
+
+## **Version 2.0.2021.0705a**
+
+### ¿Qué hay de nuevo?
 **General**
-+ ¡Nuevo logo! (Posible evento futuro sobre diseño gráfico en nuestro grupo oficial de Telegram https://t.me/@micuentanauta)
++ ¡Nuevo logo! (Posible evento futuro sobre diseño gráfico en nuestro grupo oficial de Telegram [Mi Cuenta Nauta Chat](https://t.me/micuentanautachat))
 + Completa transformación de la interfaz gráfica.
     * Se dividió la acción de modificar el temporizador y las opciones en botones diferentes.
     * El botón de abrir los ajustes del temporizador se movió para el lado izquierdo del botón
