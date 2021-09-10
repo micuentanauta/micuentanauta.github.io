@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+{% include head.html %}
+
+<body>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Su link de descarga gratuito está listo</h2>
+                <span class="close">×</span>
+            </div>
+
+            <div class="modal-body">
+                <p>¿Le ha sido de utilidad nuestra aplicación?</p>
+                <p>Considere hacer una donación, siempre son muy bienvenidas.</p>
+                <div class="donate-container">
+                    <div class="donate-item">
+                        <p style="font-size: 20px">Saldo</p>
+                        <img src="assets/movile-qr.png" />
+                        <p>{{ site.phone_number }}</p>
+                    </div>
+                    <div class="donate-item">
+                        <p style="font-size: 20px">Transferencia</p>
+                        <img src="assets/enzona-qr.png" />
+                        <p>{{ site.bank_iban }}</p>
+                    </div>
+                </div>
+
+                <div id="redirect-link">
+                    <p>
+                        Tu archivo será descargado automáticamente en
+                        <span id="seconds">10</span> segundo(s)...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imageWrapper">
+        <div class="headerBackground">
+            <div class="container">
+                {% include header.html %}
+                <div class="desktopPreview">
+                    <!-- <img class="desktopScreen" src="{{ site.github.baseurl }}assets/headerimage.png" alt=""> -->
+                </div>
+                <div class="appInfo">
+                    <div class="appIconShadow">
+                        <svg width="0" height="0">
+                            <defs>
+                                <clippath id="shape120">
+                                    <path id="shape" class="cls-1"
+                                        d="M6821,495.533v-4.281c0-1.2-.04-2.4-0.04-3.642a57.7,57.7,0,0,0-.68-7.882,26.144,26.144,0,0,0-2.48-7.483,25.115,25.115,0,0,0-11.04-11.044,26.118,26.118,0,0,0-7.49-2.481,47.28,47.28,0,0,0-7.88-.68c-1.2-.04-2.4-0.04-3.64-0.04h-53.5c-1.2,0-2.4.04-3.64,0.04a57.813,57.813,0,0,0-7.88.68,26.323,26.323,0,0,0-7.49,2.481,25.115,25.115,0,0,0-11.04,11.044,26.144,26.144,0,0,0-2.48,7.483,47.313,47.313,0,0,0-.68,7.882c-0.04,1.2-.04,2.4-0.04,3.642v53.5c0,1.2.04,2.4,0.04,3.641a57.7,57.7,0,0,0,.68,7.883,26.137,26.137,0,0,0,2.48,7.482,25.115,25.115,0,0,0,11.04,11.044,26.261,26.261,0,0,0,7.49,2.481,47.28,47.28,0,0,0,7.88.68c1.2,0.04,2.4.04,3.64,0.04h53.5c1.2,0,2.4-.04,3.64-0.04a57.654,57.654,0,0,0,7.88-.68,26.057,26.057,0,0,0,7.49-2.481,25.115,25.115,0,0,0,11.04-11.044,26.137,26.137,0,0,0,2.48-7.482,47.316,47.316,0,0,0,.68-7.883c0.04-1.2.04-2.4,0.04-3.641V495.533h0Z"
+                                        transform="translate(-6701 -458)" filter="url(#f1)" />
+                                </clippath>
+                            </defs>
+                        </svg>
+                        <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" />
+                    </div>
+                    <div class="appNamePriceContainer">
+                        <h1 class="appName">{{ site.app_name }}</h1>
+                        <h2 class="appPrice">{{ site.app_price }}</h2>
+                    </div>
+                    <div class="appDescriptionContainer">
+                        <p class="appDescription">{{ site.app_description }}</p>
+                    </div>
+                    <div class="downloadButtonsContainer">
+                        {% if site.playstore_link %}
+                        <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore"
+                                src="assets/playstore.png" /></a>
+                        {% endif %} {% if site.appstore_link %}
+                        <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore"
+                                src="assets/appstore.png" /></a>
+                        {% endif %} {% if site.windows_link %}
+
+                        
+                        <!-- <a class="downloadButton" href="{{site.windows_link}}">
+                                    <i class="fas fa-download"></i>
+                                    Descargar para Windows (32, 64 bits)
+                                </a> -->
+
+                        <a class="downloadButton" id="myBtn" link="{{ site.windows_link }}">
+                            <i class="fas fa-download"></i>
+                            Descargar para Windows (32, 64 bits)
+                        </a>
+                        
+                        <p class="userFinalLicense">
+                            Al descargar la aplicación está de acuerdo con la
+                            <a href="{{ page.url | relative_url }}privacypolicy" target="_self">política de privacidad</a>.
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% include features.html %} {% include footer.html %}
+
+                <script src="js/main.js"> </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
