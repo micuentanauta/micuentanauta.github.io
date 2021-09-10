@@ -11,12 +11,12 @@ include_in_header: true
 ### `Última versión disponible`
 # **Version 2.0.2021.0819b**
 
-## ¿Qué hay de nuevo?
+### ¿Qué hay de nuevo?
 + Implementada una función para detectar la existencia de nuevas versiones de la aplicación.
 + Mejoras en la interfaz gráfica.
 * Modificación de íconos para una señalización más apropiada de la funcionalidad de cada sección.
 
-## Bugs corregidos.
+### Bugs corregidos.
 * Corrección de un bug que no permitía cerrar apropiadamente la aplicación en el primer inicio.
 * Corrección de un bug que asignaba de forma no apropiada los temas al inicio de la aplicación.
 
