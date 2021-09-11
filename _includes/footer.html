@@ -4,11 +4,22 @@
 	{% endif %}
 	<div class="footerIcons">
 
+		
+
 		{% if site.facebook_username %}
 			<a href="https://facebook.com/{{ site.facebook_username }}">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
+				</span>
+			</a>
+		{% endif %}
+
+		{% if site.telegram_channel %}
+			<a href="https://t.me/{{ site.telegram_channel }}">
+				<span class="fa-stack fa-1x">
+					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+					<i class="socialIconTop fab telegram-plane fa-stack-1x"></i>
 				</span>
 			</a>
 		{% endif %}
