@@ -41,9 +41,9 @@ La información que nos provees por ahora es prácticamente nula, aunque en pró
 <br>
 
 ## 3. Reclamación ante bugs y otros accidentes:
-El creador de esta aplicación no se hace responsable por el uso indebido de la misma o por los bugs que pueda contener. Se recomienda usar la última versión disponible.
+El grupo de desarrollo de esta aplicación no se hace responsable por el uso indebido de la misma o por los bugs que pueda contener. Se recomienda usar la última versión disponible.
 
 <br>
 
 ## 4. Nota final (Importante):
-Esta aplicación está en fase beta así que puede presentar errores, si usted presenta alguno, por favor envíelo a la dirección email del creador. Se recomienda conectarse directamente desde los puntos de acceso de ETECSA.
+Esta aplicación está en fase beta así que puede presentar errores, si usted presenta alguno, por favor envíelo a la dirección email del proyecto. Se recomienda conectarse directamente desde los puntos de acceso de ETECSA.
