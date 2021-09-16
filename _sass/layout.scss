@@ -1,5 +1,5 @@
 .sponsors {
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   display: flex;
   flex: 0 0 100%;
   align-items: center;
@@ -17,6 +17,10 @@
   width: auto;
   height: 50px;
   align-self: center;
+  transition: filter 0.1s ease-out 100ms
+}
+.sponsors img:hover {
+filter: grayscale(0%);
 }
 
 .sponsors>div {
@@ -24,8 +28,11 @@
   flex: 0 0 100%;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 40px;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.sponsors > div > a {
+margin: 5px 20px;
 }
 
 .imageWrapper {
