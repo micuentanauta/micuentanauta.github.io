@@ -72,15 +72,7 @@ sponsors                                  :
   - title                                 : TotalCommander2021
     url                                   : https://t.me/binaryfall
     image                                 : assets/tc2021.png
-
-  - title                                 : TotalCommander2022
-    url                                   : https://t.me/binaryfall2
-    image                                 : assets/tc2021.png
-
-  - title                                 : TotalCommander2023
-    url                                   : https://t.me/binaryfall3
-    image                                 : assets/tc2021.png
-
+    
 # Theme Settings
 topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
