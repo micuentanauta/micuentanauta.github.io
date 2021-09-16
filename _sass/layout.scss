@@ -1,12 +1,14 @@
 .sponsors {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   display: flex;
-  flex: 0 0 100%;
+  flex: 0 0 auto;
   align-items: center;
   flex-direction: column;
+  grid-area: s;
+  padding-top: 100px;
 }
 
-.sponsors>p {
+.sponsors > p {
   color: #686868;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -17,22 +19,22 @@
   width: auto;
   height: 50px;
   align-self: center;
-  transition: filter 0.1s ease-out 100ms
+  transition: filter 0.1s ease-out 100ms;
 }
 .sponsors img:hover {
-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
-.sponsors>div {
+.sponsors > div {
   display: flex;
-  flex: 0 0 100%;
+  flex: 0 0 auto;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .sponsors > div > a {
-margin: 5px 20px;
+  margin: 5px 20px;
 }
 
 .imageWrapper {
@@ -79,40 +81,38 @@ margin: 5px 20px;
 }
 
 .container {
-  // Set up the container for the site content
   display: grid;
   margin: auto;
-  max-width: $content-width;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 115px 660px auto auto;
   grid-column-gap: 30px;
-  grid-template-areas:
-    "h h h h h h h h h h h h"
-    "p p p p p i i i i i i i"
-    "c c c c c c c c c c c c"
+  grid-template-areas: 
+    "h h h h h h h h h h h h" 
+    "p p p p p i i i i i i i" 
+    "c c c c c c c c c c c c" 
+    "s s s s s s s s s s s s" 
     "f f f f f f f f f f f f";
 }
-
 @media only screen and (max-width: 768px) {
   .container {
-    // Set up the container for the site content
     grid-template-rows: 80px 811px auto auto;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .container {
     grid-column-gap: 0px;
     grid-template-columns: 1;
     grid-template-rows: 115px auto auto auto auto;
     grid-template-areas:
-      "h h h h h h h h h h h h"
-      "i i i i i i i i i i i i"
-      "p p p p p p p p p p p p"
-      "c c c c c c c c c c c c"
-      "f f f f f f f f f f f f";
+     "h h h h h h h h h h h h" 
+     "i i i i i i i i i i i i" 
+     "p p p p p p p p p p p p" 
+     "c c c c c c c c c c c c" 
+     "s s s s s s s s s s s s" 
+     "f f f f f f f f f f f f";
   }
 }
 
