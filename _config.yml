@@ -1,7 +1,8 @@
 #page title
 page_title                                : Mi Cuenta Nauta - Web Oficial                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
-windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
+# windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
+windows_link                              : https://bit.ly/mcn2020211005betasetup
 
 # App Info
 ios_app_id                                :                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
