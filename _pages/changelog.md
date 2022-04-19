@@ -9,7 +9,22 @@ include_in_header: true
 <br>
 
 ### `Última versión disponible`
-# **Version 2.0.2021.1006b**
+# **Version 2.0.2022.0418b**
+
+### ¿Qué hay de nuevo?
++ Añadidas animaciones de entrada de ventanas.
++ Añadido un botón de donaciones a la ventana principal.
+* Mejoras en la detección de los servicios de ETECSA.
+* Mayor compatibilidad con nuevas versiones de Windows 11.
+* Cambios necesarios en la infraestructura de detección de actualizaciones de la aplicación.
+* Corrección de errores y optimización del código.	
+
+### Bugs corregidos.
+* Corrección de un bug que cerraba de forma inesperada la aplicación al comprobar actualizaciones.
+
+<br>
+
+## **Version 2.0.2021.1006b**
 
 ### ¿Qué hay de nuevo?
 * Solución de un bug que no permitía iniciar sesión y no mostraba el tiempo restante.
