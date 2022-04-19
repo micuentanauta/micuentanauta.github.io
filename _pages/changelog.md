@@ -9,7 +9,24 @@ include_in_header: true
 <br>
 
 ### `Última versión disponible`
-# **Version 2.0.2021.0819b**
+# **Version 2.0.2021.1006b**
+
+### ¿Qué hay de nuevo?
+* Solución de un bug que no permitía iniciar sesión y no mostraba el tiempo restante.
+
+<br>
+
+## **Version 2.0.2021.1005b**
+
+### ¿Qué hay de nuevo?
++ Agregada una opción para omitir la verificación de los certificados.
++ Agregada la sección de donaciones en la ventana "Acerca de...".
++ Agregado el nuevo vínculo de contacto del sitio oficial.
+* Ajustes mínimos en la interfaz gráfica.
+
+<br>
+
+## **Version 2.0.2021.0819b**
 
 ### ¿Qué hay de nuevo?
 + Implementada una función para detectar la existencia de nuevas versiones de la aplicación.
