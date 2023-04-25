@@ -16,7 +16,7 @@ include_in_header: true
 + Corrección de errores y optimización del código.
 
 
-# **Version 2.0.2022.0418b**
+## **Version 2.0.2022.0418b**
 
 ### ¿Qué hay de nuevo?
 
