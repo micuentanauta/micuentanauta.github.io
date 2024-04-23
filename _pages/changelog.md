@@ -7,14 +7,20 @@ include_in_header: true
 
 ### `Última versión disponible`
 
-# **Version 2.0.2023.0425b**
+# **Version 2.0.2024.0423b**
+
+### ¿Qué hay de nuevo?
+
++ Actualización de las librerías internas (preparación para nuevos servicios).
++ Corrección de errores y optimización del código.
+
+## **Version 2.0.2023.0425b**
 
 ### ¿Qué hay de nuevo?
 
 + Añadida la compatibilidad con cuentas Nauta Plus.
 + Cambios necesarios en la infraestructura relacionados con los nuevos servidores de ETECSA.
 + Corrección de errores y optimización del código.
-
 
 ## **Version 2.0.2022.0418b**
 
@@ -32,15 +38,11 @@ include_in_header: true
 
 * Corrección de un bug que cerraba de forma inesperada la aplicación al comprobar actualizaciones.
 
-<br>
-
 ## **Version 2.0.2021.1006b**
 
 ### ¿Qué hay de nuevo?
 
 * Solución de un bug que no permitía iniciar sesión y no mostraba el tiempo restante.
-
-<br>
 
 ## **Version 2.0.2021.1005b**
 
