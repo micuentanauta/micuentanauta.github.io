@@ -7,7 +7,14 @@ include_in_header: true
 
 ### `Última versión disponible`
 
-# **Version 2.0.2024.0423b**
+# **Version 2.0.2024.0623b**
+
+### ¿Qué hay de nuevo?
+
++ Mejoras en el cálculo del tiempo restante.
++ Corrección de errores y optimización del código.
+
+## **Version 2.0.2024.0423b**
 
 ### ¿Qué hay de nuevo?
 
