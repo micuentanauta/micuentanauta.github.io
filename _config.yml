@@ -3,7 +3,7 @@ page_title                                : Mi Cuenta Nauta - Web Oficial       
 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
-windows_link                              : https://bit.ly/mcn2020240423beta
+windows_link                              : https://bit.ly/mcn2020240623beta
 
 # App Info
 ios_app_id                                :                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -15,7 +15,7 @@ blog_link                                 : https://micuentanauta.blogspot.com
 
 app_icon                                  : assets/logo.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Mi Cuenta Nauta                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 : v2.0.2024.0423beta                   # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 : v2.0.2024.0623beta                   # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un entorno seguro a la hora de conectarse a internet.
 
 enable_smart_app_banner                   : false                                # Set to true to show a smart app banner at top of page on mobile devices.
@@ -24,12 +24,12 @@ enable_smart_app_banner                   : false                               
 
 
 # Information About Yourself
-your_name                                 : BlackNoizE404                                
-your_link                                 :                   
-your_city                                 : Cuba                                
+your_name                                 : BlackNoizE404                              
+your_link                                 : 
+your_city                                 : Cuba
 email_address                             : blacknoize404@gmail.com
 telegram_channel                          : micuentanauta
-facebook_username                         :                                           
+facebook_username                         :
 instagram_username                        : 
 twitter_username                          : 
 github_username                           : 
