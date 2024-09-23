@@ -3,213 +3,193 @@ layout: page
 title: Registro de cambios
 include_in_header: true
 ---
-# Registro de cambios
+## Registro de cambios
 
-### `Última versión disponible`
+### **Version 2.0.2024.0923b** (`Última versión disponible`)
 
-# **Version 2.0.2024.0623b**
+**Mejoras**
 
-### ¿Qué hay de nuevo?
+- Añadido un nuevo certificado de seguridad para las cuentas.
 
-+ Mejoras en el cálculo del tiempo restante.
-+ Corrección de errores y optimización del código.
+### **Version 2.0.2024.0623b**
 
-## **Version 2.0.2024.0423b**
+**Mejoras**
 
-### ¿Qué hay de nuevo?
+- Mejoras en el cálculo del tiempo restante.
+- Corrección de errores y optimización del código.
 
-+ Actualización de las librerías internas (preparación para nuevos servicios).
-+ Corrección de errores y optimización del código.
+### Version 2.0.2024.0423b
 
-## **Version 2.0.2023.0425b**
+**Mejoras**
 
-### ¿Qué hay de nuevo?
+- Actualización de las librerías internas (preparación para nuevos servicios).
+- Corrección de errores y optimización del código.
 
-+ Añadida la compatibilidad con cuentas Nauta Plus.
-+ Cambios necesarios en la infraestructura relacionados con los nuevos servidores de ETECSA.
-+ Corrección de errores y optimización del código.
+### Version 2.0.2023.0425b
 
-## **Version 2.0.2022.0418b**
+**Mejoras**
 
-### ¿Qué hay de nuevo?
+- Añadida la compatibilidad con cuentas Nauta Plus.
+- Cambios necesarios en la infraestructura relacionados con los nuevos servidores de ETECSA.
+- Corrección de errores y optimización del código.
 
-+ Añadidas animaciones de entrada de ventanas.
-+ Añadido un botón de donaciones a la ventana principal.
+### Version 2.0.2022.0418b
 
-* Mejoras en la detección de los servicios de ETECSA.
-* Mayor compatibilidad con nuevas versiones de Windows 11.
-* Cambios necesarios en la infraestructura de detección de actualizaciones de la aplicación.
-* Corrección de errores y optimización del código.
+**Mejoras**
 
-### Bugs corregidos.
+- Añadidas animaciones de entrada de ventanas.
+- Añadido un botón de donaciones a la ventana principal.
+- Mejoras en la detección de los servicios de ETECSA.
+- Mayor compatibilidad con nuevas versiones de Windows 11.
+- Cambios necesarios en la infraestructura de detección de actualizaciones de la aplicación.
+- Corrección de errores y optimización del código.
 
-* Corrección de un bug que cerraba de forma inesperada la aplicación al comprobar actualizaciones.
+**Bugs corregidos**
 
-## **Version 2.0.2021.1006b**
+- Corrección de un bug que cerraba de forma inesperada la aplicación al comprobar actualizaciones.
 
-### ¿Qué hay de nuevo?
+### Version 2.0.2021.1006b
 
-* Solución de un bug que no permitía iniciar sesión y no mostraba el tiempo restante.
+**Mejoras**
 
-## **Version 2.0.2021.1005b**
+- Solución de un bug que no permitía iniciar sesión y no mostraba el tiempo restante.
 
-### ¿Qué hay de nuevo?
+### Version 2.0.2021.1005b
 
-+ Agregada una opción para omitir la verificación de los certificados.
-+ Agregada la sección de donaciones en la ventana "Acerca de...".
-+ Agregado el nuevo vínculo de contacto del sitio oficial.
+**Mejoras**
 
-* Ajustes mínimos en la interfaz gráfica.
+- Agregada una opción para omitir la verificación de los certificados.
+- Agregada la sección de donaciones en la ventana "Acerca de...".
+- Agregado el nuevo vínculo de contacto del sitio oficial.
+- Ajustes mínimos en la interfaz gráfica.
 
-<br>
+### Version 2.0.2021.0819b
 
-## **Version 2.0.2021.0819b**
+**Mejoras**
 
-### ¿Qué hay de nuevo?
+- Implementada una función para detectar la existencia de nuevas versiones de la aplicación.
+- Mejoras en la interfaz gráfica.
+- Modificación de íconos para una señalización más apropiada de la funcionalidad de cada sección.
 
-+ Implementada una función para detectar la existencia de nuevas versiones de la aplicación.
-+ Mejoras en la interfaz gráfica.
+**Bugs corregidos**
 
-* Modificación de íconos para una señalización más apropiada de la funcionalidad de cada sección.
+- Corrección de un bug que no permitía cerrar apropiadamente la aplicación en el primer inicio.
+- Corrección de un bug que asignaba de forma no apropiada los temas al inicio de la aplicación.
 
-### Bugs corregidos.
+### Version 2.0.2021.0718b
 
-* Corrección de un bug que no permitía cerrar apropiadamente la aplicación en el primer inicio.
-* Corrección de un bug que asignaba de forma no apropiada los temas al inicio de la aplicación.
+**Mejoras**
 
-<br>
+- Primeras pruebas para implementar un instalador automatizado.
+- Mejora en la detección de errores relacionados con los archivos de configuración.
 
-## **Version 2.0.2021.0718b**
+**Bugs corregidos**
 
-### ¿Qué hay de nuevo?
+- Corrección de un bug que no permitía usar cuentas cuyo nombre de usuario y/o contraseña tuvieran caracteres no válidos para peticiones web.
 
-+ Primeras pruebas para implementar un instalador automatizado.
+### Version 2.0.2021.0715b
 
-* Mejora en la detección de errores relacionados con los archivos de configuración.
+**Mejoras**
 
-### Bugs corregidos.
-
-* Corrección de un bug que no permitía usar cuentas cuyo nombre de usuario y/o contraseña tuvieran caracteres no válidos para peticiones web.
-
-<br>
-
-## **Version 2.0.2021.0715b**
-
-### ¿Qué hay de nuevo?
-
-+ Implementación de diálogos personalizados preparados para combinar con el tema actual de la aplicación.
-+ Implementación de conexiones a través de proxy y posibilidad de configurar sus ajustes.
-+ Ahora la aplicación carga automáticamente los ajustes de versiones antiguas.
-+ Implementación de detección de certificados de ETECSA _(Se evita iniciar sesión en portales cautivos falsos y relacionados con el robo de cuentas)_
-
-* Mejorados los diálogos de respuesta ante errores, algunos se les añadió la posibilidad de reintentar la operación.
-* Deprecación del comando ping.
-
+- Implementación de diálogos personalizados preparados para combinar con el tema actual de la aplicación.
+- Implementación de conexiones a través de proxy y posibilidad de configurar sus ajustes.
+- Ahora la aplicación carga automáticamente los ajustes de versiones antiguas.
+- Implementación de detección de certificados de ETECSA _(Se evita iniciar sesión en portales cautivos falsos y relacionados con el robo de cuentas)_.
+- Mejorados los diálogos de respuesta ante errores, algunos se les añadió la posibilidad de reintentar la operación.
+- Deprecación del comando ping.
 - Cambios sustanciales en las [políticas de privacidad](/privacypolicy).
+- Refactorización de los últimos componentes.
+- Corrección de bugs con la animación de ocultar la ventana de sesión.
+- Fase beta del proyecto.
 
-* Refactorización de los últimos componentes.
-* Corrección de bugs con la animación de ocultar la ventana de sesión.
-* Fase beta del proyecto.
+**Bugs corregidos**
 
-### Bugs corregidos.
+- Corrección de bugs relacionados con la forma que se mostraba el tiempo restante. **(Aún en pruebas)**
 
-* Corrección de bugs relacionados con la forma que se mostraba el tiempo restante. **(Aún en pruebas)**
+### Version 2.0.2021.0708a
 
-<br>
-
-## **Version 2.0.2021.0708a**
-
-### Bugs corregidos.
+**Bugs corregidos**
 
 - Solución de un bug al calcular el saldo diponible en la cuenta luego de recargar.
 - Solución de un bug relacionado con el cierre la ventana de sesión abierta.
 
-<br>
+### Version 2.0.2021.0707a
 
-## **Version 2.0.2021.0707a**
-
-### Bugs corregidos.
+**Mejoras**
 
 - Solución de varios bugs relacionados con el inicio de sesión.
 
-<br>
+### Version 2.0.2021.0705a
 
-## **Version 2.0.2021.0705a**
+**Mejoras**
 
-### ¿Qué hay de nuevo?
+- ¡Nuevo logo! (Posible evento futuro sobre diseño gráfico en nuestro grupo oficial de Telegram [Mi Cuenta Nauta Chat](https://t.me/micuentanautachat))
+- Completa transformación de la interfaz gráfica.
 
-**General**
-
-+ ¡Nuevo logo! (Posible evento futuro sobre diseño gráfico en nuestro grupo oficial de Telegram [Mi Cuenta Nauta Chat](https://t.me/micuentanautachat))
-+ Completa transformación de la interfaz gráfica.
-
-  * Se dividió la acción de modificar el temporizador y las opciones en botones diferentes.
-  * El botón de abrir los ajustes del temporizador se movió para el lado izquierdo del botón
+  - Se dividió la acción de modificar el temporizador y las opciones en botones diferentes.
+  - El botón de abrir los ajustes del temporizador se movió para el lado izquierdo del botón
     de iniciar sesión para mayor visibilidad.
-  * Se rediseñó la sección de captura del "Captcha".
-  * Se agregó un nuevo algoritmo para detectar cuando la ventana de sesión está fuera de la pantalla
+  - Se rediseñó la sección de captura del "Captcha".
+  - Se agregó un nuevo algoritmo para detectar cuando la ventana de sesión está fuera de la pantalla
     y así evitar que se pierda.
-+ Mejora sustancial en los algoritmos de seguridad.
+- Mejora sustancial en los algoritmos de seguridad.
 
   **Sección: Ventana principal**:
 
-  + Agregada una opción para autocompletar cuentas previamente guardadas.
-  + Agregada una opción para mostrar todas las cuentas guardadas directamente desde la ventana principal.
-  + Agregado un botón para limpiar los ajustes del temporizador directamente desde la ventana principal.
+  - Agregada una opción para autocompletar cuentas previamente guardadas.
+  - Agregada una opción para mostrar todas las cuentas guardadas directamente desde la ventana principal.
+  - Agregado un botón para limpiar los ajustes del temporizador directamente desde la ventana principal.
 
   **Sección: Cuenta abierta**:
 
-  + Se rediseñó la interfaz para hacerla escalable.
-  + Ahora es posible redimensionar la ventana.
-  + Ahora se muestra una etiqueta cuando hay un temporizador activo.
-  + Ahora es posible arrastrar la ventana.
-  + Ahora es posible cambiar la transparencia de la ventana.
-  + Ahora es posible alternar la visibilidad de la ventana para permitir que esté siempre visible o no.
-  + Se mejoró el algoritmo para cerrar cuentas haciéndolo más estable y funcional ante distintos posibles
+  - Se rediseñó la interfaz para hacerla escalable.
+  - Ahora es posible redimensionar la ventana.
+  - Ahora se muestra una etiqueta cuando hay un temporizador activo.
+  - Ahora es posible arrastrar la ventana.
+  - Ahora es posible cambiar la transparencia de la ventana.
+  - Ahora es posible alternar la visibilidad de la ventana para permitir que esté siempre visible o no.
+  - Se mejoró el algoritmo para cerrar cuentas haciéndolo más estable y funcional ante distintos posibles
     errores de red.
-
-  * 2 bugs potenciales corregidos (Véase sección de bugs)
+  - 2 bugs potenciales corregidos (Véase sección de bugs)
 
   **Sección: Opciones**:
 
-  + Se creó una nueva sección: Opciones
+  - Se creó una nueva sección: Opciones
 
-    + Opciones generales como cambiar el tema, guardar la posición y opacidad de la ventana de sesión.
-    + Se reconstruyó la sección de cuentas para incluirse como categoría.
+    - Opciones generales como cambiar el tema, guardar la posición y opacidad de la ventana de sesión.
+    - Se reconstruyó la sección de cuentas para incluirse como categoría.
 
     **Sección: Gestión de cuentas**:
 
-    + Rediseñada la interfaz de agregar cuentas.
-    + Se agregó una opción para editar cuentas previamente guardadas.
+    - Rediseñada la interfaz de agregar cuentas.
+    - Se agregó una opción para editar cuentas previamente guardadas.
 
     **Opciones: Sección de ajustes generales**:
 
-    + Ahora puedes escoger entre dos temas (Oscuro y claro)
-    + Agregada una opción para detectar automáticamente el tema del sistema operativo y cambiarlo
+    - Ahora puedes escoger entre dos temas (Oscuro y claro)
+    - Agregada una opción para detectar automáticamente el tema del sistema operativo y cambiarlo
       automáticamente (Solo Windows 10 o superior).
 
     **Opciones: Sección de ajustes de red**:
 
-    + Ahora puedes cambiar el tiempo de espera por una respuesta http.
+    - Ahora puedes cambiar el tiempo de espera por una respuesta http.
 
   **Sección: Portal Nauta**:
 
-  + Se agregó una nueva función para actualizar dinámicamente los datos del portal Nauta.
-
-  * Rediseño de la interfaz gráfica.
-  * Mejoras al detectar el precio de las horas.
+  - Se agregó una nueva función para actualizar dinámicamente los datos del portal Nauta.
+  - Rediseño de la interfaz gráfica.
+  - Mejoras al detectar el precio de las horas.
 
   **Sección: Acerca de.../EULA**:
 
-  + Se unificaron ambas ventanas en una que cumple la misma función de forma más efectiva.
+  - Se unificaron ambas ventanas en una que cumple la misma función de forma más efectiva.
+  - Cambios pequeños en la interfaz.
 
-  * Cambios pequeños en la interfaz.
-
-#### Bugs corregidos.
+**Bugs corregidos**
 
 **Sección: Sesión abierta**:
 
-* Se corrigió el siguiente bug:
+- Se corrigió el siguiente bug:
   Al iniciar sesión la aplicación necesita obtener la variable del tiempo restante de
   la cuenta para que así la ventana se cierre cuando el tiempo se acabe, cuando el tiempo
   del temporizador se acabe o cuando se cierre manualmente la cuenta desde el botón.
@@ -217,73 +197,57 @@ include_in_header: true
   Sin embargo, si en el momento en el cual la aplicación intenta obtener el tiempo restante
   el servidor no responde u ocurre un problema en la red, pues la ventana de sesión enviará
   un error y posiblemente la cuenta permanecería abierta.
-* Se corrigió el siguiente bug:
+- Se corrigió el siguiente bug:
   Habian ocasiones en que la ventana de sesión desaparecía de la pantalla, gracias al nuevo
   algoritmo es posible que este bug quede solucionado.
 
-<br>
-
-## Version 1.2.2021.08b
+### Version 1.2.2021.08b
 
 Se espera que sea la versión más estable hasta el momento así que esta versión pasa a fase RC.
 
-#### ¿Qué hay de nuevo?
+**Mejoras**
 
 - Mejora en los protocolos de seguridad.
 - Simplificación de las peticiones al servidor de Etecsa.
 
-<br>
+### Version 1.2.2021.07b
 
-## Version 1.2.2021.07b
-
-#### ¿Qué hay de nuevo?
+**Mejoras**
 
 - Agregada la posibilidad de añadir y guardar cuentas de acceso nacional (nauta.co.cu).
 - Agregada la opción de cerrar la ventana de sesión aunque la cuenta aún esté abierta y por algún motivo no se pueda cerrar.
+- Revisión del algoritmo de cambio de contraseña y optimización de los patrones para Regex.
+- Mejoras en el código.
 
-* Revisión del algoritmo de cambio de contraseña y optimización de los patrones para Regex.
-* Mejoras en el código.
-
-#### Bugs corregidos.
+**Bugs corregidos**
 
 - Corregido un bug que no permitía mostrar el tiempo de la cuenta cuando se tenía más de 23 horas en la cuenta.
 
-<br>
+### Version 1.2.2021.06b
 
-## Version 1.2.2021.06b
-
-#### ¿Qué hay de nuevo?
+**Mejoras**
 
 - Agregado un contenedor criptográfico avanzado derivado de AES para proteger las contraseñas almacenadas en su computador.
+- Mejoras en el código.
 
-* Mejoras en el código.
-
-#### Bugs corregidos.
+**Bugs corregidos**
 
 - Corregido un bug que no permitía cerrar la ventana de sesión cuando se usaba más de un monitor.
 - Corregido un bug que no permitía cerrar la ventana de sesión cuando se usaba un escalado de pantalla diferente.
 
-<br>
+### Version 1.2.2021.05b
 
-## Version 1.2.2021.05b
-
-#### ¿Qué hay de nuevo?
+**Mejoras**
 
 - Optimización y refactorización del código relacionado con la interfaz gráfica.
 
-<br>
+### Version 1.2.2021.04b (`Primera versión registrada`)
 
-### `Primera versión registrada`
-
-## Version 1.2.2021.04b
-
-#### ¿Qué hay de nuevo?
+**Mejoras**
 
 - Corrección de bugs.
 
-#### Corrección de bugs
+**Corrección de bugs**
 
 - Corregidos los problemas de inicio de sesión y cierre de sesión.
 - Optimización de animaciones.
-
-<br>

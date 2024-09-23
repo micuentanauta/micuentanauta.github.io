@@ -1,123 +1,104 @@
 #page title
-page_title                                : Mi Cuenta Nauta - Web Oficial                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title: Mi Cuenta Nauta - Web Oficial # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
-windows_link                              : https://bit.ly/mcn2020240623beta
+windows_link: https://bit.ly/mcn2024250323beta
 
 # App Info
-ios_app_id                                :                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
-ios_app_country                           :                                         # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
-playstore_link                            :                                           # Enter Google Play Store URL.
+ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+appstore_link: # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+playstore_link: # Enter Google Play Store URL.
 
-blog_link                                 : https://micuentanauta.blogspot.com
+blog_link: https://micuentanauta.blogspot.com
 
-app_icon                                  : assets/logo.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  : Mi Cuenta Nauta                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 : v2.0.2024.0623beta                   # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un entorno seguro a la hora de conectarse a internet.
+app_icon: assets/logo.png # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_name: Mi Cuenta Nauta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price: v2.0.2025.0323beta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description: Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un entorno seguro a la hora de conectarse a internet.
 
-enable_smart_app_banner                   : false                                # Set to true to show a smart app banner at top of page on mobile devices.
-
-
-
+enable_smart_app_banner: false # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Information About Yourself
-your_name                                 : BlackNoizE404                              
-your_link                                 : 
-your_city                                 : Cuba
-email_address                             : blacknoize404@gmail.com
-telegram_channel                          : micuentanauta
-facebook_username                         :
-instagram_username                        : 
-twitter_username                          : 
-github_username                           : 
-youtube_username                          :
-phone_number                              : +53 53 369 125
-bank_iban                                 : 9224 0699 9886 3266
+your_name: BlackNoizE404
+your_link:
+your_city: Cuba
+email_address: blacknoize404@gmail.com
+telegram_channel: micuentanauta
+facebook_username:
+instagram_username:
+twitter_username:
+github_username:
+youtube_username:
+phone_number: +53 53 369 125
+bank_iban: 9224 0699 9886 3266
 
-current_year                              : 2024
-
+current_year: 2024
 
 # Feature List                            Edit, add or remove features to be presented.
-features                                  :
+features:
+  - title: Es bastante intuitivo y rápido.
+    description: Ha sido desarrollada enfocándose hasta en el más mínimo detalle de falta de rendimiento.
+    fontawesome_icon_name: tachometer-alt
 
-  - title                                 : Es bastante intuitivo y rápido.
-    description                           : Ha sido desarrollada enfocándose hasta en el más mínimo detalle de falta de rendimiento.
-    fontawesome_icon_name                 : tachometer-alt
-    
-  - title                                 : Una idea un tanto novedosa.
-    description                           : Una vez que tengas tu cuenta abierta tendrás siempre en pantalla tu tiempo restante y la posibilidad de cerrar la sesión cuando quieras sin perder saldo.
-    fontawesome_icon_name                 : hourglass-half
-    
-  - title                                 : Nuestro equipo lucha por una buena seguridad.
-    description                           : Intentamos una seguridad lo más férrea posible mientras fomentamos un uso responsable de las cuentas Nauta.
-    fontawesome_icon_name                 : shield-alt
-    
-  - title                                 : ¡Ahora con temas!
-    description                           : Cuida tus ojos mientras usas nuestra aplicación.
-    fontawesome_icon_name                 : magic
+  - title: Una idea un tanto novedosa.
+    description: Una vez que tengas tu cuenta abierta tendrás siempre en pantalla tu tiempo restante y la posibilidad de cerrar la sesión cuando quieras sin perder saldo.
+    fontawesome_icon_name: hourglass-half
 
-  - title                                 : Un portal Nauta mucho más rápido, ligero y eficaz.
-    description                           : Todo en un mismo lugar, accesible incluso desde datos móviles con mínimo gasto.
-    fontawesome_icon_name                 : chart-pie
+  - title: Nuestro equipo lucha por una buena seguridad.
+    description: Intentamos una seguridad lo más férrea posible mientras fomentamos un uso responsable de las cuentas Nauta.
+    fontawesome_icon_name: shield-alt
 
-  - title                                 : Cuentas, cuentas y más ahora con nuestra versión vitaminada de las opciones.
-    description                           : Configura todas tus cuentas nautas a gusto, cambia cómo se comporta la aplicación.
-    fontawesome_icon_name                 : users
+  - title: ¡Ahora con temas!
+    description: Cuida tus ojos mientras usas nuestra aplicación.
+    fontawesome_icon_name: magic
 
+  - title: Un portal Nauta mucho más rápido, ligero y eficaz.
+    description: Todo en un mismo lugar, accesible incluso desde datos móviles con mínimo gasto.
+    fontawesome_icon_name: chart-pie
+
+  - title: Cuentas, cuentas y más ahora con nuestra versión vitaminada de las opciones.
+    description: Configura todas tus cuentas nautas a gusto, cambia cómo se comporta la aplicación.
+    fontawesome_icon_name: users
 
 # Lista de patrocinadores
-sponsors                                  :
+sponsors:
+  - title: TotalCommander2021
+    url: https://t.me/binaryfall
+    image: assets/tc2021.png
 
-  - title                                 : TotalCommander2021
-    url                                   : https://t.me/binaryfall
-    image                                 : assets/tc2021.png
-    
 # Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffc43f"
+topbar_color: "#000000"
+topbar_transparency: 0.1
+topbar_title_color: "#ffc43f"
 
-cover_image                               : assets/headerimage.jpg                    # Replace with alternative image path or image URL.
+cover_image: assets/headerimage.jpg # Replace with alternative image path or image URL.
 
-cover_overlay_color                       : "#1f1900"
-cover_overlay_transparency                : 0.4
+cover_overlay_color: "#1f1900"
+cover_overlay_transparency: 0.4
 
-device_image                              : assets/app.png
-device_color                              : black
+device_image: assets/app.png
+device_color: black
 
-body_background_color                     : "#121212ff"
+body_background_color: "#121212ff"
 
-link_color                                : "#ffc43f"
+link_color: "#ffc43f"
 
-app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
+app_title_color: "#ffffff"
+app_price_color: "#ffffff"
+app_description_color: "#ffffff"
 
-feature_title_color                       : "#ffc43f"
-feature_text_color                        : "#686868"
+feature_title_color: "#ffc43f"
+feature_text_color: "#686868"
 
-feature_icons_foreground_color            : "#ffc43f"
-feature_icons_background_color            : "#232323"
+feature_icons_foreground_color: "#ffc43f"
+feature_icons_background_color: "#232323"
 
-social_icons_foreground_color             : "#ffc43f"
-social_icons_background_color             : "#232323"
+social_icons_foreground_color: "#ffc43f"
+social_icons_background_color: "#232323"
 
-footer_text_color                         : "#686868"
-
-
-
-
-
-
-
-
-
-
-
-
+footer_text_color: "#686868"
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###

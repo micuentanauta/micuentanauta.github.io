@@ -17,12 +17,12 @@
                 <div class="donate-container">
                     <div class="donate-item">
                         <p style="font-size: 20px">Saldo</p>
-                        <img src="assets/movile-qr.png" draggable="false"/>
+                        <img src="assets/movile-qr.png" draggable="false" />
                         <p>{{ site.phone_number }}</p>
                     </div>
                     <div class="donate-item">
                         <p style="font-size: 20px">Transferencia</p>
-                        <img src="assets/enzona-qr.png" draggable="false"/>
+                        <img src="assets/enzona-qr.png" draggable="false" />
                         <p>{{ site.bank_iban }}</p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                                 </clippath>
                             </defs>
                         </svg>
-                        <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" draggable="false"/>
+                        <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" draggable="false" />
                     </div>
                     <div class="appNamePriceContainer">
                         <h1 class="appName">{{ site.app_name }}</h1>
@@ -66,32 +66,33 @@
                     <div class="downloadButtonsContainer">
                         {% if site.playstore_link %}
                         <a class="playStoreLink" href="{{site.playstore_link}}">
-                            <img class="playStore" src="assets/playstore.png" draggable="false"/>
+                            <img class="playStore" src="assets/playstore.png" draggable="false" />
                         </a>
                         {% endif %} {% if site.appstore_link %}
                         <a class="appStoreLink" href="{{site.appstore_link}}">
-                            <img class="appStore" src="assets/appstore.png" draggable="false"/>
+                            <img class="appStore" src="assets/appstore.png" draggable="false" />
                         </a>
-                        {% endif %} 
-                        
+                        {% endif %}
+
                         {% if site.windows_link %}
 
                         <a class="downloadButton" id="myBtn" link="{{ site.windows_link }}">
                             <i class="fas fa-download"></i>
                             Descargar para Windows (32, 64 bits)
                         </a>
-                        
+
                         <p class="userFinalLicense">
                             Al descargar la aplicación está de acuerdo con la
-                            <a href="{{ page.url | relative_url }}privacypolicy" target="_self">política de privacidad</a>.
+                            <a href="{{ page.url | relative_url }}privacypolicy" target="_self">política de
+                                privacidad</a>.
                         </p>
                         {% endif %}
                     </div>
                 </div>
-                {% include features.html %} 
+                {% include features.html %}
 
                 {% include sponsors.html %}
-                
+
                 {% include footer.html %}
 
                 <script src="js/main.js"> </script>
