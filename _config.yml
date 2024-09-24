@@ -4,7 +4,6 @@ page_title: Mi Cuenta Nauta - Web Oficial # Automatically populates with app nam
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
 windows_link: https://bit.ly/mcn2020240923beta
-
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2

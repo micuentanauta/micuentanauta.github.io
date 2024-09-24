@@ -3,6 +3,7 @@ layout: page
 title: Registro de cambios
 include_in_header: true
 ---
+
 ## Registro de cambios
 
 ### **Version 2.0.2024.0923b** (`Última versión disponible`)
@@ -10,8 +11,9 @@ include_in_header: true
 **Mejoras**
 
 - Añadido un nuevo certificado de seguridad para las cuentas.
+- Servicio de notificación de actualizaciones habilitado.
 
-### **Version 2.0.2024.0623b**
+### Version 2.0.2024.0623b
 
 **Mejoras**
 
@@ -132,6 +134,7 @@ include_in_header: true
   - Se rediseñó la sección de captura del "Captcha".
   - Se agregó un nuevo algoritmo para detectar cuando la ventana de sesión está fuera de la pantalla
     y así evitar que se pierda.
+
 - Mejora sustancial en los algoritmos de seguridad.
 
   **Sección: Ventana principal**:
@@ -197,6 +200,7 @@ include_in_header: true
   Sin embargo, si en el momento en el cual la aplicación intenta obtener el tiempo restante
   el servidor no responde u ocurre un problema en la red, pues la ventana de sesión enviará
   un error y posiblemente la cuenta permanecería abierta.
+
 - Se corrigió el siguiente bug:
   Habian ocasiones en que la ventana de sesión desaparecía de la pantalla, gracias al nuevo
   algoritmo es posible que este bug quede solucionado.
