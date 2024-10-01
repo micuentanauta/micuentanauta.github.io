@@ -3,6 +3,7 @@ layout: page
 title: Política de Privacidad
 include_in_header: false
 ---
+
 **Última actualización**
 Julio 15 2022
 
@@ -11,8 +12,6 @@ Julio 15 2022
 Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un ambiente más seguro a la hora de conectarse a internet.
 
 **Importante:** Las políticas de privacidad pueden verse sujetas a cambios.
-
-<br>
 
 ## 1.0 Información que recolectamos.
 
@@ -26,8 +25,6 @@ La aplicación no recopila dato alguno que el usuario no esté de acuerdo a alma
 ### 1.2 Información que nos provees como consumidor de la aplicación.
 
 La información que nos provees por ahora es prácticamente nula, aunque en próximas iteraciones de la aplicación esto podría cambiar para mejorar la aplicación con reportes anónimos de cuelgues de la aplicación y otros comportamientos no esperados.
-
-<br>
 
 ## 2.0 Qué deberes tienes como consumidor de la aplicación.
 
@@ -43,13 +40,9 @@ La información que nos provees por ahora es prácticamente nula, aunque en pró
 1. A ser notificado a través de siguientes actualizaciones sobre los cambios en las políticas de privacidad.
 2. A ser tratado de forma agradable y entendible.
 
-<br>
-
 ## 3. Reclamación ante bugs y otros accidentes:
 
 El grupo de desarrollo de esta aplicación no se hace responsable por el uso indebido de la misma o por los bugs que pueda contener. Se recomienda usar la última versión disponible.
-
-<br>
 
 ## 4. Nota final (Importante):
 
