@@ -10,7 +10,7 @@ ios_app_country: # Required outside USA. Enter 2 letter country code as in https
 appstore_link: # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link: # Enter Google Play Store URL.
 
-blog_link: https://micuentanauta.blogspot.com
+blog_link: # https://micuentanauta.blogspot.com
 
 app_icon: assets/logo.png # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: Mi Cuenta Nauta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
