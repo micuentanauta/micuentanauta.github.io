@@ -6,7 +6,7 @@
         "download_url": "bit.ly/mcn29920250416beta",
         "updated_date": "2025.04.16"
     },
-    "older_versions": [
+    "older_builds": [
         {
             "changelog": "Añadido un nuevo certificado de seguridad para las cuentas.\n+ Servicio de notificación de actualizaciones habilitado.",
             "version": "2.0.2024.923",
