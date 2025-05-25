@@ -2,14 +2,14 @@
     "is_activated": true,
     "last_build": {
         "changelog": "Preparativos para la versión 3.0.\n+ Se ha deshabilitado el acceso al portal antiguo para trabajar en el nuevo.\n+ Nueva interfaz.\n+ Corrección de bugs.\n+ Eliminación del límite local de vencimiento de las versiones beta.",
-        "version": "2.99.2025.0416",
+        "version": "2.99.2025.416",
         "download_url": "bit.ly/mcn29920250416beta",
         "updated_date": "2025.04.16"
     },
     "older_versions": [
         {
             "changelog": "Añadido un nuevo certificado de seguridad para las cuentas.\n+ Servicio de notificación de actualizaciones habilitado.",
-            "version": "2.0.2024.0923",
+            "version": "2.0.2024.923",
             "download_url": "bit.ly/mcn2020240923beta",
             "updated_date": "2024.09.23"
         }
