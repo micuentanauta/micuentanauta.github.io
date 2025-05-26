@@ -12,6 +12,8 @@ playstore_link: # Enter Google Play Store URL.
 
 blog_link: # https://micuentanauta.blogspot.com
 
+contact_form: https://formspree.io/f/mnndkyaw
+
 app_icon: assets/logo.png # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: Mi Cuenta Nauta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price: v2.0.2024.0923beta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
