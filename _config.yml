@@ -39,28 +39,28 @@ current_year: 2024
 
 # Feature List                            Edit, add or remove features to be presented.
 features:
-  - title: Es bastante intuitivo y rápido.
-    description: Ha sido desarrollada enfocándose hasta en el más mínimo detalle de falta de rendimiento.
+  - title: Es bastante intuitivo y rápido
+    description: Ha sido desarrollada para proveer un rendimiento óptimo
     fontawesome_icon_name: tachometer-alt
 
-  - title: Una idea un tanto novedosa.
-    description: Una vez que tengas tu cuenta abierta tendrás siempre en pantalla tu tiempo restante y la posibilidad de cerrar la sesión cuando quieras sin perder saldo.
+  - title: No pierdas más nunca la sesión abierta
+    description: Una vez que tengas tu cuenta abierta tendrás siempre en pantalla tu tiempo restante y la posibilidad de cerrar la sesión cuando quieras sin perder saldo
     fontawesome_icon_name: hourglass-half
 
-  - title: Nuestro equipo lucha por una buena seguridad.
-    description: Intentamos una seguridad lo más férrea posible mientras fomentamos un uso responsable de las cuentas Nauta.
+  - title: Seguridad garantizada
+    description: Fomentamos un uso responsable de las cuentas Nauta
     fontawesome_icon_name: shield-alt
 
   - title: ¡Ahora con temas!
-    description: Cuida tus ojos mientras usas nuestra aplicación.
+    description: Cuida tus ojos mientras usas nuestra aplicación
     fontawesome_icon_name: magic
 
-  - title: Un portal Nauta mucho más rápido, ligero y eficaz.
-    description: Todo en un mismo lugar, accesible incluso desde datos móviles con mínimo gasto.
+  - title: Un portal Nauta mucho más rápido, ligero y eficaz
+    description: Todo en un mismo lugar, accesible incluso desde datos móviles con mínimo gasto
     fontawesome_icon_name: chart-pie
 
-  - title: Cuentas, cuentas y más ahora con nuestra versión vitaminada de las opciones.
-    description: Configura todas tus cuentas nautas a gusto, cambia cómo se comporta la aplicación.
+  - title: Cuentas, cuentas y más ahora con nuestra versión vitaminada de las opciones
+    description: Configura todas tus cuentas nautas a gusto, cambia cómo se comporta la aplicación
     fontawesome_icon_name: users
 
 # Lista de patrocinadores
