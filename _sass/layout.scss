@@ -868,3 +868,158 @@ footer {
 .hidden {
   display: none;
 }
+
+/* Formulario */
+
+form {
+    position: relative;
+    background: rgba(41, 41, 41, 0.95);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.4s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Campos del formulario */
+.field {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+/* Estilos para inputs y textarea */
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 14px 0 8px 0;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #f1f1f1;
+}
+
+/* Efecto Material Design en foco */
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-bottom-color: #1a73e8;
+    box-shadow: 0 2px 0 0 rgba(26, 115, 232, 0.4);
+}
+
+/* Etiquetas flotantes */
+.field label {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* Movimiento de etiqueta cuando hay contenido o está enfocado */
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field textarea:focus + label,
+.field textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #1a73e8;
+    background: rgba(41, 41, 41, 0.95);
+    padding: 0 4px;
+    z-index: 1;
+}
+
+/* Campo de mensaje */
+.field textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+/* Acciones (botones) */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.actions li {
+    list-style: none;
+    flex: 1 1 auto;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+}
+
+/* Botón principal */
+input[type="submit"].special {
+    background-color: #1a73e8;
+    color: white;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+input[type="submit"].special:hover {
+    background-color: #155fb2;
+    box-shadow: 0 6px 16px rgba(26, 115, 232, 0.4);
+}
+
+/* Botón secundario */
+input[type="reset"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input[type="reset"]:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 2rem 1.5rem;
+    }
+
+    .field.half {
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .actions li {
+        width: 100%;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+}
