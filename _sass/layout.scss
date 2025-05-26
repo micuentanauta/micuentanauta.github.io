@@ -879,12 +879,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 10rem 4rem;
     position: relative;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactSection h3 {
+    color: #ffc43f;
 }
 
 form {
-    position: relative;
     background: rgba(41, 41, 41, 0.95);
     padding: 3rem;
     border-radius: 12px;
