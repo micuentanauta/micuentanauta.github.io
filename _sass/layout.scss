@@ -1014,6 +1014,10 @@ input[type="reset"]:hover {
 
 /* Responsive */
 @media (max-width: 600px) {
+    .contactSection {
+      padding: 4rem 2rem;
+    }
+
     form {
         padding: 3rem;
     }
