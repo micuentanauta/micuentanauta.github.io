@@ -667,13 +667,16 @@ nav > ul li a:active {
 
 .features {
   grid-area: c;
+  margin-top: 93px;
+}
+
+.features-container {
   display: flex;
   flex: 0 1 auto;
   align-content: flex-start;
   justify-content: flex-start;
   flex-grow: 1;
   flex-wrap: wrap;
-  margin-top: 93px;
 }
 
 .feature {
@@ -728,10 +731,12 @@ nav > ul li a:active {
 
 @media only screen and (max-width: 992px) {
   .features {
+    margin-top: 11px;
+  }
+  .features-container {
     flex-grow: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 11px;
   }
 
   .feature {
@@ -870,6 +875,14 @@ footer {
 }
 
 /* Formulario */
+.contactSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    padding: 2rem;
+    position: relative;
+}
 
 form {
     position: relative;
