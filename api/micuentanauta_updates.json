@@ -1,7 +1,7 @@
 {
     "is_activated": true,
     "last_build": {
-        "changelog": "Preparativos para la versión 3.0.\n+ Se ha deshabilitado el acceso al portal antiguo para trabajar en el nuevo.\n+ Nueva interfaz.\n+ Corrección de bugs.\n+ Eliminación del límite local de vencimiento de las versiones beta.",
+        "changelog": "Preparativos para la versión 3.0.\n+ Se ha deshabilitado el acceso al portal antiguo para trabajar en el nuevo.\n+ Total rediseño de la interfaz.\n+ Mejoras en el servicio de notificación de actualizaciones.\n+ Nueva ventana totalmente reescalable y adaptable de sesión abierta.\n* Sistema de guardado de ajustes mejorado.\n* Corrección de bugs.\n+ Eliminación del límite local de vencimiento de las versiones beta.",
         "version": "2.99.2025.416",
         "download_url": "bit.ly/mcn29920250416beta",
         "updated_date": "2025.04.16"
