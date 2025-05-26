@@ -879,15 +879,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-    padding: 2rem;
+    padding: 4rem;
     position: relative;
 }
 
 form {
     position: relative;
     background: rgba(41, 41, 41, 0.95);
-    padding: 2.5rem;
+    padding: 3rem;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -904,8 +903,9 @@ form {
 
 /* Campos del formulario */
 .field {
-    position: relative;
     margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilos para inputs y textarea */
@@ -915,7 +915,6 @@ form {
     padding: 14px 0 8px 0;
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-    font-size: 1rem;
     transition: all 0.3s ease;
     background: transparent;
     color: #f1f1f1;
@@ -931,10 +930,8 @@ form {
 
 /* Etiquetas flotantes */
 .field label {
-    position: absolute;
     top: 14px;
     left: 0;
-    font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: all 0.2s ease;
@@ -971,7 +968,6 @@ form {
 
 .actions li {
     list-style: none;
-    flex: 1 1 auto;
 }
 
 /* Botones */
@@ -985,7 +981,6 @@ input[type="reset"] {
     transition: all 0.2s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 0.95rem;
 }
 
 /* Botón principal */
