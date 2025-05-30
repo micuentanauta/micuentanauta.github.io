@@ -1,0 +1,34 @@
+[
+    {
+        "goal": 5000,
+        "current": 250,
+        "contributors": [
+            {
+                "name": "blob",
+                "contribution": 250 
+            }
+        ],
+        "objectives": [
+            {
+                "title": "Compatiblidad preliminares con los servicios del Portal Nauta",
+                "reason": "Añadir las funcionalidades más críticas como recargar con voucher, transferir saldo, cambiar contraseñas de usuario",
+                "requester": "bn404"
+            },
+            {
+                "title": "Compatiblidad con los servicios nuevos del Portal Nauta",
+                "reason": "Añadir el forzado de cierre de la cuenta y de detalles de las cuentas",
+                "requester": "bn404"
+            },
+            {
+                "title": "Vinculación directa con cuenta nauta única",
+                "reason": "Añadir la vinculación directa con Cuenta Nauta para añadir directamente las cuentas de navegación asociadas",
+                "requester": "bn404"
+            },
+            {
+                "title": "Actualización de tiempo en ventana de sesión",
+                "reason": "Agregar un botón de actualización de tiempo para comprobar las horas restantes desde el servidor",
+                "requester": "bn404"
+            }
+        ]
+    }
+]

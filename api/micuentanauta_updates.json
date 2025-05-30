@@ -4,14 +4,16 @@
         "changelog": "Preparativos para la versión 3.0.\n+ Se ha deshabilitado el acceso al portal antiguo para trabajar en el nuevo.\n+ Total rediseño de la interfaz.\n+ Mejoras en el servicio de notificación de actualizaciones.\n+ Nueva ventana totalmente reescalable y adaptable de sesión abierta.\n* Sistema de guardado de ajustes mejorado.\n* Corrección de bugs.\n+ Eliminación del límite local de vencimiento de las versiones beta.",
         "version": "2.99.2025.416",
         "download_url": "bit.ly/mcn29920250416beta",
-        "updated_date": "2025.04.16"
+        "updated_date": "2025.04.16",
+        "kind": "1"
     },
     "older_builds": [
         {
             "changelog": "Añadido un nuevo certificado de seguridad para las cuentas.\n+ Servicio de notificación de actualizaciones habilitado.",
             "version": "2.0.2024.923",
             "download_url": "bit.ly/mcn2020240923beta",
-            "updated_date": "2024.09.23"
+            "updated_date": "2024.09.23",
+            "kind": "1"
         }
     ]
 }
