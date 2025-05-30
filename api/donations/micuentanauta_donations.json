@@ -28,6 +28,16 @@
                 "title": "Actualización de tiempo en ventana de sesión",
                 "reason": "Agregar un botón de actualización de tiempo para comprobar las horas restantes desde el servidor",
                 "requester": "bn404"
+            },
+            {
+                "title": "Inicio con Windows",
+                "reason": "Inicio con Windows",
+                "requester": "bn404"
+            },
+            {
+                "title": "Ícono en la barra de notificaciones",
+                "reason": "Forma rápida de acceder a la app a través de la barar de notificaciones",
+                "requester": "bn404"
             }
         ]
     }
