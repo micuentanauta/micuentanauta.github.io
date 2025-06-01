@@ -3,7 +3,7 @@ page_title: Mi Cuenta Nauta - Web Oficial # Automatically populates with app nam
 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
-windows_link: https://bit.ly/mcn2020240923beta
+windows_link: https://bit.ly/mcn3001beta
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
@@ -14,9 +14,9 @@ blog_link: # https://micuentanauta.blogspot.com
 
 contact_form: https://formspree.io/f/mnndkyaw
 
-app_icon: assets/logo.png # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_icon: assets/mcn-icon.svg # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: Mi Cuenta Nauta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price: v2.0.2024.0923beta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_version: v3.0.0.1beta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description: Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un entorno seguro a la hora de conectarse a internet
 
 enable_smart_app_banner: false # Set to true to show a smart app banner at top of page on mobile devices.
@@ -35,7 +35,7 @@ youtube_username:
 phone_number: +53 53 369 125
 bank_iban: 9224 0699 9886 3266
 
-current_year: 2024
+current_year: 2025
 
 # Feature List                            Edit, add or remove features to be presented.
 features:
@@ -79,7 +79,7 @@ cover_image: assets/headerimage.jpg # Replace with alternative image path or ima
 cover_overlay_color: "#1f1900"
 cover_overlay_transparency: 0.4
 
-device_image: assets/app.png
+device_image: assets/mcn-window-3001.png
 device_color: black
 
 body_background_color: "#121212ff"
@@ -87,7 +87,7 @@ body_background_color: "#121212ff"
 link_color: "#ffc43f"
 
 app_title_color: "#ffffff"
-app_price_color: "#ffffff"
+app_version_color: "#ffffff"
 app_description_color: "#ffffff"
 
 feature_title_color: "#ffc43f"

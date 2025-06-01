@@ -248,7 +248,7 @@ nav > ul li a:active {
   color: rgba($header-title-color, 1);
 }
 
-// App Title, Price, Description and Links
+// App Title, Version, Description and Links
 
 .appInfo {
   grid-area: i;
@@ -277,7 +277,7 @@ nav > ul li a:active {
   clip-path: url(#shape120);
 }
 
-.appNamePriceContainer {
+.appNameVersionContainer {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -290,8 +290,8 @@ nav > ul li a:active {
   color: $app-title-color;
 }
 
-.appPrice {
-  color: $app-price-color;
+.appVersion {
+  color: $app-version-color;
   font-weight: normal;
   margin-top: 13px;
 }
@@ -498,7 +498,7 @@ nav > ul li a:active {
 
 
 @media only screen and (max-width: 768px) {
-  .appNamePriceContainer {
+  .appNameVersionContainer {
     width: 100%;
     margin-left: 0px;
     align-items: center;
@@ -508,7 +508,7 @@ nav > ul li a:active {
     margin-top: 30px;
     text-align: center;
   }
-  .appPrice {
+  .appVersion {
     margin-top: 13px;
     text-align: center;
   }
