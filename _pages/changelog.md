@@ -44,30 +44,30 @@ Bugs corregidos
 - La ventana de sesión abierta no se cerraba luego de cerrar sesión.
 - El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.
 
-### **Version 2.0.2024.0923b** (`Última versión disponible`)
+### **Version 2.0.2024.0923b**
 
-**Mejoras**
+**Cambios**
 
 - Añadido un nuevo certificado de seguridad para las cuentas.
 - Servicio de notificación de actualizaciones habilitado.
 
 ### Version 2.0.2024.0623b
 
-**Mejoras**
+**Cambios**
 
 - Mejoras en el cálculo del tiempo restante.
 - Corrección de errores y optimización del código.
 
 ### Version 2.0.2024.0423b
 
-**Mejoras**
+**Cambios**
 
 - Actualización de las librerías internas (preparación para nuevos servicios).
 - Corrección de errores y optimización del código.
 
 ### Version 2.0.2023.0425b
 
-**Mejoras**
+**Cambios**
 
 - Añadida la compatibilidad con cuentas Nauta Plus.
 - Cambios necesarios en la infraestructura relacionados con los nuevos servidores de ETECSA.
@@ -75,7 +75,7 @@ Bugs corregidos
 
 ### Version 2.0.2022.0418b
 
-**Mejoras**
+**Cambios**
 
 - Añadidas animaciones de entrada de ventanas.
 - Añadido un botón de donaciones a la ventana principal.
@@ -90,13 +90,13 @@ Bugs corregidos
 
 ### Version 2.0.2021.1006b
 
-**Mejoras**
+**Cambios**
 
 - Solución de un bug que no permitía iniciar sesión y no mostraba el tiempo restante.
 
 ### Version 2.0.2021.1005b
 
-**Mejoras**
+**Cambios**
 
 - Agregada una opción para omitir la verificación de los certificados.
 - Agregada la sección de donaciones en la ventana "Acerca de...".
@@ -105,10 +105,10 @@ Bugs corregidos
 
 ### Version 2.0.2021.0819b
 
-**Mejoras**
+**Cambios**
 
 - Implementada una función para detectar la existencia de nuevas versiones de la aplicación.
-- Mejoras en la interfaz gráfica.
+- Cambios en la interfaz gráfica.
 - Modificación de íconos para una señalización más apropiada de la funcionalidad de cada sección.
 
 **Bugs corregidos**
@@ -118,7 +118,7 @@ Bugs corregidos
 
 ### Version 2.0.2021.0718b
 
-**Mejoras**
+**Cambios**
 
 - Primeras pruebas para implementar un instalador automatizado.
 - Mejora en la detección de errores relacionados con los archivos de configuración.
@@ -129,7 +129,7 @@ Bugs corregidos
 
 ### Version 2.0.2021.0715b
 
-**Mejoras**
+**Cambios**
 
 - Implementación de diálogos personalizados preparados para combinar con el tema actual de la aplicación.
 - Implementación de conexiones a través de proxy y posibilidad de configurar sus ajustes.
@@ -155,13 +155,13 @@ Bugs corregidos
 
 ### Version 2.0.2021.0707a
 
-**Mejoras**
+**Cambios**
 
 - Solución de varios bugs relacionados con el inicio de sesión.
 
 ### Version 2.0.2021.0705a
 
-**Mejoras**
+**Cambios**
 
 - ¡Nuevo logo! (Posible evento futuro sobre diseño gráfico en nuestro grupo oficial de Telegram [Mi Cuenta Nauta Chat](https://t.me/micuentanautachat))
 - Completa transformación de la interfaz gráfica.
@@ -219,7 +219,7 @@ Bugs corregidos
 
   - Se agregó una nueva función para actualizar dinámicamente los datos del portal Nauta.
   - Rediseño de la interfaz gráfica.
-  - Mejoras al detectar el precio de las horas.
+  - Cambios al detectar el precio de las horas.
 
   **Sección: Acerca de.../EULA**:
 
@@ -247,19 +247,19 @@ Bugs corregidos
 
 Se espera que sea la versión más estable hasta el momento así que esta versión pasa a fase RC.
 
-**Mejoras**
+**Cambios**
 
 - Mejora en los protocolos de seguridad.
 - Simplificación de las peticiones al servidor de Etecsa.
 
 ### Version 1.2.2021.07b
 
-**Mejoras**
+**Cambios**
 
 - Agregada la posibilidad de añadir y guardar cuentas de acceso nacional (nauta.co.cu).
 - Agregada la opción de cerrar la ventana de sesión aunque la cuenta aún esté abierta y por algún motivo no se pueda cerrar.
 - Revisión del algoritmo de cambio de contraseña y optimización de los patrones para Regex.
-- Mejoras en el código.
+- Cambios en el código.
 
 **Bugs corregidos**
 
@@ -267,10 +267,10 @@ Se espera que sea la versión más estable hasta el momento así que esta versi�
 
 ### Version 1.2.2021.06b
 
-**Mejoras**
+**Cambios**
 
 - Agregado un contenedor criptográfico avanzado derivado de AES para proteger las contraseñas almacenadas en su computador.
-- Mejoras en el código.
+- Cambios en el código.
 
 **Bugs corregidos**
 
@@ -279,13 +279,13 @@ Se espera que sea la versión más estable hasta el momento así que esta versi�
 
 ### Version 1.2.2021.05b
 
-**Mejoras**
+**Cambios**
 
 - Optimización y refactorización del código relacionado con la interfaz gráfica.
 
 ### Version 1.2.2021.04b (`Primera versión registrada`)
 
-**Mejoras**
+**Cambios**
 
 - Corrección de bugs.
 
