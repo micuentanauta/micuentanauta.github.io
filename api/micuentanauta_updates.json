@@ -1,13 +1,20 @@
 {
     "is_activated": true,
     "last_build": {
+        "changelog": "Versionado\n\n* El versionado cambia del formato v{major}.{minor}.{year}.{month-day} a v{major}.{minor}.{build}.{revision}.\n\n Bugs corregidos\n\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
+        "version": "3.0.0.1",
+        "download_url": "bit.ly/mcn3001beta",
+        "updated_date": "2025.05.31",
+        "kind": "0"
+    },
+    "older_builds": [
+        {
         "changelog": "*Corrección de bugs.\n* La ventana de sesión abierta no se cerraba luego de cerrar sesión.\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
         "version": "2.99.2025.431",
         "download_url": "bit.ly/mcn29920250431beta",
         "updated_date": "2025.04.31",
         "kind": "0"
-    },
-    "older_builds": [
+        },
         {
         "changelog": "*Corrección de bugs.\n* El control de tiempo de la sesión no convertía apropiadamente las horas.\n*En entornos de conectividad limitada, la comprobación de actualizaciones fallaba con un mensaje genérico.",
         "version": "2.99.2025.430",
