@@ -554,7 +554,7 @@ nav > ul li a:active {
   background-size: 400px auto;
   background-position-x: center;
   background-repeat: no-repeat;
-  margin-top: 170px;
+  margin-top: 140px;
 }
 .desktopScreen {
   width: 349px;
@@ -596,6 +596,7 @@ nav > ul li a:active {
 @media only screen and (max-width: 1070px) {
   .desktopPreview {
     background-size: 370px auto;
+  	margin-top: 120px;
   }
 
   .iphonePreview {
@@ -624,7 +625,7 @@ nav > ul li a:active {
 @media only screen and (max-width: 992px) {
   .desktopPreview {
     display: flex;
-    background-size: 300px auto;
+    background-size: 150px auto;
     background-position: center 0;
     margin-top: 40px;
     justify-content: center;
