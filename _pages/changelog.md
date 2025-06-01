@@ -6,6 +6,44 @@ include_in_header: true
 
 ## Registro de cambios
 
+### **Version 3.0.0.1b** (`Última versión disponible`)
+
+**Cambios**
+
+General:
+- Nuevo logo y rediseño de la aplicación
+- Simplificación en las interacciones con la interfaz.
+
+Ventana de sesión abierta
+- Nueva ventana de sesión abierta totalmente reescalable y adaptable.
+
+Notificación de Actualizaciones
+- Mejoras en el servicio de notificación de actualizaciones.
+
+Sistema de guardado
+- Sistema de guardado de ajustes mejorado.
+
+Fin del vencimiento de la aplicación
+- Eliminación del límite local de vencimiento de las versiones beta.
+
+Refactorización
+- La aplicación ha sido refactorizada a detalle para permitir una mejor escalabilidad en futuras actualizaciones.
+
+Versionado
+- El versionado cambia del formato v{major}.{minor}.{year}.{month-day} a v{major}.{minor}.{build}.{revision}.
+—> major aumentará cuando se introduzcan cambios incompatibles con versiones anteriores.
+—> minor nuevas funcionalidades manteniéndose compatible con versiones anteriores.
+—> build cuando se hagan parches, mejoras de rendimiento o correcciones de bugs.
+—> revision para correcciones críticos urgentes o hotfixes.
+
+Bugs corregidos
+- Ahora los ajustes de la aplicación se mantienen con una nueva versión.
+- El control de tiempo de la sesión no convertía apropiadamente las horas.
+- En entornos de conectividad limitada, la comprobación de actualizaciones fallaba con un mensaje genérico.
+- El cierre de sesión presentaba fallos en la petición.
+- La ventana de sesión abierta no se cerraba luego de cerrar sesión.
+- El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.
+
 ### **Version 2.0.2024.0923b** (`Última versión disponible`)
 
 **Mejoras**
