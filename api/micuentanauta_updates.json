@@ -12,7 +12,7 @@
         "changelog": "*Corrección de bugs.\n* La ventana de sesión abierta no se cerraba luego de cerrar sesión.\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
         "version": "2.99.2025.431",
         "download_url": "bit.ly/mcn29920250431beta",
-        "updated_date": "2025.04.31",
+        "updated_date": "2025.04.30",
         "kind": "0"
         },
         {
