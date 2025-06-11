@@ -1,14 +1,31 @@
 [
     {
-        "goal": 5000,
-        "current": 250,
+        "goal": 2500,
+        "current": 1000,
         "contributors": [
             {
-                "name": "blob",
+                "telegram_username": "Jhon_sup",
+                "contribution": 300 
+            },
+            {
+                "telegram_username": "Yasmani. C. H",
                 "contribution": 250 
+            },
+            {
+                "telegram_username": "blob",
+                "contribution": 250 
+            },
+            {
+                "telegram_username": "Smith_Qva",
+                "contribution": 200 
             }
         ],
         "objectives": [
+            {
+                "title": "Compatiblidad preliminares con los servicios del Portal Nauta",
+                "reason": "Añadir las funcionalidades más críticas como recargar con voucher, transferir saldo, cambiar contraseñas de usuario",
+                "requester": "bn404"
+            },
             {
                 "title": "Compatiblidad preliminares con los servicios del Portal Nauta",
                 "reason": "Añadir las funcionalidades más críticas como recargar con voucher, transferir saldo, cambiar contraseñas de usuario",
@@ -36,7 +53,7 @@
             },
             {
                 "title": "Ícono en la barra de notificaciones",
-                "reason": "Forma rápida de acceder a la app a través de la barar de notificaciones",
+                "reason": "Forma rápida de acceder a la app a través de la barra de notificaciones",
                 "requester": "bn404"
             }
         ]
