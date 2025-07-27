@@ -79,7 +79,7 @@ cover_image: assets/headerimage.jpg # Replace with alternative image path or ima
 cover_overlay_color: "#1f1900"
 cover_overlay_transparency: 0.4
 
-device_image: assets/mcn-window-3001.png
+device_image: assets/mcn-windows.png
 device_color: black
 
 body_background_color: "#121212ff"
