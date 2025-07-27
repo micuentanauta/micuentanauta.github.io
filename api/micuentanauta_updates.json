@@ -1,13 +1,20 @@
 {
     "is_activated": true,
     "last_build": {
-        "changelog": "Versionado\n\n* El versionado cambia del formato v{major}.{minor}.{year}.{month-day} a v{major}.{minor}.{build}.{revision}.\n\n Bugs corregidos\n\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
-        "version": "3.0.0.1",
-        "download_url": "bit.ly/mcn3001beta",
-        "updated_date": "2025.05.31",
+        "changelog": "Ventana Principal\n\n+ Añadida opción para minimizar ventana.\n\nVentana de sesión abierta\n\n+ Permite alternar en la ventana de sesión el tiempo restante del tiempo consumido y desactivar la animación del tiempo.\n+ Ahora es posible colapsar la ventana para ahorrar espacio en pantalla.\n+ Añadida opción de alternar animación.\n\nVentana de opciones\n\n+ Rediseño de la interfaz para coincidir con la nueva estética de la aplicación.\n+ Nuevas opciones de configuración.\n\n Bugs corregidos\n\n* El cierre de sesión presentaba fallos con el reinicio de la sesión.\n* La ventana de sesión abierta se podía cerrar accidentalmente con alt+f4, lo que podría ser un comportamiento inesperado.\n* El cambio de tema no se activaba correctamente al cierre de la ventana de opciones sin guardar.\n* La carga del tiempo del temporizador desde los ajustes no se hacía apropiadamente.\n* Corrección de bugs menores.",
+        "version": "3.0.1.0",
+        "download_url": "bit.ly/mcn3010beta",
+        "updated_date": "2025.07.27",
         "kind": "0"
     },
     "older_builds": [
+        {
+            "changelog": "Versionado\n\n* El versionado cambia del formato v{major}.{minor}.{year}.{month-day} a v{major}.{minor}.{build}.{revision}.\n\n Bugs corregidos\n\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
+            "version": "3.0.0.1",
+            "download_url": "bit.ly/mcn3001beta",
+            "updated_date": "2025.05.31",
+            "kind": "0"
+        },
         {
         "changelog": "*Corrección de bugs.\n* La ventana de sesión abierta no se cerraba luego de cerrar sesión.\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
         "version": "2.99.2025.431",

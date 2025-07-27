@@ -6,7 +6,30 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Version 3.0.0.1b** (`Última versión disponible`)
+### **Versión 3.0.1.0b** (`Última versión disponible`)
+
+**Cambios**
+
+Ventana principal
+- Añadida opción para minimizar ventana.
+
+Ventana de sesión abierta
+- Permite alternar en la ventana de sesión el tiempo restante del tiempo consumido y desactivar la animación del tiempo.
+- Ahora es posible colapsar la ventana para ahorrar espacio en pantalla.
+- Añadida opción de alternar animación.
+	
+Opciones
+- Rediseño de la interfaz para coincidir con la nueva estética de la aplicación.
+- Nuevas opciones de configuración.
+	
+Bugs corregidos
+- El cierre de sesión presentaba fallos con el reinicio de la sesión.
+- La ventana de sesión abierta se podía cerrar accidentalmente con alt+f4, lo que podría ser un comportamiento inesperado.
+- El cambio de tema no se activaba correctamente al cierre de la ventana de opciones sin guardar.
+- La carga del tiempo del temporizador desde los ajustes no se hacía apropiadamente.
+- Corrección de bugs menores.
+
+### **Versión 3.0.0.1b**
 
 **Cambios**
 
