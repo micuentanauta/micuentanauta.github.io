@@ -6,7 +6,15 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Versión 3.0.1.0b** (`Última versión disponible`)
+### **Versión 3.0.1.1b** (`Última versión disponible`)
+
+**Cambios**
+	
+Bugs corregidos
+- Corrección de bug al cargar el tiempo restante de la cuenta.
+
+
+### **Versión 3.0.1.0b**
 
 **Cambios**
 
