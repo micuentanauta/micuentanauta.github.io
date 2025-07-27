@@ -6,13 +6,19 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Versión 3.0.1.1b** (`Última versión disponible`)
+### **Versión 3.0.1.2b** (`Última versión disponible`)
+
+**Cambios**
+	
+Bugs corregidos
+- Corrección de bug con el temporizador finalizado que no cierra la sesión.
+
+### **Versión 3.0.1.1b**
 
 **Cambios**
 	
 Bugs corregidos
 - Corrección de bug al cargar el tiempo restante de la cuenta.
-
 
 ### **Versión 3.0.1.0b**
 
