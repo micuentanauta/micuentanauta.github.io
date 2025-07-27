@@ -1,13 +1,20 @@
 {
     "is_activated": true,
     "last_build": {
-        "changelog": "Ventana Principal\n\n+ Añadida opción para minimizar ventana.\n\nVentana de sesión abierta\n\n+ Permite alternar en la ventana de sesión el tiempo restante del tiempo consumido y desactivar la animación del tiempo.\n+ Ahora es posible colapsar la ventana para ahorrar espacio en pantalla.\n+ Añadida opción de alternar animación.\n\nVentana de opciones\n\n+ Rediseño de la interfaz para coincidir con la nueva estética de la aplicación.\n+ Nuevas opciones de configuración.\n\n Bugs corregidos\n\n* El cierre de sesión presentaba fallos con el reinicio de la sesión.\n* La ventana de sesión abierta se podía cerrar accidentalmente con alt+f4, lo que podría ser un comportamiento inesperado.\n* El cambio de tema no se activaba correctamente al cierre de la ventana de opciones sin guardar.\n* La carga del tiempo del temporizador desde los ajustes no se hacía apropiadamente.\n* Corrección de bugs menores.",
-        "version": "3.0.1.1",
-        "download_url": "bit.ly/mcn3011beta",
+        "changelog": "Bugs corregidos\n\n* Corrección de bug con el temporizador finalizado que no cierra la sesión.",
+        "version": "3.0.1.2",
+        "download_url": "bit.ly/mcn3012beta",
         "updated_date": "2025.07.27",
         "kind": "1"
     },
     "older_builds": [
+        {
+            "changelog": "Bugs corregidos\n\n* Corrección de bug al cargar el tiempo restante de la cuenta.",
+            "version": "3.0.1.1",
+            "download_url": "bit.ly/mcn3011beta",
+            "updated_date": "2025.07.27",
+            "kind": "1"
+        },
         {
             "changelog": "Ventana Principal\n\n+ Añadida opción para minimizar ventana.\n\nVentana de sesión abierta\n\n+ Permite alternar en la ventana de sesión el tiempo restante del tiempo consumido y desactivar la animación del tiempo.\n+ Ahora es posible colapsar la ventana para ahorrar espacio en pantalla.\n+ Añadida opción de alternar animación.\n\nVentana de opciones\n\n+ Rediseño de la interfaz para coincidir con la nueva estética de la aplicación.\n+ Nuevas opciones de configuración.\n\n Bugs corregidos\n\n* El cierre de sesión presentaba fallos con el reinicio de la sesión.\n* La ventana de sesión abierta se podía cerrar accidentalmente con alt+f4, lo que podría ser un comportamiento inesperado.\n* El cambio de tema no se activaba correctamente al cierre de la ventana de opciones sin guardar.\n* La carga del tiempo del temporizador desde los ajustes no se hacía apropiadamente.\n* Corrección de bugs menores.",
             "version": "3.0.1.0",
