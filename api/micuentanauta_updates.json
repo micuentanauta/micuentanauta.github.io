@@ -1,7 +1,7 @@
 {
     "is_activated": true,
     "last_build": {
-        "changelog": "Bugs corregidos\n\n* Corrección de bug con el temporizador finalizado que no cierra la sesión.",
+        "changelog": "Interfaz general\n\n+ Se añadieron validaciones y un control más granular de los parámetros de cada campo.\n+ Ajustes menores en la iconografía de la aplicación.\n\nVentana de sesión abierta\n\n+ Ahora se puede actualizar la cantidad de tiempo restante.\n\nAjustes\n\n+ El sistema de gestión de ajustes guardados ha sido reconstruido para permitir migraciones de versiones pasadas y estabilidad en versiones futuras.\n+ Ahora se puede iniciar con windows la aplicación directamente a la barra de notificaciones.\n\nEnrutador de ventanas\n\n+ Ahora se presenta un control más conciso de las ventanas abiertas para evitar comportamientos inesperados.\n\nEnrutador de peticiones\n\n+ Ahora se presenta un control más conciso de las peticiones url para evitar interacciones repetidas entre distintos orígenes.\n\nÍcono en la barra de notificaciones\n\n+ Ahora la aplicación se mantiene de forma persistente en la barra de notificaciones lo que permite iniciar sesión y cerrar sesión de forma más cómoda.\n\nRefactorización\n\n+ Se ha realizado una gran refactorización de la aplicación para mejor mantenibilidad en versiones futuras.\n\nBugs corregidos\n\n* Mejoras en el control del tiempo.\n* Corrección de bugs menores.",
         "version": "3.1.0.0",
         "download_url": "bit.ly/mcn3100",
         "updated_date": "2026.01.12",

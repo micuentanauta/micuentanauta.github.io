@@ -6,7 +6,38 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Versión 3.0.1.2b** (`Última versión disponible`)
+### **Versión 3.1.0.0** (`Última versión disponible`)
+
+**Cambios**
+
+Interfaz general
++ Se añadieron validaciones y un control más granular de los parámetros de cada campo.
++ Ajustes menores en la iconografía de la aplicación.
+
+Ventana de sesión abierta
++ Ahora se puede actualizar la cantidad de tiempo restante.
+
+Ajustes
++ El sistema de gestión de ajustes guardados ha sido reconstruido para permitir migraciones de versiones pasadas y estabilidad en versiones futuras.
++ Ahora se puede iniciar con windows la aplicación directamente a la barra de notificaciones.
+
+Enrutador de ventanas
++ Ahora se presenta un control más conciso de las ventanas abiertas para evitar comportamientos inesperados.
+
+Enrutador de peticiones
++ Ahora se presenta un control más conciso de las peticiones url para evitar interacciones repetidas entre distintos orígenes.
+
+Ícono en la barra de notificaciones
++ Ahora la aplicación se mantiene de forma persistente en la barra de notificaciones lo que permite iniciar sesión y cerrar sesión de forma más cómoda.
+
+Refactorización
++ Se ha realizado una gran refactorización de la aplicación para mejor mantenibilidad en versiones futuras.
+
+Bugs corregidos
+* Mejoras en el control del tiempo.
+* Corrección de bugs menores.
+
+### **Versión 3.0.1.2b**
 
 **Cambios**
 	
