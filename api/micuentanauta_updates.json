@@ -2,12 +2,19 @@
     "is_activated": true,
     "last_build": {
         "changelog": "Bugs corregidos\n\n* Corrección de bug con el temporizador finalizado que no cierra la sesión.",
-        "version": "3.0.1.2",
-        "download_url": "bit.ly/mcn3012beta",
-        "updated_date": "2025.07.27",
+        "version": "3.1.0.0",
+        "download_url": "bit.ly/mcn3100",
+        "updated_date": "2026.01.12",
         "kind": "1"
     },
     "older_builds": [
+        {
+            "changelog": "Bugs corregidos\n\n* Corrección de bug con el temporizador finalizado que no cierra la sesión.",
+            "version": "3.0.1.2",
+            "download_url": "bit.ly/mcn3012beta",
+            "updated_date": "2025.07.27",
+            "kind": "1"
+        },
         {
             "changelog": "Bugs corregidos\n\n* Corrección de bug al cargar el tiempo restante de la cuenta.",
             "version": "3.0.1.1",

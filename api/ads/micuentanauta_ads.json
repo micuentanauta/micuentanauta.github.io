@@ -1,11 +1,11 @@
 [
     {
-        "published_date": "",
-        "end_date": "",
-        "title": "",
-        "thumbnail": "",
-        "image": "",
-        "body": "",
-        "link": ""
+        "published_date": "2026.01.12 6:13:00",
+        "end_date": "2027.05.26 6:13:00",
+        "title": "Anuncio de prueba",
+        "thumbnail_url": "https://micuentanauta.com/assets/img/logo.png",
+        "image_url": "https://micuentanauta.com/assets/img/logo.png",
+        "body": "Cuerpo de prueba",
+        "link": "https://t.me/micuentanauta"
     }
 ]
