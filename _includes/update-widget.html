@@ -63,7 +63,7 @@
                 if (isNaN(commitDate.getTime())) return;
                 if (commitDate.getTime() > buildDate.getTime()) {
                     setState("busy", "Nueva versión en proceso de publicación…");
-                } else {
+                } else if (!widget.classList.contains("new")) {
                     setState("ok", "Actualizado: " + fmtDate(buildDate));
                 }
             })
