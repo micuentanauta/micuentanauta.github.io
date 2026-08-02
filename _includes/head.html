@@ -6,6 +6,7 @@
 	<title>{{ site.page_title }}</title>
 	<meta name="description" content="{{ site.app_description }}">
 	<meta name="author" content="{{ site.your_name }}">
+	<meta name="build-time" content="{{ site.time | date_to_xmlschema }}">
 	<meta name="theme-color" content="{{ page.theme_color | default: site.topbar_color }}">
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">

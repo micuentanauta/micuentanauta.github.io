@@ -1,0 +1,82 @@
+<div id="mcnUpdateWidget" class="update-widget" hidden>
+    <span class="update-widget-dot" aria-hidden="true"></span>
+    <span id="mcnUpdateWidgetText" class="update-widget-text"></span>
+</div>
+<script>
+(function () {
+    var BUILD_TIME_KEY = "mcn_last_seen_build_time";
+    var widget = document.getElementById("mcnUpdateWidget");
+    var textEl = document.getElementById("mcnUpdateWidgetText");
+    if (!widget || !textEl) return;
+
+    var meta = document.querySelector('meta[name="build-time"]');
+    var buildTime = meta ? (meta.getAttribute("content") || "") : "";
+    var buildDate = buildTime ? new Date(buildTime) : null;
+    var lastCheck = 0;
+    var repo = null;
+
+    function repoFromHost() {
+        var m = /^([\w-]+)\.github\.io$/i.exec(location.hostname);
+        return m ? m[1] + "/" + m[0] : null;
+    }
+
+    function pad(n) { return (n < 10 ? "0" : "") + n; }
+
+    function fmtDate(d) {
+        return pad(d.getDate()) + "/" + pad(d.getMonth() + 1) + "/" + d.getFullYear() + " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
+    }
+
+    function setState(state, text) {
+        widget.className = "update-widget" + (state ? " " + state : "");
+        textEl.textContent = text;
+        if (buildDate && !isNaN(buildDate.getTime())) {
+            widget.title = "Publicado el " + buildDate.toString();
+        }
+    }
+
+    function show() {
+        var stored = null;
+        try { stored = localStorage.getItem(BUILD_TIME_KEY); } catch (e) {}
+        if (buildDate && stored && stored !== buildTime) {
+            setState("new", "Sitio actualizado: " + fmtDate(buildDate));
+        } else {
+            setState("ok", buildDate ? "Actualizado: " + fmtDate(buildDate) : "");
+        }
+        if (buildTime) {
+            try { localStorage.setItem(BUILD_TIME_KEY, buildTime); } catch (e) {}
+        }
+        widget.hidden = false;
+    }
+
+    function checkRemote() {
+        if (!repo) return;
+        var now = Date.now();
+        if (now - lastCheck < 30000) return;
+        lastCheck = now;
+        fetch("https://api.github.com/repos/" + repo + "/commits?per_page=1")
+            .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+            .then(function (data) {
+                var c = data && data[0] && data[0].commit;
+                var dateStr = c && ((c.committer && c.committer.date) || (c.author && c.author.date)) || "";
+                if (!dateStr || !buildDate) return;
+                var commitDate = new Date(dateStr);
+                if (isNaN(commitDate.getTime())) return;
+                if (commitDate.getTime() > buildDate.getTime()) {
+                    setState("busy", "Nueva versión en proceso de publicación…");
+                } else {
+                    setState("ok", "Actualizado: " + fmtDate(buildDate));
+                }
+            })
+            .catch(function () {});
+    }
+
+    repo = repoFromHost();
+    if (!buildDate && !repo) return;
+    show();
+    checkRemote();
+    setInterval(checkRemote, 60000);
+    document.addEventListener("visibilitychange", function () {
+        if (!document.hidden) checkRemote();
+    });
+})();
+</script>
