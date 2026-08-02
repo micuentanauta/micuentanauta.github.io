@@ -9,15 +9,16 @@
 
 <body class="subPageBody">
     {% include icons.html %}
+    {% include header.html %}
     <div class="headerBackground subPageHeaderBackground">
         <div class="container subPageContainer">
-            {% include header.html %}
             <article class="page markdown-body">
                 {{ content }}
             </article>
         </div>
         {% include footer.html %}
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

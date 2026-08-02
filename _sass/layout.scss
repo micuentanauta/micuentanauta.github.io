@@ -38,6 +38,8 @@
 
 .imageWrapper {
   height: 780px;
+  min-height: 100vh;
+  min-height: 100svh;
   background: linear-gradient(rgba(31, 25, 0, 0.4), rgba(0, 0, 0, 0.8)), url($header-image);
 
   background-repeat: no-repeat;
@@ -60,17 +62,17 @@
 }
 
 // Sub Page Header Styling
-.subPageHeaderBackground .logo > p {
+body.subPageBody .logo > p {
   color: $header-title-color;
 }
 
-.subPageHeaderBackground nav > ul li a:link,
-.subPageHeaderBackground nav > ul li a:visited {
+body.subPageBody nav > ul li a:link,
+body.subPageBody nav > ul li a:visited {
   color: rgba($header-title-color, 1);
 }
 
-.subPageHeaderBackground nav > ul li a:hover,
-.subPageHeaderBackground nav > ul li a:active {
+body.subPageBody nav > ul li a:hover,
+body.subPageBody nav > ul li a:active {
   color: rgba(#ffd371, 1);
 }
 
@@ -130,9 +132,24 @@
 }
 
 header {
-  grid-area: h;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
-  margin-right: -15px;
+  padding-left: max(15px, calc((100% - 1170px) / 2 + 15px));
+  padding-right: max(15px, calc((100% - 1170px) / 2 + 15px));
+  background-color: rgba($header-color, 0);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    -webkit-backdrop-filter 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba($header-color, 0.6);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .logo {
@@ -343,7 +360,7 @@ nav > ul li a:active {
   visibility: hidden;
   opacity: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   padding-top: 100px;
   left: 0;
   top: 0;

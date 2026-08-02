@@ -191,3 +191,23 @@ if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and 
     hidden = "webkitHidden";
     visibilityChange = "webkitvisibilitychange";
 }
+
+//#region Navbar transparente arriba y con desenfoque al hacer scroll
+
+var navbar = document.querySelector("header");
+
+function updateNavbar() {
+    if (!navbar) {
+        return;
+    }
+    if (window.scrollY > 10) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+}
+
+window.addEventListener("scroll", updateNavbar, { passive: true });
+updateNavbar();
+
+//#endregion
