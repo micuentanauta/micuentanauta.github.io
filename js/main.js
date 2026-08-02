@@ -43,31 +43,18 @@ var lastFocused = null; // elemento que abre el modal, para restaurar el foco al
 
 var redirect_address
 
-var DONATION_SEEN_KEY = "mcn_donation_seen"; // el modal de donación solo se muestra una vez
-
 function startDownload() {
     redirect_address = btn.getAttribute('link');
     redirect();
 }
 
 function openModal() {
-    var seen = false;
-    try {
-        seen = !!localStorage.getItem(DONATION_SEEN_KEY);
-    } catch (e) { }
-
-    if (seen) {
-        startDownload();
-        return;
-    }
-
-    try {
-        localStorage.setItem(DONATION_SEEN_KEY, "1");
-    } catch (e) { }
-
     modal.classList.add("visible");
     modal.setAttribute("aria-hidden", "false");
     content.classList.add("blur");
+    if (navbar) {
+        navbar.classList.add("blur");
+    }
 
     lastFocused = document.activeElement;
 
@@ -86,6 +73,9 @@ function closeModal() {
     modal.classList.remove("visible");
     modal.setAttribute("aria-hidden", "true");
     content.classList.remove("blur");
+    if (navbar) {
+        navbar.classList.remove("blur");
+    }
 
     download_link.classList.remove('blink');
 
