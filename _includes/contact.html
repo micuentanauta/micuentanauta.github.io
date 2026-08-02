@@ -3,16 +3,18 @@
     <form action="{{ site.contact_form }}" method="POST">
         <div class="field half first">
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" placeholder="Su nombre" required />
         </div>
         <div class="field half">
             <label for="email">Email</label>
-            <input type="text" name="_replyto" id="email" />
+            <input type="email" name="_replyto" id="email" placeholder="suemail@ejemplo.com" required />
         </div>
         <div class="field">
             <label for="message">Mensaje</label>
-            <textarea name="message" id="message" rows="6"></textarea>
+            <textarea name="message" id="message" rows="6" placeholder="Cuéntenos en qué podemos ayudarle" required></textarea>
         </div>
+        <input type="hidden" name="_subject" value="Mensaje desde la web de Mi Cuenta Nauta" />
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <ul class="actions">
             <li><input type="submit" value="Enviar mensaje" class="special" /></li>
             <li><input type="reset" value="Limpiar" /></li>

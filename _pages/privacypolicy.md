@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Última actualización**
-Julio 15 2022
+Agosto 2 2026
 
 # Política de privacidad
 

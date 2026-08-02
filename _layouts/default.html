@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="es">
 {% include head.html %}
 
 <body>
-    <div id="myModal" class="modal">
+    {% include icons.html %}
+
+    <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Su link de descarga gratuito está listo</h2>
-                <span class="close">×</span>
+                <h2 id="modalTitle">Su link de descarga gratuito está listo</h2>
+                <button type="button" class="close" aria-label="Cerrar">×</button>
             </div>
 
             <div class="modal-body">
@@ -17,12 +19,12 @@
                 <div class="donate-container">
                     <div class="donate-item">
                         <p style="font-size: 20px">Saldo</p>
-                        <img src="assets/movile-qr.png" draggable="false" />
+                        <img src="assets/movile-qr.png" alt="Código QR para donar por saldo" loading="lazy" draggable="false" />
                         <p>{{ site.phone_number }}</p>
                     </div>
                     <div class="donate-item">
                         <p style="font-size: 20px">Transferencia</p>
-                        <img src="assets/enzona-qr.png" draggable="false" />
+                        <img src="assets/enzona-qr.png" alt="Código QR para donar por transferencia" loading="lazy" draggable="false" />
                         <p>{{ site.bank_iban }}</p>
                     </div>
                 </div>
@@ -41,7 +43,6 @@
             <div class="container">
                 {% include header.html %}
                 <div class="desktopPreview">
-                    <!-- <img class="desktopScreen" src="{{ site.github.baseurl }}assets/headerimage.png" alt=""> -->
                 </div>
                 <div class="appInfo">
                     <div class="appIconShadow">
@@ -54,7 +55,7 @@
                                 </clippath>
                             </defs>
                         </svg>
-                        <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" draggable="false" />
+                        <img class="appIconLarge" src="{{ site.app_icon | relative_url }}" alt="Logo {{ site.app_name }}" draggable="false" />
                     </div>
                     <div class="appNameVersionContainer">
                         <h1 class="appName">{{ site.app_name }}</h1>
@@ -76,14 +77,21 @@
 
                         {% if site.windows_link %}
 
-                        <a class="downloadButton" id="myBtn" link="{{ site.windows_link }}">
-                            <i class="fas fa-download"></i>
+                        <a class="downloadButton" id="myBtn" role="button" tabindex="0" link="{{ site.windows_link }}">
+                            <svg class="svg-icon" aria-hidden="true"><use href="#i-download"/></svg>
                             Descargar para Windows (32, 64 bits)
                         </a>
 
+                        {% if site.download_sha256 %}
+                        <p class="downloadMeta">
+                            Última versión: {{ site.app_version }} &middot; {{ site.download_date }} &middot; {{ site.download_size_mb }} MB<br>
+                            SHA-256: <code>{{ site.download_sha256 }}</code>
+                        </p>
+                        {% endif %}
+
                         <p class="userFinalLicense">
                             Al descargar la aplicación está de acuerdo con la
-                            <a href="{{ page.url | relative_url }}privacypolicy" target="_self">política de
+                            <a href="{{ page.url | relative_url }}privacypolicy" target="_self" rel="noopener">política de
                                 privacidad</a>
                         </p>
                         {% endif %}

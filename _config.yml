@@ -1,9 +1,20 @@
 #page title
 page_title: Mi Cuenta Nauta - Web Oficial # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
+url: https://micuentanauta.github.io # Required for canonical URLs, sitemap and Open Graph.
+
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
 windows_link: https://bit.ly/mcn3100
+
+# Organización oficial (SEO de marca y metadatos de publicación)
+organization_url: https://github.com/micuentanauta
+
+# Metadatos del archivo que distribuye windows_link (se muestran junto al botón).
+# download_sha256 debe coincidir con el archivo que sirve el enlace corto.
+download_date: 2026.01.12
+download_size_mb: 5.1
+download_sha256: BF4492DEA949A0A3DB71EBF6BB6F773A5E29F6E0AB4F5B4FEB2432F5D631A621
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
@@ -74,12 +85,12 @@ topbar_color: "#000000"
 topbar_transparency: 0.1
 topbar_title_color: "#ffc43f"
 
-cover_image: assets/headerimage.jpg # Replace with alternative image path or image URL.
+cover_image: assets/headerimage.webp # Replace with alternative image path or image URL.
 
 cover_overlay_color: "#1f1900"
 cover_overlay_transparency: 0.4
 
-device_image: assets/mcn-windows.png
+device_image: assets/mcn-windows.webp
 device_color: black
 
 body_background_color: "#121212ff"
@@ -91,7 +102,7 @@ app_version_color: "#ffffff"
 app_description_color: "#ffffff"
 
 feature_title_color: "#ffc43f"
-feature_text_color: "#686868"
+feature_text_color: "#9a9a9a"
 
 feature_icons_foreground_color: "#ffc43f"
 feature_icons_background_color: "#232323"
@@ -99,7 +110,7 @@ feature_icons_background_color: "#232323"
 social_icons_foreground_color: "#ffc43f"
 social_icons_background_color: "#232323"
 
-footer_text_color: "#686868"
+footer_text_color: "#9a9a9a"
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###
@@ -108,6 +119,10 @@ footer_text_color: "#686868"
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :compressed # You might prefer to minify using :compressed
+
+# Plugins disponibles en el gem github-pages
+plugins:
+  - jekyll-sitemap
 
 # Exclude these files from your production _site
 exclude:

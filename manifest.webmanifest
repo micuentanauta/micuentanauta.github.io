@@ -1,0 +1,23 @@
+{
+  "name": "Mi Cuenta Nauta - Web Oficial",
+  "short_name": "Mi Cuenta Nauta",
+  "description": "Centro de información, soporte y descarga de la aplicación Mi Cuenta Nauta para Windows.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#000000",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

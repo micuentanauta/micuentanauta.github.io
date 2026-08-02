@@ -6,9 +6,9 @@
         {% if feature.title %}
             <div class="feature">
                 <div>
-                    <span class="fa-stack fa-1x">
-                        <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                        <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+                    <span class="icon-stack" aria-hidden="true">
+                        <svg class="icon-circle svg-icon iconBack"><use href="#i-circle"/></svg>
+                        <svg class="icon-glyph svg-icon iconTop"><use href="#i-{{ feature.fontawesome_icon_name }}"/></svg>
                     </span>
                 </div>
                 <div class="featureText">

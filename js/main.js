@@ -29,67 +29,122 @@ var modal = document.getElementById("myModal");
 
 const content = document.getElementsByClassName("imageWrapper")[0];
 
-const body = document.querySelector("body");
-
 // Get the button that opens the modal
 const btn = document.getElementById("myBtn");
 
 const download_link = document.getElementById('redirect-link');
 
-// Get the <span> element that closes the modal
+// Get the <button> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-const download_btn = document.getElementById("download_btn");
-
-var seconds = 9; // seconds for HTML
+var seconds = 10; // seconds for HTML
 var foo; // variable for clearInterval() function
+var lastFocused = null; // elemento que abre el modal, para restaurar el foco al cerrarlo
 
 var redirect_address
 
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-    
-    modal.classList.toggle("visible");
-    content.classList.toggle("blur");
+var DONATION_SEEN_KEY = "mcn_donation_seen"; // el modal de donación solo se muestra una vez
 
+function startDownload() {
     redirect_address = btn.getAttribute('link');
+    redirect();
+}
 
-    download_link.innerHTML = 'Tu archivo será descargado automáticamente en <span id="seconds">10</span> segundo(s)...';
+function openModal() {
+    var seen = false;
+    try {
+        seen = !!localStorage.getItem(DONATION_SEEN_KEY);
+    } catch (e) { }
+
+    if (seen) {
+        startDownload();
+        return;
+    }
+
+    try {
+        localStorage.setItem(DONATION_SEEN_KEY, "1");
+    } catch (e) { }
+
+    modal.classList.add("visible");
+    modal.setAttribute("aria-hidden", "false");
+    content.classList.add("blur");
+
+    lastFocused = document.activeElement;
+
+    seconds = 10;
+    download_link.innerHTML = 'Tu archivo será descargado automáticamente en <span id="seconds">' + seconds + '</span> segundo(s)...';
     download_link.classList.add('blink');
-    
+
     countdownTimer();
-    // modal.style.display = "block";
-    // body.style.overflow = "hidden";
-};
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+    if (span && typeof span.focus === "function") {
+        span.focus();
+    }
+}
 
-    modal.classList.toggle("visible");
-    content.classList.toggle("blur");
-    
+function closeModal() {
+    modal.classList.remove("visible");
+    modal.setAttribute("aria-hidden", "true");
+    content.classList.remove("blur");
+
     download_link.classList.remove('blink');
-    
-    seconds = 9
-    
+
+    seconds = 10;
+
     clearInterval(foo);
 
-};
+    if (lastFocused && typeof lastFocused.focus === "function") {
+        lastFocused.focus();
+    }
+}
+
+// When the user clicks the button, open the modal
+if (btn) {
+    btn.addEventListener("click", openModal);
+
+    // Soporte de teclado para el botón de descarga (role="button", sin href)
+    btn.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openModal();
+        }
+    });
+}
+
+// When the user clicks on <button> (x), close the modal
+if (span) {
+    span.addEventListener("click", closeModal);
+}
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener("click", function (event) {
     if (event.target == modal) {
-        
-        modal.classList.toggle("visible");
-        content.classList.toggle("blur");
-
-        download_link.classList.remove('blink');
-        
-        seconds = 9
-        
-        clearInterval(foo);
+        closeModal();
     }
-};
+});
+
+// Close the modal with the Escape key
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal && modal.classList.contains("visible")) {
+        closeModal();
+    }
+
+    // Focus trap dentro del modal mientras está abierto
+    if (event.key === "Tab" && modal && modal.classList.contains("visible")) {
+        var focusables = modal.querySelectorAll('a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])');
+        if (focusables.length > 0) {
+            var first = focusables[0];
+            var last = focusables[focusables.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
+    }
+});
 
 // Countdown timer for redirecting to another URL after several seconds
 
@@ -104,14 +159,14 @@ function redirect() {
 }
 
 function updateSecs() {
-    document.getElementById("seconds").innerHTML = seconds;
     seconds--;
-    if (seconds == -1) {
-
+    if (seconds <= 0) {
+        document.getElementById("seconds").innerHTML = "0";
         clearInterval(foo);
-        
         redirect();
+        return;
     }
+    document.getElementById("seconds").innerHTML = seconds;
 }
 
 function countdownTimer() {
@@ -136,13 +191,3 @@ if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and 
     hidden = "webkitHidden";
     visibilityChange = "webkitvisibilitychange";
 }
-
-// // If the page is hidden, pause the video;
-// // if the page is shown, play the video
-// function handleVisibilityChange() {
-//     if (document[hidden]) {
-//         videoElement.pause();
-//     } else {
-//         videoElement.play();
-//     }
-// }
