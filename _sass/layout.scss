@@ -1337,10 +1337,6 @@ input[type="reset"]:hover {
 
 // Entrance animations
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1353,8 +1349,9 @@ input[type="reset"]:hover {
 .appDescriptionContainer,
 .downloadButtonsContainer,
 .userFinalLicense {
-  animation: fade-in-up 0.7s ease-out forwards;
   opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 0.7s ease-out forwards;
 }
 
 .appIconShadow { animation-delay: 0.1s; }
@@ -1365,8 +1362,9 @@ input[type="reset"]:hover {
 
 // Features - animate individual features only
 .feature {
-  animation: fade-in-up 0.5s ease-out forwards;
   opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 0.5s ease-out forwards;
 }
 
 .feature:nth-child(1) { animation-delay: 0.7s; }
@@ -1378,16 +1376,18 @@ input[type="reset"]:hover {
 
 // Sponsors
 .sponsor {
-  animation: fade-in-up 0.5s ease-out forwards;
   opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 0.5s ease-out forwards;
 }
 
 .sponsor:nth-child(1) { animation-delay: 1.3s; }
 
 // Footer
 footer {
-  animation: fade-in-up 0.7s ease-out forwards;
   opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 0.7s ease-out forwards;
   animation-delay: 1.5s;
 }
 
@@ -1403,6 +1403,7 @@ footer {
   footer {
     animation: none !important;
     opacity: 1 !important;
+    transform: none !important;
   }
 }
 
