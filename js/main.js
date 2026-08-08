@@ -208,7 +208,7 @@ updateNavbar();
 var menuBtn = document.getElementById("mcnMenuBtn");
 
 if (menuBtn && navbar) {
-    var scrollNav = navbar.querySelector(".scroll");
+    var scrollNav = navbar.nextElementSibling; // sibling nav.scroll
 
     menuBtn.addEventListener("click", function () {
         var open = navbar.classList.toggle("menu-open");
@@ -217,9 +217,7 @@ if (menuBtn && navbar) {
         if (open) {
             scrollNav.style.display = "flex";
             scrollNav.offsetHeight;
-            navbar.classList.add("menu-open");
         } else {
-            navbar.classList.remove("menu-open");
             scrollNav.addEventListener("transitionend", function handler() {
                 scrollNav.style.display = "none";
                 scrollNav.removeEventListener("transitionend", handler);
