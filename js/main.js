@@ -208,16 +208,33 @@ updateNavbar();
 var menuBtn = document.getElementById("mcnMenuBtn");
 
 if (menuBtn && navbar) {
+    var scrollNav = navbar.querySelector(".scroll");
+
     menuBtn.addEventListener("click", function () {
         var open = navbar.classList.toggle("menu-open");
         menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
         menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+        if (open) {
+            scrollNav.style.display = "flex";
+            scrollNav.offsetHeight;
+            navbar.classList.add("menu-open");
+        } else {
+            navbar.classList.remove("menu-open");
+            scrollNav.addEventListener("transitionend", function handler() {
+                scrollNav.style.display = "none";
+                scrollNav.removeEventListener("transitionend", handler);
+            }, { once: true });
+        }
         updateNavbar();
     });
 
     navbar.querySelectorAll("nav a").forEach(function (link) {
         link.addEventListener("click", function () {
             navbar.classList.remove("menu-open");
+            scrollNav.addEventListener("transitionend", function handler() {
+                scrollNav.style.display = "none";
+                scrollNav.removeEventListener("transitionend", handler);
+            }, { once: true });
             menuBtn.setAttribute("aria-expanded", "false");
             menuBtn.setAttribute("aria-label", "Abrir menú");
             updateNavbar();
