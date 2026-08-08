@@ -222,7 +222,7 @@ header.scrolled {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 99;
     padding-left: max(15px, calc((100% - 1170px) / 2 + 15px));
     padding-right: max(15px, calc((100% - 1170px) / 2 + 15px));
     background-color: transparent;
@@ -231,8 +231,6 @@ header.scrolled {
 
   header.scrolled + .scroll {
     background-color: rgba($header-color, 0.6);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
   }
 }
