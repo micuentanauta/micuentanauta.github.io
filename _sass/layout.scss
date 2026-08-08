@@ -162,7 +162,7 @@ header.scrolled {
   margin-right: 30px;
 }
 
-.logo > p {
+.logo > .headerName {
   color: $header-title-color;
   white-space: nowrap;
   display: flex;
@@ -176,7 +176,7 @@ header.scrolled {
     margin-right: 0px;
   }
 
-  .logo > p {
+  .logo > .headerName {
     display: none;
   }
 }
@@ -257,10 +257,10 @@ header.scrolled {
     overflow: visible;
     display: none;
     padding: 8px 0;
-    background-color: rgba($header-color, 0.95);
+    background-color: rgba($header-color, 0.6);
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
   }
 
   header.menu-open .scroll {
