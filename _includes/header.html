@@ -21,13 +21,38 @@
 			<p class="headerName">{{ site.app_name }}</p>
 		{% endif %}
 	</div>
+	<nav class="scroll desktop-nav">
+		<ul>
+			{% for page in site.pages %}
+				{% if page.include_in_header == true %}
+				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+			{% if site.blog_link %}
+				<li><a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer">Blog Oficial</a></li>
+			{% endif %}
+		</ul>
+	</nav>
 	<button type="button" class="menu-btn" id="mcnMenuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
 		<span class="menu-bar" aria-hidden="true"></span>
 		<span class="menu-bar" aria-hidden="true"></span>
 		<span class="menu-bar" aria-hidden="true"></span>
 	</button>
 </header>
-<nav class="scroll desktop-nav">
+<nav class="scroll mobile-dropdown" id="siteNav">
+	<ul>
+		{% for page in site.pages %}
+			{% if page.include_in_header == true %}
+			<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+		{% if site.blog_link %}
+			<li><a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer">Blog Oficial</a></li>
+		{% endif %}
+	</ul>
+</nav>
+</header>
+<nav class="scroll mobile-dropdown" id="siteNav">
 	<ul>
 		{% for page in site.pages %}
 			{% if page.include_in_header == true %}
