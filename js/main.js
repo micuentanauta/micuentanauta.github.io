@@ -190,7 +190,8 @@ function updateNavbar() {
     if (!navbar) {
         return;
     }
-    if (window.scrollY > 10) {
+    var menuOpen = navbar.classList.contains("menu-open");
+    if (menuOpen || window.scrollY > 10) {
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
@@ -211,6 +212,7 @@ if (menuBtn && navbar) {
         var open = navbar.classList.toggle("menu-open");
         menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
         menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+        updateNavbar();
     });
 
     navbar.querySelectorAll("nav a").forEach(function (link) {
@@ -218,6 +220,7 @@ if (menuBtn && navbar) {
             navbar.classList.remove("menu-open");
             menuBtn.setAttribute("aria-expanded", "false");
             menuBtn.setAttribute("aria-label", "Abrir menú");
+            updateNavbar();
         });
     });
 }
