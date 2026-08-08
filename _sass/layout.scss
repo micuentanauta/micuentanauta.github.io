@@ -1342,7 +1342,8 @@ input[type="reset"]:hover {
 }
 
 // Individual animated elements (leaf nodes only, no containers)
-.appIconShadow,
+// Hero icon (inside .appInfo), not header logo
+.appInfo .appIconShadow,
 .appNameVersionContainer,
 .appDescriptionContainer,
 .downloadButtonsContainer,
@@ -1352,7 +1353,7 @@ input[type="reset"]:hover {
   animation: fade-in-up 0.7s ease-out forwards;
 }
 
-.appIconShadow { animation-delay: 0.1s; }
+.appInfo .appIconShadow { animation-delay: 0.1s; }
 .appNameVersionContainer { animation-delay: 0.2s; }
 .appDescriptionContainer { animation-delay: 0.3s; }
 .downloadButtonsContainer { animation-delay: 0.4s; }
