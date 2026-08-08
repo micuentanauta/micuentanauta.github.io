@@ -206,22 +206,17 @@ updateNavbar();
 //#region Menú hamburguesa (móvil)
 
 var menuBtn = document.getElementById("mcnMenuBtn");
+var mobileDropdown = document.getElementById("siteNav"); // .mobile-dropdown
 
-if (menuBtn && navbar) {
-    var scrollNav = navbar.nextElementSibling; // sibling nav.scroll
-
+if (menuBtn && navbar && mobileDropdown) {
     menuBtn.addEventListener("click", function () {
         var open = navbar.classList.toggle("menu-open");
         menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
         menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
         if (open) {
-            scrollNav.style.display = "flex";
-            scrollNav.offsetHeight;
+            mobileDropdown.classList.add("open");
         } else {
-            scrollNav.addEventListener("transitionend", function handler() {
-                scrollNav.style.display = "none";
-                scrollNav.removeEventListener("transitionend", handler);
-            }, { once: true });
+            mobileDropdown.classList.remove("open");
         }
         updateNavbar();
     });
@@ -229,14 +224,22 @@ if (menuBtn && navbar) {
     navbar.querySelectorAll("nav a").forEach(function (link) {
         link.addEventListener("click", function () {
             navbar.classList.remove("menu-open");
-            scrollNav.addEventListener("transitionend", function handler() {
-                scrollNav.style.display = "none";
-                scrollNav.removeEventListener("transitionend", handler);
-            }, { once: true });
+            mobileDropdown.classList.remove("open");
             menuBtn.setAttribute("aria-expanded", "false");
             menuBtn.setAttribute("aria-label", "Abrir menú");
             updateNavbar();
         });
+    });
+
+    // Cerrar menú al cambiar a vista desktop (resize > 768px)
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768 && navbar.classList.contains("menu-open")) {
+            navbar.classList.remove("menu-open");
+            mobileDropdown.classList.remove("open");
+            menuBtn.setAttribute("aria-expanded", "false");
+            menuBtn.setAttribute("aria-label", "Abrir menú");
+            updateNavbar();
+        }
     });
 }
 
