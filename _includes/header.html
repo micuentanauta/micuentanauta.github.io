@@ -17,7 +17,12 @@
 		</div>
 		<p href="../" class="headerName">{{ site.app_name }}</p>
 	</div>
-	<nav class="scroll">
+	<button type="button" class="menu-btn" id="mcnMenuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+		<span class="menu-bar" aria-hidden="true"></span>
+		<span class="menu-bar" aria-hidden="true"></span>
+		<span class="menu-bar" aria-hidden="true"></span>
+	</button>
+	<nav class="scroll" id="siteNav">
 		<ul>
 			{% for page in site.pages %}
 				{% if page.include_in_header == true %}

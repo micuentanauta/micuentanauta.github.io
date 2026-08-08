@@ -201,3 +201,25 @@ window.addEventListener("scroll", updateNavbar, { passive: true });
 updateNavbar();
 
 //#endregion
+
+//#region Menú hamburguesa (móvil)
+
+var menuBtn = document.getElementById("mcnMenuBtn");
+
+if (menuBtn && navbar) {
+    menuBtn.addEventListener("click", function () {
+        var open = navbar.classList.toggle("menu-open");
+        menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+    });
+
+    navbar.querySelectorAll("nav a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navbar.classList.remove("menu-open");
+            menuBtn.setAttribute("aria-expanded", "false");
+            menuBtn.setAttribute("aria-label", "Abrir menú");
+        });
+    });
+}
+
+//#endregion
