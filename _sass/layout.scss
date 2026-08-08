@@ -37,11 +37,9 @@
 }
 
 .imageWrapper {
-  height: 780px;
   min-height: 100vh;
   min-height: 100svh;
   background: linear-gradient(rgba(31, 25, 0, 0.4), rgba(0, 0, 0, 0.8)), url($header-image);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -88,7 +86,7 @@ body.subPageBody nav > ul li a:active {
   padding-left: 15px;
   padding-right: 15px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 115px 660px auto auto;
+  grid-template-rows: 115px minmax(calc(100vh - 115px), 1fr) auto auto;
   grid-column-gap: 30px;
   grid-template-areas: 
     "h h h h h h h h h h h h" 
@@ -809,7 +807,6 @@ nav > ul li a:active {
 
 .features {
   grid-area: c;
-  margin-top: 180px;
 }
 
 .features-container {
