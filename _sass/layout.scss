@@ -1339,7 +1339,7 @@ input[type="reset"]:hover {
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -1347,13 +1347,12 @@ input[type="reset"]:hover {
   }
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.7s ease-out forwards;
-  opacity: 0;
-}
-
-// Staggered delays for hero elements
-.appInfo > * {
+// Individual animated elements (leaf nodes only, no containers)
+.appIconShadow,
+.appNameVersionContainer,
+.appDescriptionContainer,
+.downloadButtonsContainer,
+.userFinalLicense {
   animation: fade-in-up 0.7s ease-out forwards;
   opacity: 0;
 }
@@ -1364,13 +1363,7 @@ input[type="reset"]:hover {
 .downloadButtonsContainer { animation-delay: 0.4s; }
 .userFinalLicense { animation-delay: 0.5s; }
 
-// Features staggered
-.features {
-  animation: fade-in-up 0.7s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.6s;
-}
-
+// Features - animate individual features only
 .feature {
   animation: fade-in-up 0.5s ease-out forwards;
   opacity: 0;
@@ -1384,18 +1377,12 @@ input[type="reset"]:hover {
 .feature:nth-child(6) { animation-delay: 1.2s; }
 
 // Sponsors
-.sponsors {
-  animation: fade-in-up 0.7s ease-out forwards;
-  opacity: 0;
-  animation-delay: 1.3s;
-}
-
 .sponsor {
   animation: fade-in-up 0.5s ease-out forwards;
   opacity: 0;
 }
 
-.sponsor:nth-child(1) { animation-delay: 1.4s; }
+.sponsor:nth-child(1) { animation-delay: 1.3s; }
 
 // Footer
 footer {
@@ -1406,11 +1393,12 @@ footer {
 
 // Respect reduced motion
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-in-up,
-  .appInfo > *,
-  .features,
+  .appIconShadow,
+  .appNameVersionContainer,
+  .appDescriptionContainer,
+  .downloadButtonsContainer,
+  .userFinalLicense,
   .feature,
-  .sponsors,
   .sponsor,
   footer {
     animation: none !important;
