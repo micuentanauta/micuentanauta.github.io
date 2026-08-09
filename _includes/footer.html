@@ -5,7 +5,7 @@
 	<div class="footerIcons">
 
 		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener noreferrer">
+			<a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-facebook-f"/></svg>
@@ -14,7 +14,7 @@
 		{% endif %}
 
 		{% if site.telegram_channel %}
-			<a href="https://t.me/{{ site.telegram_channel }}" target="_blank" rel="noopener noreferrer">
+			<a href="https://t.me/{{ site.telegram_channel }}" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-telegram-plane"/></svg>
@@ -23,7 +23,7 @@
 		{% endif %}
 
 		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">
+			<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-twitter"/></svg>
@@ -32,7 +32,7 @@
 		{% endif %}
 
 		{% if site.instagram_username %}
-			<a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">
+			<a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-instagram"/></svg>
@@ -41,7 +41,7 @@
 		{% endif %}
 
 		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
+			<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-github"/></svg>
@@ -50,7 +50,7 @@
 		{% endif %}
 
 		{% if site.email_address %}
-			<a href="mailto:{{ site.email_address }}">
+			<a href="mailto:{{ site.email_address }}" aria-label="Email">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-envelope"/></svg>
@@ -59,7 +59,7 @@
 		{% endif %}
 
 		{% if site.blog_link %}
-			<a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer">
+			<a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer" aria-label="Blog Oficial">
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-blogger-b"/></svg>
@@ -79,4 +79,6 @@
 			<a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer">Blog Oficial</a>
 		{% endif %}
 	</div>
+
+	<p class="footerCopyright">© {{ site.current_year }} {{ site.app_name }}. Todos los derechos reservados.</p>
 </footer>

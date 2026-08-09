@@ -993,6 +993,16 @@ footer {
   }
 }
 
+.footerCopyright {
+  color: $footer-text-color;
+  text-align: center;
+  font-size: 0.85rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgba($footer-text-color, 0.1);
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 992px) {
   .footerText {
     color: $footer-text-color;
