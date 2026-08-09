@@ -2,12 +2,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="{{ page.theme_color | default: site.topbar_color }}">
 
 	<title>{{ site.page_title }}</title>
 	<meta name="description" content="{{ site.app_description }}">
 	<meta name="author" content="{{ site.your_name }}">
 	<meta name="build-time" content="{{ site.time | date_to_xmlschema }}">
-	<meta name="theme-color" content="{{ page.theme_color | default: site.topbar_color }}">
+
+	<!-- Performance hints -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 	<link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">

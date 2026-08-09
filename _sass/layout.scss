@@ -1453,3 +1453,70 @@ footer {
 .form-note a:hover {
   color: #e6b035;
 }
+
+/* Accessibility: Focus visible styles */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid $accent-color;
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: $accent-color;
+  color: #121212;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 10000;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Backdrop-filter fallbacks for Safari/older browsers */
+@supports not (backdrop-filter: blur(14px)) {
+  header.scrolled,
+  .mobile-dropdown.open {
+    background-color: rgba($header-color, 0.85);
+  }
+}
+
+/* Reduced motion - disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  header,
+  .mobile-dropdown,
+  .downloadButtonsContainer,
+  .footerIcons,
+  .footerLinks,
+  .footerCopyright {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
