@@ -1,0 +1,284 @@
+﻿// Base - Typography
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+// Font faces
+@font-face {
+  font-family: "DM Sans";
+  src: url("{{ '/fonts/DMSans-Medium.ttf' | relative_url }}") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Font family
+$font-family-base: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Headings
+h1 { font-size: 3rem; font-weight: 600; line-height: 1.2; }
+h2 { font-size: 2rem; font-weight: 600; line-height: 1.3; }
+h3 { font-size: 2rem; font-weight: 600; line-height: 1.3; }
+h4 { font-size: 1.75rem; font-weight: 600; line-height: 1.4; }
+h5 { font-size: 1.5rem; font-weight: 600; line-height: 1.4; }
+h6 { font-size: 1.25rem; font-weight: 600; line-height: 1.4; }
+
+p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+strong, b { font-weight: 600; }
+em, i { font-style: italic; }
+small { font-size: 0.875em; }
+sub, sup { font-size: 0.75em; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+
+code, pre, kbd, samp {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+blockquote {
+  border-left: 4px solid $accent-color;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: $accent-color;
+  padding-left: 1.5rem;
+  margin-left: 0;
+  color: rgba($app-title-color, 0.8);
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+  font-size: 0.875em;
+  color: $feature-text-color;
+}
+
+dl {
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+// Lists
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba($footer-text-color, 0.1);
+}
+
+th {
+  font-weight: 600;
+  color: $app-title-color;
+  background-color: rgba($header-color, 0.1);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+table caption {
+  caption-side: bottom;
+  padding: 0.5rem;
+  color: $feature-text-color;
+  font-size: 0.875rem;
+}
+
+// Forms
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: $app-title-color;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba($accent-color, 0.3);
+  border-radius: $radius-md;
+  background-color: rgba($body-color, 0.9);
+  color: $app-title-color;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: $accent-color;
+  box-shadow: 0 0 0 3px rgba($accent-color, 0.15);
+  background-color: $body-color;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba($feature-text-color, 0.6);
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: $accent-color;
+}
+
+fieldset {
+  border: 1px solid rgba($accent-color, 0.2);
+  border-radius: $radius-md;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+  color: $app-title-color;
+}
+
+// Print styles
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a, a:visited {
+    text-decoration: underline;
+  }
+  
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  a[href^="mailto:"]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  .skip-link,
+  header,
+  nav,
+  .mobile-dropdown,
+  .downloadButtonsContainer,
+  .footerIcons,
+  .footerLinks,
+  .footerCopyright,
+  .modal,
+  .modal-backdrop {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: #000 !important;
+    font-size: 12pt;
+  }
+  
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+  
+  .page {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr, img {
+    page-break-inside: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+  }
+  
+  @page {
+    margin: 2cm;
+  }
+  
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

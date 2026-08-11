@@ -1,0 +1,19 @@
+// Abstracts - Functions
+// =============================================================================
+
+// Color manipulation helpers (using Sass built-in functions mostly)
+// These are placeholders for custom functions if needed
+
+@function fluid($min, $max, $min-vw: 320px, $max-vw: 1200px) {
+  $slope: ($max - $min) / ($max-vw - $min-vw);
+  $intercept: $min - ($slope * $min-vw);
+  @return calc(#{$min} + #{$slope} * (100vw - #{$min-vw}));
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($px, $base: 16px) {
+  @return #{$px / $base}rem;
+}

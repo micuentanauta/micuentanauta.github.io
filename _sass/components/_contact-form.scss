@@ -1,0 +1,265 @@
+﻿// Components - Contact Form
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: $app-title-color;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba($accent-color, 0.3);
+  border-radius: 6px;
+  background-color: rgba($body-color, 0.9);
+  color: $app-title-color;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: $accent-color;
+  box-shadow: 0 0 0 3px rgba($accent-color, 0.15);
+  background-color: $body-color;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba($feature-text-color, 0.6);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffc43f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2em;
+  padding-right: 3rem;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, $accent-color, #e6b035);
+  color: #121212;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba($accent-color, 0.3);
+  filter: brightness(1.05);
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-btn .spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  background-color: rgba(76, 175, 80, 0.15);
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  color: #4caf50;
+}
+
+.form-status.error {
+  display: block;
+  background-color: rgba(244, 67, 54, 0.15);
+  border: 1px solid rgba(244, 67, 54, 0.4);
+  color: #f44336;
+}
+
+.form-note {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: $feature-text-color;
+  text-align: center;
+}
+
+.form-note a {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.form-note a:hover {
+  color: #e6b035;
+}
+
+// Legacy contact form (from original layout.scss)
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 4rem;
+  position: relative;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactSection h3 {
+  color: $accent-color;
+}
+
+form {
+  background: rgba(41, 41, 41, 0.95);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  animation: fade-in 0.4s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.field {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 14px 0 8px 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #f1f1f1;
+  font-family: inherit;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-bottom-color: $form-focus-color;
+  box-shadow: 0 2px 0 0 rgba(26, 115, 232, 0.4);
+}
+
+.field label {
+  top: 14px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field textarea:focus + label,
+.field textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: $form-focus-color;
+  background: rgba(41, 41, 41, 0.95);
+  padding: 0 4px;
+  z-index: 1;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.actions li {
+  list-style: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="submit"].special {
+  background-color: $form-focus-color;
+  color: white;
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+input[type="submit"].special:hover {
+  background-color: #155fb2;
+  box-shadow: 0 6px 16px rgba(26, 115, 232, 0.4);
+}
+
+input[type="reset"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f1f1f1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input[type="reset"]:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}

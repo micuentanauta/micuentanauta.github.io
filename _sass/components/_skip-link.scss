@@ -1,0 +1,32 @@
+﻿// Components - Skip Link
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: $accent-color;
+  color: #121212;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: $z-index-skip-link;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid $accent-color;
+  outline-offset: 2px;
+}

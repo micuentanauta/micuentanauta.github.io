@@ -1,0 +1,41 @@
+// Components - Sponsors
+// =============================================================================
+
+.sponsors {
+  padding-bottom: 60px;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  flex-direction: column;
+  grid-area: s;
+}
+
+.sponsors > p {
+  color: #9a9a9a;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.sponsors img {
+  filter: grayscale(100%);
+  width: auto;
+  height: 50px;
+  align-self: center;
+  transition: filter 0.1s ease-out 100ms;
+}
+
+.sponsors img:hover {
+  filter: grayscale(0%);
+}
+
+.sponsors > div {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sponsors > div > a {
+  margin: 5px 20px;
+}

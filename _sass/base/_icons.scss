@@ -1,0 +1,30 @@
+// Base - Inline SVG Icons
+// =============================================================================
+
+.svg-icon {
+  fill: currentColor;
+}
+
+.icon-stack {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.icon-stack .icon-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.icon-stack .icon-glyph {
+  position: relative;
+  width: 1em;
+  height: 1em;
+}

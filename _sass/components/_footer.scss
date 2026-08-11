@@ -1,0 +1,143 @@
+﻿// Components - Footer
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+footer {
+  grid-area: f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerText {
+  color: $footer-text-color;
+  display: block;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footerIcons {
+  padding-bottom: 70px;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footerIcons a:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.footerLinks {
+  display: flex;
+  text-align: center;
+  padding-bottom: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footerLinks a {
+  color: $footer-text-color;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footerLinks a:hover {
+  color: $accent-color;
+}
+
+.footerLinks a:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerLinks {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .footerLinks a {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.footerCopyright {
+  color: $footer-text-color;
+  text-align: center;
+  font-size: 0.85rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgba($footer-text-color, 0.1);
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .footerText {
+    padding-top: 54px;
+    padding-bottom: 61px;
+  }
+
+  .footerIcons {
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footerLinks {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .footerLinks a {
+    justify-content: center;
+  }
+}
+
+.footerIcons .icon-stack {
+  width: 2em;
+  height: 2em;
+}
+
+.footerIcons .icon-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footerIcons .icon-glyph {
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+
+.footerIcons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footerIcons a:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}

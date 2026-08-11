@@ -1,0 +1,82 @@
+// Main SCSS entry point
+// =============================================================================
+
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "abstracts/functions" as *;
+
+@use "base/reset";
+@use "base/typography";
+@use "base/icons";
+@use "base/animations";
+
+@use "layout/container";
+@use "layout/responsive";
+
+@use "components/header";
+@use "components/footer";
+@use "components/hero";
+@use "components/features";
+@use "components/contact-form";
+@use "components/buttons";
+@use "components/skip-link";
+@use "components/modal";
+@use "components/sponsors";
+@use "components/update-widget";
+
+@use "vendors/github-markdown";
+
+// Accessibility & utilities (from original layout.scss end)
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: $accent-color;
+  color: #121212;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 10000;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+@supports not (backdrop-filter: blur(14px)) {
+  header.scrolled,
+  .mobile-dropdown.open {
+    background-color: rgba($header-color, 0.85);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  header,
+  .mobile-dropdown,
+  .downloadButtonsContainer,
+  .footerIcons,
+  .footerLinks,
+  .footerCopyright {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  a {
+    text-decoration: underline;
+  }
+}

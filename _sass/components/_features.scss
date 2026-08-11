@@ -1,0 +1,164 @@
+﻿// Components - Features
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+.features {
+  grid-area: c;
+  margin-top: 12rem;
+}
+
+.features-container {
+  display: flex;
+  flex: 0 1 auto;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  padding-top: 63px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100% / 3);
+}
+
+.feature:nth-child(-n + 3) {
+  padding-top: 0px;
+}
+
+.feature:nth-child(3n) {
+  padding-right: 0;
+}
+
+.feature:nth-child(3n + 1) {
+  padding-left: 0;
+}
+
+.iconBack {
+  color: $feature-icons-background-color;
+}
+
+.iconTop {
+  color: $feature-icons-foreground-color;
+}
+
+.featureText {
+  margin-left: 18px;
+}
+
+.featureText > h3 {
+  color: $feature-title-color;
+}
+
+.featureText > p {
+  color: $feature-text-color;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 992px) {
+  .features {
+    margin-top: 11px;
+  }
+  .features-container {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    display: flex;
+    padding-top: 41px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .feature:nth-child(-n + 3) {
+    padding-top: 41px;
+  }
+
+  .feature:nth-child(1) {
+    padding-top: 0;
+  }
+
+  .feature:nth-child(3n) {
+    padding-right: 15px;
+  }
+
+  .feature:nth-child(3n + 1) {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .features {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 11px;
+  }
+  .features-container {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 11px;
+  }
+
+  .feature {
+    display: flex;
+    padding-top: 41px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .feature:nth-child(-n + 3) {
+    padding-top: 41px;
+  }
+
+  .feature:nth-child(1) {
+    padding-top: 0;
+  }
+
+  .feature:nth-child(3n) {
+    padding-right: 0;
+  }
+
+  .feature:nth-child(3n + 1) {
+    padding-left: 0;
+  }
+}
+
+.iconBack {
+  color: $feature-icons-background-color;
+}
+
+.iconTop {
+  color: $feature-icons-foreground-color;
+}
+
+.socialIconBack {
+  color: $social-icons-background-color;
+}
+
+.socialIconTop {
+  color: $social-icons-foreground-color;
+}
+
+.featureText {
+  margin-left: 18px;
+}
+
+.featureText > h3 {
+  color: $feature-title-color;
+}
+
+.featureText > p {
+  color: $feature-text-color;
+  margin-top: 8px;
+  line-height: 1.5;
+}

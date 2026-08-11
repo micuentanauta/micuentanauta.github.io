@@ -1,0 +1,412 @@
+﻿// Components - Hero
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+.appIconShadow {
+  display: flex;
+  filter: $drop-shadow;
+}
+
+.appIconLarge {
+  width: 120px;
+  height: 120px;
+  -webkit-clip-path: url(#shape120);
+  clip-path: url(#shape120);
+}
+
+.appNameVersionContainer {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.appName {
+  color: $app-title-color;
+}
+
+.appVersion {
+  color: $app-version-color;
+  font-weight: normal;
+  margin-top: 13px;
+}
+
+.appDescriptionContainer {
+  font-size: 2.5rem;
+  font-weight: normal;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 45px;
+  flex: 0 1 auto;
+  line-height: 1.5;
+}
+
+.appDescription {
+  color: $app-description-color;
+}
+
+.downloadButtonsContainer {
+  display: inline-block;
+  margin-top: 42px;
+  filter: $drop-shadow;
+}
+
+.playStore {
+  height: 75px;
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+  .playStore {
+    margin-right: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .playStore {
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+
+.appStore {
+  height: 75px;
+}
+
+.downloadButton {
+  background-image: linear-gradient(to bottom, #0059c3, #0059c359);
+  color: #fff !important;
+  padding: 0.75em 1.25em;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  appearance: none;
+  font-weight: 500;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.downloadButton:hover {
+  background-image: linear-gradient(to bottom, #4298ff, #0059c359);
+}
+
+@media only screen and (max-width: 768px) {
+  .downloadButton {
+    padding: 0.75em 1em;
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .downloadButton {
+    padding: 0.6em 0.8em;
+    font-size: 11pt;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .appDescription {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .downloadButtonsContainer {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .appNameVersionContainer {
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .appName {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .appVersion {
+    margin-top: 13px;
+    text-align: center;
+  }
+
+  .playStore {
+    margin-right: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .playStore {
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+
+.appStore {
+  height: 75px;
+}
+
+.downloadButton {
+  background-image: linear-gradient(to bottom, #0059c3, #0059c359);
+  color: #fff !important;
+  padding: 0.75em 1.25em;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  appearance: none;
+  font-weight: 500;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.downloadButton:hover {
+  background-image: linear-gradient(to bottom, #4298ff, #0059c359);
+}
+
+@media only screen and (max-width: 768px) {
+  .downloadButton {
+    padding: 0.75em 1em;
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .downloadButton {
+    padding: 0.6em 0.8em;
+    font-size: 11pt;
+  }
+}
+
+.downloadMeta {
+  color: #9a9a9a;
+  margin-top: 18px;
+  line-height: 1.7;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.downloadMeta code {
+  background: #232323;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.downloadButton .svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  margin-right: 0.5em;
+}
+
+.downloadMeta {
+  color: #9a9a9a;
+  margin-top: 18px;
+  line-height: 1.7;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.downloadMeta code {
+  background: #232323;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.playStore {
+  height: 75px;
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+  .playStore {
+    margin-right: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .playStore {
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+
+.appStore {
+  height: 75px;
+}
+
+.downloadButton {
+  background-image: linear-gradient(to bottom, #0059c3, #0059c359);
+  color: #fff !important;
+  padding: 0.75em 1.25em;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  appearance: none;
+  font-weight: 500;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.downloadButton:hover {
+  background-image: linear-gradient(to bottom, #4298ff, #0059c359);
+}
+
+@media only screen and (max-width: 768px) {
+  .downloadButton {
+    padding: 0.75em 1em;
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .downloadButton {
+    padding: 0.6em 0.8em;
+    font-size: 11pt;
+  }
+}
+
+.downloadMeta {
+  color: #9a9a9a;
+  margin-top: 18px;
+  line-height: 1.7;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.downloadMeta code {
+  background: #232323;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.downloadButton .svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  margin-right: 0.5em;
+}
+
+.downloadMeta {
+  color: #9a9a9a;
+  margin-top: 18px;
+  line-height: 1.7;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.downloadMeta code {
+  background: #232323;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.playStore {
+  height: 75px;
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+  .playStore {
+    margin-right: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .playStore {
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+
+.appStore {
+  height: 75px;
+}
+
+.downloadButton {
+  background-image: linear-gradient(to bottom, #0059c3, #0059c359);
+  color: #fff !important;
+  padding: 0.75em 1.25em;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  appearance: none;
+  font-weight: 500;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.downloadButton:hover {
+  background-image: linear-gradient(to bottom, #4298ff, #0059c359);
+}
+
+@media only screen and (max-width: 768px) {
+  .downloadButton {
+    padding: 0.75em 1em;
+    font-size: 13pt;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .downloadButton {
+    padding: 0.6em 0.8em;
+    font-size: 11pt;
+  }
+}
+
+.downloadMeta {
+  color: #9a9a9a;
+  margin-top: 18px;
+  line-height: 1.7;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.downloadMeta code {
+  background: #232323;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
