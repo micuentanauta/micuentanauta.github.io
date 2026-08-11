@@ -32,25 +32,6 @@
   }
 }
 
-@media only screen and (min-width: 769px) {
-  .desktop-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    padding-left: max(15px, calc((100% - 1170px) / 2 + 15px));
-    padding-right: max(15px, calc((100% - 1170px) / 2 + 15px));
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  header.scrolled ~ .desktop-nav {
-    background-color: rgba($header-color, 0.6);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .desktop-nav {
     display: none;
