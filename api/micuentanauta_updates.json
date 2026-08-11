@@ -1,15 +1,24 @@
 {
     "is_activated": true,
     "last_build": {
-        "changelog": "Interfaz general\n\n+ Se añadieron validaciones y un control más granular de los parámetros de cada campo.\n+ Ajustes menores en la iconografía de la aplicación.\n\nVentana de sesión abierta\n\n+ Ahora se puede actualizar la cantidad de tiempo restante.\n\nAjustes\n\n+ El sistema de gestión de ajustes guardados ha sido reconstruido para permitir migraciones de versiones pasadas y estabilidad en versiones futuras.\n+ Ahora se puede iniciar con windows la aplicación directamente a la barra de notificaciones.\n\nEnrutador de ventanas\n\n+ Ahora se presenta un control más conciso de las ventanas abiertas para evitar comportamientos inesperados.\n\nEnrutador de peticiones\n\n+ Ahora se presenta un control más conciso de las peticiones url para evitar interacciones repetidas entre distintos orígenes.\n\nÍcono en la barra de notificaciones\n\n+ Ahora la aplicación se mantiene de forma persistente en la barra de notificaciones lo que permite iniciar sesión y cerrar sesión de forma más cómoda.\n\nRefactorización\n\n+ Se ha realizado una gran refactorización de la aplicación para mejor mantenibilidad en versiones futuras.\n\nBugs corregidos\n\n* Mejoras en el control del tiempo.\n* Corrección de bugs menores.",
-        "version": "3.1.0.0",
-        "download_url": "bit.ly/mcn3100",
-        "sha256": "BF4492DEA949A0A3DB71EBF6BB6F773A5E29F6E0AB4F5B4FEB2432F5D631A621",
-        "size_mb": 5.1,
-        "updated_date": "2026.01.12",
+        "changelog": "[Configuración]\r\n\t+ Los ajustes de versiones anteriores se convierten automáticamente al nuevo formato de guardado al abrir la aplicación, sin perder tus datos.\r\n\t+ Nuevo modo silencioso: la aplicación puede iniciarse sin mostrar notificaciones.\r\n\t* Corregido un error que hacía que los ajustes se restablecieran.\r\n\r\n\t[Seguridad]\r\n\t+ Se reforzó la protección de los datos con un cifrado más robusto.\r\n\t* Corregido un error de seguridad que no liberaba correctamente los recursos del cifrado.\r\n\r\n\t[Ventana principal]\r\n\t+ La aplicación ahora muestra su propio icono en las ventanas.\r\n\t* Corregido un bug visual: al cambiar de tema, el ícono de la pestaña seleccionada solo cambiaba de color.\r\n\t* Corregido un error por el que no se mostraba el ícono de estado de la ventana maximizada al arrastrarla hacia los bordes.\r\n\r\n\t[Cuenta cautiva]\r\n\t+ Ahora puedes cancelar la espera al consultar las cuentas móviles y de telefonía fija.\r\n\t* Corregido un error por el que la cuenta cautiva no actualizaba su estado al terminar el temporizador.\r\n\t* Corregido un error falso al consultar el estado del correo.\r\n\r\n\t[Notificaciones]\r\n\t* Corregido un error al calcular el progreso de una donación sin meta establecida.\r\n\r\n\t[Compatibilidad]\r\n\t+ La aplicación ahora se distribuye también para las versiones más recientes de Windows (.NET 8 y .NET 9), con mejor rendimiento y menor consumo de memoria.\r\n\t* Corregido un error en .NET 9 por el que se guardaba la dirección del ensamblado en lugar de la del ejecutable.\r\n\r\n\t[Bugs corregidos]\r\n\t* Resuelto un error con las cuentas favoritas.\r\n\t* Corregido un error que provocaba un fallo al validar los datos introducidos.\r\n\t* Corregido un error que impedía reiniciar la aplicación correctamente.\r\n\t* Corregido un error visual de opacidad en el fondo de la ventana.",
+        "version": "3.1.0.1",
+        "download_url": "bit.ly/mcn3101",
+        "sha256": "1138FA66C82A5BD7CEA1AE4E8D4D62ADCAFAEEB31705DE0C4CB1A71857688E56",
+        "size_mb": 5.2,
+        "updated_date": "2026.08.11",
         "kind": "1"
     },
     "older_builds": [
+        {
+            "changelog": "Interfaz general\n\n+ Se añadieron validaciones y un control más granular de los parámetros de cada campo.\n+ Ajustes menores en la iconografía de la aplicación.\n\nVentana de sesión abierta\n\n+ Ahora se puede actualizar la cantidad de tiempo restante.\n\nAjustes\n\n+ El sistema de gestión de ajustes guardados ha sido reconstruido para permitir migraciones de versiones pasadas y estabilidad en versiones futuras.\n+ Ahora se puede iniciar con windows la aplicación directamente a la barra de notificaciones.\n\nEnrutador de ventanas\n\n+ Ahora se presenta un control más conciso de las ventanas abiertas para evitar comportamientos inesperados.\n\nEnrutador de peticiones\n\n+ Ahora se presenta un control más conciso de las peticiones url para evitar interacciones repetidas entre distintos orígenes.\n\nÍcono en la barra de notificaciones\n\n+ Ahora la aplicación se mantiene de forma persistente en la barra de notificaciones lo que permite iniciar sesión y cerrar sesión de forma más cómoda.\n\nRefactorización\n\n+ Se ha realizado una gran refactorización de la aplicación para mejor mantenibilidad en versiones futuras.\n\nBugs corregidos\n\n* Mejoras en el control del tiempo.\n* Corrección de bugs menores.",
+            "version": "3.1.0.0",
+            "download_url": "bit.ly/mcn3100",
+            "sha256": "BF4492DEA949A0A3DB71EBF6BB6F773A5E29F6E0AB4F5B4FEB2432F5D631A621",
+            "size_mb": 5.1,
+            "updated_date": "2026.01.12",
+            "kind": "1"
+        },
         {
             "changelog": "Bugs corregidos\n\n* Corrección de bug con el temporizador finalizado que no cierra la sesión.",
             "version": "3.0.1.2",
@@ -39,18 +48,18 @@
             "kind": "0"
         },
         {
-        "changelog": "*Corrección de bugs.\n* La ventana de sesión abierta no se cerraba luego de cerrar sesión.\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
-        "version": "2.99.2025.431",
-        "download_url": "bit.ly/mcn29920250431beta",
-        "updated_date": "2025.04.30",
-        "kind": "0"
+            "changelog": "*Corrección de bugs.\n* La ventana de sesión abierta no se cerraba luego de cerrar sesión.\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
+            "version": "2.99.2025.431",
+            "download_url": "bit.ly/mcn29920250431beta",
+            "updated_date": "2025.04.30",
+            "kind": "0"
         },
         {
-        "changelog": "*Corrección de bugs.\n* El control de tiempo de la sesión no convertía apropiadamente las horas.\n*En entornos de conectividad limitada, la comprobación de actualizaciones fallaba con un mensaje genérico.",
-        "version": "2.99.2025.430",
-        "download_url": "bit.ly/mcn29920250430beta",
-        "updated_date": "2025.04.30",
-        "kind": "0"
+            "changelog": "*Corrección de bugs.\n* El control de tiempo de la sesión no convertía apropiadamente las horas.\n*En entornos de conectividad limitada, la comprobación de actualizaciones fallaba con un mensaje genérico.",
+            "version": "2.99.2025.430",
+            "download_url": "bit.ly/mcn29920250430beta",
+            "updated_date": "2025.04.30",
+            "kind": "0"
         },
         {
             "changelog": "Preparativos para la versión 3.0.\n+ Se ha deshabilitado el acceso al portal antiguo para trabajar en el nuevo.\n+ Total rediseño de la interfaz.\n+ Mejoras en el servicio de notificación de actualizaciones.\n+ Nueva ventana totalmente reescalable y adaptable de sesión abierta.\n* Sistema de guardado de ajustes mejorado.\n* Corrección de bugs.\n+ Eliminación del límite local de vencimiento de las versiones beta.",
