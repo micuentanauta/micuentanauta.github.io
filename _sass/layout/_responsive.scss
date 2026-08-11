@@ -102,10 +102,6 @@
 }
 
 @media only screen and (max-width: 1070px) {
-  .desktopPreview {
-    background-size: 370px auto;
-    margin-top: 120px;
-  }
   .iphonePreview {
     background-size: 370px auto;
   }
@@ -127,14 +123,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .desktopPreview {
-    display: flex;
-    background-size: 150px auto;
-    background-position: center 0;
-    margin-top: 40px;
-    justify-content: center;
-    padding-bottom: 200px;
-  }
   .iphonePreview {
     display: flex;
     background-size: 260px auto;

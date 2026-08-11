@@ -110,8 +110,7 @@ body.subPageBody nav > ul li a:active {
   grid-area: i;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 120px;
-  align-content: flex-start;
+  align-content: center;
 }
 
 @media only screen and (max-width: 992px) {
@@ -124,11 +123,9 @@ body.subPageBody nav > ul li a:active {
 // Device previews
 .desktopPreview {
   grid-area: p;
-  background-image: url($device-image);
-  background-size: 400px auto;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  margin-top: 140px;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .desktopScreen {
@@ -171,8 +168,7 @@ body.subPageBody nav > ul li a:active {
 
 @media only screen and (max-width: 1070px) {
   .desktopPreview {
-    background-size: 370px auto;
-    margin-top: 120px;
+    width: 370px;
   }
   .iphonePreview {
     background-size: 370px auto;
@@ -196,12 +192,8 @@ body.subPageBody nav > ul li a:active {
 
 @media only screen and (max-width: 992px) {
   .desktopPreview {
-    display: flex;
-    background-size: 150px auto;
-    background-position: center 0;
-    margin-top: 40px;
-    justify-content: center;
-    padding-bottom: 200px;
+    width: 150px;
+    margin: 40px auto 0;
   }
   .iphonePreview {
     display: flex;
