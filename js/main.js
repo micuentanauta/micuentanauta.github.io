@@ -43,12 +43,10 @@ var lastFocused = null; // elemento que abre el modal, para restaurar el foco al
 
 var redirect_address
 
-function startDownload() {
-    redirect_address = btn.getAttribute('link');
-    redirect();
-}
-
 function openModal() {
+    if (btn) {
+        redirect_address = btn.getAttribute('link');
+    }
     modal.classList.add("visible");
     modal.setAttribute("aria-hidden", "false");
     content.classList.add("blur");
@@ -144,8 +142,7 @@ function redirect() {
     download_link.innerHTML = 'Su archivo está descargándose...';
     download_link.classList.toggle('blink');
 
-    window.open(redirect_address, "_parent")
-    // document.location.href = redirect_address;
+    window.location.href = redirect_address;
 }
 
 function updateSecs() {
