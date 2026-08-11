@@ -9,14 +9,14 @@
 				</defs>
 			</svg>
 			{% if page.url != '/' %}
-				<a href="../" target="_self" aria-label="Ir al inicio"><img class="headerIcon" src="{{ site.app_icon | relative_url }}" draggable="false"></a>
+				<a href="{{ '/' | relative_url }}" target="_self" aria-label="Ir al inicio"><img class="headerIcon" src="{{ site.app_icon | relative_url }}" draggable="false"></a>
 			{% else %}
 				<img class="headerIcon" src="{{ site.app_icon | relative_url }}" alt="{{ site.app_name }}" draggable="false">
 			{% endif %}
 			<div class="divider"></div>
 		</div>
 		{% if page.url != '/' %}
-			<a href="../" target="_self" class="headerName">{{ site.app_name }}</a>
+			<a href="{{ '/' | relative_url }}" target="_self" class="headerName">{{ site.app_name }}</a>
 		{% else %}
 			<p class="headerName">{{ site.app_name }}</p>
 		{% endif %}
