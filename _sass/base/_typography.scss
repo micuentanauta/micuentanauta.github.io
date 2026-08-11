@@ -6,7 +6,7 @@
 // Font faces
 @font-face {
   font-family: "DM Sans";
-  src: url("{{ '/fonts/DMSans-Medium.ttf' | relative_url }}") format("truetype");
+  src: url("/fonts/DMSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
