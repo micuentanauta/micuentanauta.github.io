@@ -5,6 +5,8 @@
 <script>
 (function () {
     var BUILD_TIME_KEY = "mcn_last_seen_build_time";
+    var COMMIT_ETAG_KEY = "mcn_commits_etag";
+    var COMMIT_DATE_KEY = "mcn_commits_date";
     var widget = document.getElementById("mcnUpdateWidget");
     var textEl = document.getElementById("mcnUpdateWidgetText");
     if (!widget || !textEl) return;
@@ -16,7 +18,8 @@
     var repo = null;
 
     function repoFromHost() {
-        var m = /^([\w-]+)\.github\.io$/i.exec(location.hostname);
+        var host = location.hostname.replace(/^www\./i, "");
+        var m = /^([\w-]+)\.github\.io$/i.exec(host);
         return m ? m[1] + "/" + m[0] : null;
     }
 
@@ -24,6 +27,14 @@
 
     function fmtDate(d) {
         return pad(d.getDate()) + "/" + pad(d.getMonth() + 1) + "/" + d.getFullYear() + " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
+    }
+
+    function load(key) {
+        try { return localStorage.getItem(key); } catch (e) { return null; }
+    }
+
+    function store(key, value) {
+        try { localStorage.setItem(key, value); } catch (e) {}
     }
 
     function setState(state, text) {
@@ -35,37 +46,78 @@
     }
 
     function show() {
-        var stored = null;
-        try { stored = localStorage.getItem(BUILD_TIME_KEY); } catch (e) {}
+        var stored = load(BUILD_TIME_KEY);
         if (buildDate && stored && stored !== buildTime) {
             setState("new", "Sitio actualizado: " + fmtDate(buildDate));
         } else {
             setState("ok", buildDate ? "Actualizado: " + fmtDate(buildDate) : "");
         }
-        if (buildTime) {
-            try { localStorage.setItem(BUILD_TIME_KEY, buildTime); } catch (e) {}
-        }
+        if (buildTime) store(BUILD_TIME_KEY, buildTime);
         widget.hidden = false;
     }
 
+    function latestCommitDate(data) {
+        if (data && Object.prototype.toString.call(data) === "[object Array]" && data[0]) data = data[0];
+        var c = data && data.commit;
+        var s = c && ((c.committer && c.committer.date) || (c.author && c.author.date)) || "";
+        var d = s ? new Date(s) : null;
+        return d && !isNaN(d.getTime()) ? d : null;
+    }
+
+    function refreshDeployedBuild() {
+        return fetch(location.href, { cache: "no-store", headers: { "Accept": "text/html" } })
+            .then(function (r) { return r.ok ? r.text() : Promise.reject(r.status); })
+            .then(function (html) {
+                var m = html.match(/<meta name="build-time" content="([^"]*)"/i);
+                if (!m) return false;
+                var t = new Date(m[1]);
+                if (isNaN(t.getTime())) return false;
+                if (t.getTime() > buildDate.getTime()) {
+                    buildTime = m[1];
+                    buildDate = t;
+                    store(BUILD_TIME_KEY, buildTime);
+                    setState("new", "Sitio actualizado: " + fmtDate(buildDate));
+                    return true;
+                }
+                return false;
+            })
+            .catch(function () { return false; });
+    }
+
     function checkRemote() {
-        if (!repo) return;
+        if (!repo || !buildDate) return;
         var now = Date.now();
         if (now - lastCheck < 30000) return;
         lastCheck = now;
-        fetch("https://api.github.com/repos/" + repo + "/commits?per_page=1")
-            .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+
+        var headers = { "Accept": "application/vnd.github+json" };
+        var etag = load(COMMIT_ETAG_KEY);
+        if (etag) headers["If-None-Match"] = etag;
+
+        fetch("https://api.github.com/repos/" + repo + "/commits?per_page=1", { headers: headers })
+            .then(function (r) {
+                if (r.status === 304) return null;
+                if (!r.ok) return Promise.reject(r.status);
+                var newEtag = r.headers.get("ETag");
+                if (newEtag) store(COMMIT_ETAG_KEY, newEtag);
+                return r.json();
+            })
             .then(function (data) {
-                var c = data && data[0] && data[0].commit;
-                var dateStr = c && ((c.committer && c.committer.date) || (c.author && c.author.date)) || "";
-                if (!dateStr || !buildDate) return;
-                var commitDate = new Date(dateStr);
-                if (isNaN(commitDate.getTime())) return;
-                if (commitDate.getTime() > buildDate.getTime()) {
-                    setState("busy", "Nueva versión en proceso de publicación…");
-                } else if (!widget.classList.contains("new")) {
-                    setState("ok", "Actualizado: " + fmtDate(buildDate));
-                }
+                if (!data) return null;
+                var d = latestCommitDate(data);
+                if (d) store(COMMIT_DATE_KEY, d.toISOString());
+                return d;
+            })
+            .then(function (commitDate) {
+                if (!commitDate) return;
+                refreshDeployedBuild().then(function (siteUpdated) {
+                    if (siteUpdated) return;
+                    if (commitDate.getTime() > buildDate.getTime()) {
+                        setState("busy", "Nueva versión en proceso de publicación…");
+                    } else if (!widget.classList.contains("new")) {
+                        setState("ok", "Actualizado: " + fmtDate(buildDate));
+                    }
+                });
             })
             .catch(function () {});
     }
