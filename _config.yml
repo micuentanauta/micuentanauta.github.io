@@ -14,7 +14,7 @@ organization_url: https://github.com/micuentanauta
 # download_sha256 debe coincidir con el archivo que sirve el enlace corto.
 download_date: 2026.08.11
 download_size_mb: 5.2
-download_sha256: 43224D2C3B45C86EA6761A8787C2A823FB0901DAB628410DB6AB15E846178BE7
+download_sha256: CCE1B6E9782E9DD3C93FAFD7F18AFA783127E60CCC60108CB9D92770D00A6DE9
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
@@ -28,7 +28,7 @@ contact_form: https://formspree.io/f/mnndkyaw
 app_icon: assets/mcn-icon.svg # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: Mi Cuenta Nauta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_version: v3.1.0.1
-app_description: Mi Cuenta Nauta es una aplicación desarrollada para Windows que facilita la interacción con los servidores de ETECSA permitiendo mantener un entorno seguro a la hora de conectarse a internet
+app_description: Mi Cuenta Nauta facilita la interacción con ETECSA y te permite un entorno seguro a la hora de conectarse a internet
 
 enable_smart_app_banner: false # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -53,23 +53,18 @@ features:
   - title: Es bastante intuitivo y rápido
     description: Ha sido desarrollada para proveer un rendimiento óptimo
     fontawesome_icon_name: tachometer-alt
-
   - title: No pierdas más nunca la sesión abierta
     description: Una vez que tengas tu cuenta abierta tendrás siempre en pantalla tu tiempo restante y la posibilidad de cerrar la sesión cuando quieras sin perder saldo
     fontawesome_icon_name: hourglass-half
-
   - title: Seguridad garantizada
     description: Fomentamos un uso responsable de las cuentas Nauta
     fontawesome_icon_name: shield-alt
-
   - title: ¡Ahora con temas!
     description: Cuida tus ojos mientras usas nuestra aplicación
     fontawesome_icon_name: magic
-
   - title: Un portal Nauta mucho más rápido, ligero y eficaz
     description: Todo en un mismo lugar, accesible incluso desde datos móviles con mínimo gasto
     fontawesome_icon_name: chart-pie
-
   - title: Cuentas, cuentas y más ahora con nuestra versión vitaminada de las opciones
     description: Configura todas tus cuentas nautas a gusto, cambia cómo se comporta la aplicación
     fontawesome_icon_name: users

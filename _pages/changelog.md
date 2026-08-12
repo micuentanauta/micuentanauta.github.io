@@ -2,11 +2,49 @@
 layout: page
 title: Registro de cambios
 include_in_header: true
+layout: page
 ---
 
 ## Registro de cambios
 
-### **Versión 3.1.0.0** (`Última versión disponible`)
+
+### **Versión 3.1.0.1** (01.08.2026) (`Última versión disponible`)
+
+**Cambios**
+
+Configuración
++ Los ajustes de versiones anteriores se convierten automáticamente al nuevo formato de guardado al abrir la aplicación, sin perder tus datos.
++ Nuevo modo silencioso: la aplicación puede iniciarse sin mostrar notificaciones.
+* Corregido un error que hacía que los ajustes se restablecieran.
+
+Seguridad
++ Se reforzó la protección de los datos con un cifrado más robusto.
+* Corregido un error de seguridad que no liberaba correctamente los recursos del cifrado.
+
+Ventana principal
++ La aplicación ahora muestra su propio icono en las ventanas.
+* Corregido un bug visual: al cambiar de tema, el ícono de la pestaña seleccionada solo cambiaba de color.
+* Corregido un error por el que no se mostraba el ícono de estado de la ventana maximizada al arrastrarla hacia los bordes.
+
+Cuenta cautiva
++ Ahora puedes cancelar la espera al consultar las cuentas móviles y de telefonía fija.
+* Corregido un error por el que la cuenta cautiva no actualizaba su estado al terminar el temporizador.
+* Corregido un error falso al consultar el estado del correo.
+
+Notificaciones
+* Corregido un error al calcular el progreso de una donación sin meta establecida.
+
+Compatibilidad
++ La aplicación ahora se distribuye también para las versiones más recientes de Windows (.NET 8 y .NET 9), con mejor rendimiento y menor consumo de memoria.
+* Corregido un error en .NET 9 por el que se guardaba la dirección del ensamblado en lugar de la del ejecutable.
+
+Bugs corregidos
+* Resuelto un error con las cuentas favoritas.
+* Corregido un error que provocaba un fallo al validar los datos introducidos.
+* Corregido un error que impedía reiniciar la aplicación correctamente.
+* Corregido un error visual de opacidad en el fondo de la ventana.
+
+### **Versión 3.1.0.0**
 
 **Cambios**
 
