@@ -2,10 +2,19 @@
     {
         "published_date": "2026.01.12 6:13:00",
         "end_date": "2027.05.26 6:13:00",
-        "title": "Anuncio de prueba",
+        "Title": "Anuncio de prueba",
         "thumbnail_url": "https://micuentanauta.github.io/assets/logo.png",
         "image_url": "https://micuentanauta.github.io/assets/logo.png",
-        "body": "Cuerpo de prueba",
-        "link": "https://t.me/micuentanauta"
+        "Body": "Cuerpo de prueba",
+        "Link": "https://t.me/micuentanauta"
+    },
+    {
+        "published_date": "2026.08.12 01:42:26",
+        "end_date": "2026.08.12 01:42:26",
+        "Title": "Nuevo anuncio",
+        "thumbnail_url": "",
+        "image_url": "",
+        "Body": "",
+        "Link": ""
     }
 ]
