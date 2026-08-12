@@ -1,56 +1,63 @@
 [
     {
+        "id": "Campaña 1",
+        "start_date": "2026.06.01 22:57:45",
+        "end_date": "2026.08.11 22:57:55",
         "goal": 2500,
         "current": 2500,
         "contributors": [
             {
                 "telegram_username": "Maycol",
-                "contribution": 500 
+                "contribution": 500
             },
             {
                 "telegram_username": "Jhon_sup",
-                "contribution": 300 
+                "contribution": 300
             },
             {
                 "telegram_username": "Joacel",
-                "contribution": 300 
+                "contribution": 300
             },
             {
                 "telegram_username": "LarryPL",
-                "contribution": 250 
+                "contribution": 250
             },
             {
                 "telegram_username": "Yasmani. C. H",
-                "contribution": 250 
+                "contribution": 250
             },
             {
                 "telegram_username": "blob",
-                "contribution": 250 
+                "contribution": 250
             },
             {
                 "telegram_username": "Mito8686",
-                "contribution": 200 
+                "contribution": 200
             },
             {
                 "telegram_username": "Smith_Qva",
-                "contribution": 200 
+                "contribution": 200
             }
         ],
         "objectives": [
             {
                 "title": "Compatiblidad preliminares con los servicios del Portal Nauta",
                 "reason": "Añadir las funcionalidades más críticas como recargar con voucher, transferir saldo, cambiar contraseñas de usuario",
-                "requester": "bn404"
+                "requester": "bn404",
+                "fulfilled": true,
+                "completed_date": "2026.08.11 22:57:40"
             },
             {
                 "title": "Compatiblidad con los servicios nuevos del Portal Nauta",
                 "reason": "Añadir el forzado de cierre de la cuenta y de detalles de las cuentas",
-                "requester": "bn404"
+                "requester": "bn404",
+                "fulfilled": true
             },
             {
                 "title": "Vinculación directa con cuenta nauta única",
                 "reason": "Añadir la vinculación directa con Cuenta Nauta para añadir directamente las cuentas de navegación asociadas",
-                "requester": "bn404"
+                "requester": "bn404",
+                "fulfilled": true
             },
             {
                 "title": "Actualización de tiempo en ventana de sesión",
