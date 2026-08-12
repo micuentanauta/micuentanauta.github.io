@@ -1,0 +1,164 @@
+// Components - Contact Page
+// =============================================================================
+
+@use "../abstracts/variables" as *;
+
+.contactBio {
+  margin: $spacing-md 0 $spacing-lg;
+  padding: $spacing-lg;
+  background-color: $form-bg;
+  border: 1px solid $form-border;
+  border-radius: $radius-xl;
+
+  p {
+    margin: 0 0 $spacing-sm;
+    color: $feature-text-color;
+    font-size: 1.6rem;
+    line-height: 1.7;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: $app-title-color;
+  }
+}
+
+.contactSocial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: $spacing-md;
+  margin: $spacing-md 0 $spacing-lg;
+}
+
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-xs;
+  padding: $spacing-lg $spacing-md;
+  background-color: $form-bg;
+  border: 1px solid $form-border;
+  border-radius: $radius-xl;
+  text-align: center;
+  transition: transform $transition-fast, border-color $transition-fast, box-shadow $transition-fast;
+
+  .svg-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    color: $accent-color;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: $accent-color;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.socialCard-name {
+  color: $app-title-color;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.socialCard-handle {
+  color: $feature-text-color;
+  font-size: 1.4rem;
+  word-break: break-all;
+}
+
+.donateCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $spacing-lg;
+  margin: $spacing-md 0 $spacing-lg;
+}
+
+.donateCard {
+  padding: $spacing-lg;
+  background-color: $form-bg;
+  border: 1px solid $form-border;
+  border-radius: $radius-xl;
+  text-align: center;
+
+  h3 {
+    margin: 0 0 $spacing-sm;
+    color: $accent-color;
+    font-size: 1.8rem;
+  }
+
+  img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto $spacing-sm;
+    border-radius: $radius-md;
+  }
+
+  p {
+    margin: 0;
+    color: $app-title-color;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.telegramGroups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $spacing-md;
+  margin: $spacing-md 0 $spacing-lg;
+}
+
+.telegramGroup {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-md;
+  background-color: $form-bg;
+  border: 1px solid $form-border;
+  border-radius: $radius-lg;
+  transition: transform $transition-fast, border-color $transition-fast, box-shadow $transition-fast;
+
+  .svg-icon {
+    flex: 0 0 auto;
+    width: 2.2rem;
+    height: 2.2rem;
+    color: $accent-color;
+  }
+
+  strong {
+    display: block;
+    color: $app-title-color;
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: $accent-color;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.telegramGroup-description {
+  display: block;
+  color: $feature-text-color;
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+}
+
+.markdown-body .socialCard:hover,
+.markdown-body .socialCard:focus,
+.markdown-body .telegramGroup:hover,
+.markdown-body .telegramGroup:focus {
+  text-decoration: none;
+}
+
+.page .contactSection {
+  padding: $spacing-md 0;
+}

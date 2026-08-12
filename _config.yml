@@ -38,6 +38,13 @@ your_link:
 your_city: Cuba
 email_address: blacknoize404@gmail.com
 telegram_channel: micuentanauta
+
+# Grupos de Telegram de la comunidad (se muestran en la página de Contacto)
+telegram_groups:
+  - name: Mi Cuenta Nauta Chat
+    url: https://t.me/micuentanautachat
+    description: Comparte la aplicación, conversa con la comunidad y recibe soporte.
+
 facebook_username:
 instagram_username:
 twitter_username:
