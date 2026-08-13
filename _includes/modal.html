@@ -12,12 +12,12 @@
                 <div class="donate-container">
                     <div class="donate-item">
                         <p style="font-size: 20px">Saldo</p>
-                        <img src="assets/movile-qr.png" alt="Código QR para donar por saldo" loading="lazy" draggable="false" />
+                        <img src="{{ 'assets/movile-qr.png' | relative_url }}" alt="Código QR para donar por saldo" loading="lazy" draggable="false" />
                         <p>{{ site.phone_number }}</p>
                     </div>
                     <div class="donate-item">
                         <p style="font-size: 20px">Transferencia</p>
-                        <img src="assets/enzona-qr.png" alt="Código QR para donar por transferencia" loading="lazy" draggable="false" />
+                        <img src="{{ 'assets/enzona-qr.png' | relative_url }}" alt="Código QR para donar por transferencia" loading="lazy" draggable="false" />
                         <p>{{ site.bank_iban }}</p>
                     </div>
                 </div>
