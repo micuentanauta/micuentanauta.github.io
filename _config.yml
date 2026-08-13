@@ -33,17 +33,21 @@ app_description: Mi Cuenta Nauta facilita la interacción con ETECSA y te permit
 enable_smart_app_banner: false # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Information About Yourself
-your_name: BlackNoizE404
-your_link:
+your_name: Carlos Barnés
+your_link: https://github.com/blacknoize404
 your_city: Cuba
 email_address: blacknoize404@gmail.com
 telegram_channel: micuentanauta
+linkedin_username: barnes404
 
 # Grupos de Telegram de la comunidad (se muestran en la página de Contacto)
 telegram_groups:
   - name: Mi Cuenta Nauta Chat
     url: https://t.me/micuentanautachat
     description: Comparte la aplicación, conversa con la comunidad y recibe soporte.
+  - name: El Proyecto en Telegram
+    url: https://t.me/micuentanauta
+    description: Canal oficial del proyecto Mi Cuenta Nauta.
 
 facebook_username:
 instagram_username:

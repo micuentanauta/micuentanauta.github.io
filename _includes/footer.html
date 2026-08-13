@@ -1,7 +1,4 @@
 <footer>
-	{% if site.your_name %}
-	<p class="footerText">{% if site.your_link %}<a href="{{ site.your_link }}" rel="noopener">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} desde {{ site.your_city }}{% endif %}, {{ site.current_year }}.</p>
-	{% endif %}
 	<div class="footerIcons">
 
 		{% if site.facebook_username %}
@@ -45,6 +42,15 @@
 				<span class="icon-stack">
 					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
 					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-github"/></svg>
+				</span>
+			</a>
+		{% endif %}
+
+		{% if site.linkedin_username %}
+			<a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+				<span class="icon-stack">
+					<svg class="icon-circle svg-icon socialIconBack" width="2em" height="2em" style="fill:currentColor"><use href="#i-circle"/></svg>
+					<svg class="icon-glyph svg-icon socialIconTop" width="1em" height="1em" style="fill:currentColor"><use href="#i-linkedin"/></svg>
 				</span>
 			</a>
 		{% endif %}

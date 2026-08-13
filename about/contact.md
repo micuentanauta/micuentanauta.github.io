@@ -13,8 +13,12 @@ permalink: /about/contact/
 ## Quién soy
 
 <div class="contactBio">
-    <p>{{ site.app_name }} es un proyecto independiente que creo y mantengo yo, <strong>{{ site.your_name }}</strong>, desarrollador desde {{ site.your_city }}. La aplicación nació para resolver un problema cotidiano: gestionar las cuentas Nauta de forma más cómoda, rápida y segura en Windows.</p>
-    <p>Cada actualización, cada arreglo y cada nueva funcionalidad que ves aquí se desarrolla y publica de forma abierta, sin costo para ti.</p>
+    <p>Soy <strong>Carlos Barnés</strong>, joven investigador, recién graduado de Ingeniería Informática como segunda carrera. Un resumen de mi trayectoria:</p>
+    <p><strong>Premio CITMA – National Young Researcher Award:</strong> reconocimiento nacional concedido por contribuciones científicas sobresalientes al desarrollo e investigación tecnológica. Este premio destaca el impacto de la investigación en el diseño de modelos de Inteligencia Artificial, el procesamiento de lenguaje natural (NLP) y el desarrollo de arquitecturas de software modulares aplicadas a la lingüística computacional.</p>
+    <p><strong>Caribbean Regional Finalist – ICPC 2023:</strong> clasifiqué a las finales regionales del Caribe tras superar las rondas eliminatorias locales. La competencia evalúa la resolución de problemas de alto nivel mediante diseño avanzado de algoritmos, optimización de código a nivel de microsegundos y gestión eficiente de estructuras de datos bajo estrictas restricciones de tiempo.</p>
+    <p><strong>Caribbean Regional Finalist – ICPC 2024:</strong> clasifiqué a las finales regionales del Caribe por segundo ciclo consecutivo. Este logro consolida mi experiencia en optimización algorítmica de alto nivel, resolución de problemas matemáticos aplicados a las ciencias de la computación y el diseño de soluciones de software eficientes.</p>
+    <p>También obtuve el <strong>premio nacional científico estudiantil de computación (CNCEC)</strong>.</p>
+    <p>Con más de 10 años de experiencia en el mundo de la tecnología y el diseño gráfico, desarrollo {{ site.app_name }} de forma abierta y gratuita.</p>
 </div>
 
 ## Mis redes
@@ -22,18 +26,18 @@ permalink: /about/contact/
 Sígueme y mantente al día con las novedades del proyecto:
 
 <div class="contactSocial">
-    {% if site.telegram_channel %}
-    <a class="socialCard" href="https://t.me/{{ site.telegram_channel }}" target="_blank" rel="noopener noreferrer">
-        <svg class="svg-icon" width="1em" height="1em" style="fill:currentColor" aria-hidden="true"><use href="#i-telegram-plane"/></svg>
-        <span class="socialCard-name">Canal de Telegram</span>
-        <span class="socialCard-handle">t.me/{{ site.telegram_channel }}</span>
-    </a>
-    {% endif %}
     {% if site.github_username %}
     <a class="socialCard" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
         <svg class="svg-icon" width="1em" height="1em" style="fill:currentColor" aria-hidden="true"><use href="#i-github"/></svg>
         <span class="socialCard-name">GitHub</span>
         <span class="socialCard-handle">@{{ site.github_username }}</span>
+    </a>
+    {% endif %}
+    {% if site.linkedin_username %}
+    <a class="socialCard" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">
+        <svg class="svg-icon" width="1em" height="1em" style="fill:currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg>
+        <span class="socialCard-name">LinkedIn</span>
+        <span class="socialCard-handle">linkedin.com/in/{{ site.linkedin_username }}</span>
     </a>
     {% endif %}
     {% if site.email_address %}

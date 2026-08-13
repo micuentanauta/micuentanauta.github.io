@@ -97,6 +97,7 @@
     max-width: 100%;
     height: auto;
     margin: 0 auto $spacing-sm;
+    background-color: transparent;
     border-radius: $radius-md;
   }
 
@@ -106,6 +107,10 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
+}
+
+.markdown-body .donateCard img {
+  background-color: transparent;
 }
 
 .telegramGroups {
