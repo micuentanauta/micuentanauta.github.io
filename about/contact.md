@@ -2,6 +2,7 @@
 layout: page
 title: Contacto
 include_in_header: true
+include_in_footer: false
 theme_color: "#121212"
 permalink: /about/contact/
 ---
