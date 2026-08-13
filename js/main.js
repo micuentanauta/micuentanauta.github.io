@@ -43,13 +43,16 @@ var lastFocused = null; // elemento que abre el modal, para restaurar el foco al
 
 var redirect_address
 
-function openModal() {
-    if (btn) {
-        redirect_address = btn.getAttribute('link');
+function openModal(trigger) {
+    var source = trigger || btn;
+    if (source) {
+        redirect_address = source.getAttribute('link');
     }
     modal.classList.add("visible");
     modal.setAttribute("aria-hidden", "false");
-    content.classList.add("blur");
+    if (content) {
+        content.classList.add("blur");
+    }
     if (navbar) {
         navbar.classList.add("blur");
     }
@@ -70,7 +73,9 @@ function openModal() {
 function closeModal() {
     modal.classList.remove("visible");
     modal.setAttribute("aria-hidden", "true");
-    content.classList.remove("blur");
+    if (content) {
+        content.classList.remove("blur");
+    }
     if (navbar) {
         navbar.classList.remove("blur");
     }
@@ -88,13 +93,15 @@ function closeModal() {
 
 // When the user clicks the button, open the modal
 if (btn) {
-    btn.addEventListener("click", openModal);
+    btn.addEventListener("click", function () {
+        openModal(btn);
+    });
 
     // Soporte de teclado para el botón de descarga (role="button", sin href)
     btn.addEventListener("keydown", function (event) {
         if (event.key === "Enter" || event.key === " ") {
             event.preventDefault();
-            openModal();
+            openModal(btn);
         }
     });
 }
@@ -274,5 +281,18 @@ if (navbar) {
         showNavbarDownloads();
     }
 }
+
+var navbarDownloadLinks = document.querySelectorAll(".navbar-download");
+navbarDownloadLinks.forEach(function (button) {
+    button.addEventListener("click", function () {
+        openModal(button);
+    });
+    button.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openModal(button);
+        }
+    });
+});
 
 //#endregion

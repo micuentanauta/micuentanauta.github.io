@@ -5,39 +5,7 @@
 <body>
     {% include icons.html %}
 
-    <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modalTitle">Su link de descarga gratuito está listo</h2>
-                <button type="button" class="close" aria-label="Cerrar">×</button>
-            </div>
-
-            <div class="modal-body">
-                <p>¿Le ha sido de utilidad nuestra aplicación?</p>
-                <p>Considere hacer una donación, siempre son muy bienvenidas.</p>
-                <div class="donate-container">
-                    <div class="donate-item">
-                        <p style="font-size: 20px">Saldo</p>
-                        <img src="assets/movile-qr.png" alt="Código QR para donar por saldo" loading="lazy" draggable="false" />
-                        <p>{{ site.phone_number }}</p>
-                    </div>
-                    <div class="donate-item">
-                        <p style="font-size: 20px">Transferencia</p>
-                        <img src="assets/enzona-qr.png" alt="Código QR para donar por transferencia" loading="lazy" draggable="false" />
-                        <p>{{ site.bank_iban }}</p>
-                    </div>
-                </div>
-
-                <div id="redirect-link">
-                    <p>
-                        Tu archivo será descargado automáticamente en
-                        <span id="seconds">10</span> segundo(s)...
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include modal.html %}
     {% include header.html %}
     <div class="imageWrapper">
         <div class="headerBackground">
