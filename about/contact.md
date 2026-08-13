@@ -14,8 +14,20 @@ permalink: /about/contact/
 ## Quién soy
 
 <div class="contactBio">
-    <p><strong>Carlos Barnés</strong> es un joven investigador y desarrollador, recién graduado de Ingeniería Informática como segunda carrera, con más de 10 años de experiencia en el mundo de la tecnología y el diseño gráfico. Es quien está detrás de {{ site.app_name }}, que desarrolla de forma abierta y gratuita.</p>
-    <p>Durante su trayectoria ha recibido algunos reconocimientos, como el premio CITMA National Young Researcher Award, ser Caribbean Regional Finalist en el ICPC 2023 y 2024, y el premio nacional científico estudiantil de computación (CNCEC).</p>
+    <p><strong>Carlos Barnés</strong> (a.k.a. <strong>@blacknoize404</strong>) es un joven investigador y desarrollador, recién graduado de Ingeniería Informática como segunda carrera, con más de 10 años de experiencia en el mundo de la tecnología y el diseño gráfico. Es quien está detrás de {{ site.app_name }}, que desarrolla de forma abierta y gratuita.</p>
+    <p>Le interesan especialmente el <strong>machine learning</strong>, la visión por computadora y la resolución de problemas complejos mediante algoritmos eficientes, y está en constante exploración de nuevas tecnologías, desde la optimización de bajo nivel hasta la IA generativa.</p>
+    <p>Entre sus proyectos se encuentran:</p>
+    <ul>
+        <li><strong>Patriae</strong>: proyecto pionero enfocado en la reproducción del dialecto cubano mediante modelos de procesamiento de lenguaje natural y síntesis de voz (text-to-speech).</li>
+        <li><strong>MiniJWS</strong>: framework de servidor HTTP ligero y modular construido desde cero en Java, con documentación educativa para aprender el estándar HTTP/1.1 y arquitectura de software.</li>
+        <li><strong>MathUtils</strong>: biblioteca de Java para computación matemática avanzada.</li>
+        <li><strong>Pingmaster</strong>: aplicación multiplataforma en JavaFX para monitorear el estado de servidores remotos.</li>
+        <li><strong>Schedu</strong>: aplicación multiplataforma para la gestión de horarios escolares y agenda personal.</li>
+        <li><strong>Dímelo</strong>: plataforma web para mejorar la visibilidad y accesibilidad de los negocios locales.</li>
+        <li><strong>{{ site.app_name }}</strong>: aplicación para Windows que simplifica la interacción con los servidores de ETECSA.</li>
+    </ul>
+    <p>En su día a día trabaja principalmente con <strong>Java y Python</strong>, además de C++, C#, JavaScript y GDScript, y herramientas como TensorFlow, PyTorch, OpenCV y Django.</p>
+    <p>A lo largo de su trayectoria ha recibido algunos reconocimientos, como el premio CITMA National Young Researcher Award, ser Caribbean Regional Finalist en el ICPC 2023 y 2024, el premio nacional científico estudiantil de computación (CNCEC) y el nivel Kyu 4 en Codewars.</p>
 </div>
 
 ## Mis redes
