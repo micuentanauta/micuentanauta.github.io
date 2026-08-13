@@ -13,12 +13,8 @@ permalink: /about/contact/
 ## Quién soy
 
 <div class="contactBio">
-    <p>Soy <strong>Carlos Barnés</strong>, joven investigador, recién graduado de Ingeniería Informática como segunda carrera. Un resumen de mi trayectoria:</p>
-    <p><strong>Premio CITMA – National Young Researcher Award:</strong> reconocimiento nacional concedido por contribuciones científicas sobresalientes al desarrollo e investigación tecnológica. Este premio destaca el impacto de la investigación en el diseño de modelos de Inteligencia Artificial, el procesamiento de lenguaje natural (NLP) y el desarrollo de arquitecturas de software modulares aplicadas a la lingüística computacional.</p>
-    <p><strong>Caribbean Regional Finalist – ICPC 2023:</strong> clasifiqué a las finales regionales del Caribe tras superar las rondas eliminatorias locales. La competencia evalúa la resolución de problemas de alto nivel mediante diseño avanzado de algoritmos, optimización de código a nivel de microsegundos y gestión eficiente de estructuras de datos bajo estrictas restricciones de tiempo.</p>
-    <p><strong>Caribbean Regional Finalist – ICPC 2024:</strong> clasifiqué a las finales regionales del Caribe por segundo ciclo consecutivo. Este logro consolida mi experiencia en optimización algorítmica de alto nivel, resolución de problemas matemáticos aplicados a las ciencias de la computación y el diseño de soluciones de software eficientes.</p>
-    <p>También obtuve el <strong>premio nacional científico estudiantil de computación (CNCEC)</strong>.</p>
-    <p>Con más de 10 años de experiencia en el mundo de la tecnología y el diseño gráfico, desarrollo {{ site.app_name }} de forma abierta y gratuita.</p>
+    <p><strong>Carlos Barnés</strong> es un joven investigador y desarrollador, recién graduado de Ingeniería Informática como segunda carrera, con más de 10 años de experiencia en el mundo de la tecnología y el diseño gráfico. Es quien está detrás de {{ site.app_name }}, que desarrolla de forma abierta y gratuita.</p>
+    <p>Durante su trayectoria ha recibido algunos reconocimientos, como el premio CITMA National Young Researcher Award, ser Caribbean Regional Finalist en el ICPC 2023 y 2024, y el premio nacional científico estudiantil de computación (CNCEC).</p>
 </div>
 
 ## Mis redes
@@ -94,9 +90,9 @@ Si {{ site.app_name }} te ha sido útil, puedes apoyar su desarrollo de cualquie
     </div>
 </div>
 
-## Grupos de Telegram para compartir
+## El Proyecto en Telegram
 
-Ayuda a crecer la comunidad compartiendo la aplicación en estos grupos:
+Únete al canal oficial y a los grupos de la comunidad para seguir el proyecto y compartir la aplicación:
 
 <div class="telegramGroups">
     {% for group in site.telegram_groups %}

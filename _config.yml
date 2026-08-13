@@ -45,7 +45,7 @@ telegram_groups:
   - name: Mi Cuenta Nauta Chat
     url: https://t.me/micuentanautachat
     description: Comparte la aplicación, conversa con la comunidad y recibe soporte.
-  - name: El Proyecto en Telegram
+  - name: Mi Cuenta Nauta Canal
     url: https://t.me/micuentanauta
     description: Canal oficial del proyecto Mi Cuenta Nauta.
 
