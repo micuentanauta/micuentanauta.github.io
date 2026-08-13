@@ -32,22 +32,32 @@
 				<li><a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer">Blog Oficial</a></li>
 			{% endif %}
 		</ul>
+		{% if site.windows_link %}
+		<a class="downloadButton navbar-download navbar-download--desktop" href="{{ site.windows_link }}">Descargar</a>
+		{% endif %}
 	</nav>
-	<button type="button" class="menu-btn" id="mcnMenuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+
+	<div class="header-actions">
+		{% if site.windows_link %}
+		<a class="downloadButton navbar-download navbar-download--mobile" href="{{ site.windows_link }}">Descargar</a>
+		{% endif %}
+		<button type="button" class="menu-btn" id="mcnMenuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
 		<span class="menu-bar" aria-hidden="true"></span>
 		<span class="menu-bar" aria-hidden="true"></span>
 		<span class="menu-bar" aria-hidden="true"></span>
 	</button>
+	</div>
 </header>
 <nav class="scroll mobile-dropdown" id="siteNav">
 	<ul>
 		{% for page in site.pages %}
-			{% if page.include_in_header == true %}
+			{% if page.include_in_header == true and page.permalink != '/about/contact/' %}
 			<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
 			{% endif %}
 		{% endfor %}
 		{% if site.blog_link %}
 			<li><a href="{{ site.blog_link }}" target="_blank" rel="noopener noreferrer">Blog Oficial</a></li>
 		{% endif %}
+		<li><a href="{{ '/about/contact/' | relative_url }}" target="_self">Contacto</a> </li>
 	</ul>
 </nav>

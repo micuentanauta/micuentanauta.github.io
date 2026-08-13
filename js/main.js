@@ -241,3 +241,38 @@ if (menuBtn && navbar && mobileDropdown) {
 }
 
 //#endregion
+
+//#region Botón de descarga del navbar
+
+function showNavbarDownloads() {
+    if (navbar) {
+        navbar.classList.add("navbar-download-visible");
+    }
+}
+
+function hideNavbarDownloads() {
+    if (navbar) {
+        navbar.classList.remove("navbar-download-visible");
+    }
+}
+
+var heroInfo = document.getElementsByClassName("appInfo")[0];
+
+if (navbar) {
+    if (heroInfo) {
+        var downloadObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    hideNavbarDownloads();
+                } else {
+                    showNavbarDownloads();
+                }
+            });
+        }, { threshold: 0 });
+        downloadObserver.observe(heroInfo);
+    } else {
+        showNavbarDownloads();
+    }
+}
+
+//#endregion

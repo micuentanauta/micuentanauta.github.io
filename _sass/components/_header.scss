@@ -75,9 +75,10 @@ header.scrolled {
 // Desktop Navigation
 .desktop-nav {
   display: flex;
-  width: 100%;
+  flex: 1;
   align-items: center;
   justify-content: flex-end;
+  gap: 30px;
   height: 115px;
   white-space: nowrap;
   overflow-x: auto;
@@ -151,7 +152,6 @@ header.scrolled {
 
 .menu-btn {
   display: none;
-  margin-left: auto;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -188,6 +188,34 @@ header.scrolled {
 
   header.menu-open .menu-bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+// Navbar download buttons
+.navbar-download {
+  display: none;
+}
+
+header.navbar-download-visible .navbar-download {
+  display: inline-flex;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  header.navbar-download-visible .navbar-download--mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header.navbar-download-visible .navbar-download--desktop {
+    display: none;
   }
 }
 
