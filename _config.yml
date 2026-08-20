@@ -5,16 +5,16 @@ url: https://micuentanauta.github.io # Required for canonical URLs, sitemap and 
 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
-windows_link: https://bit.ly/mcn3101
+windows_link: https://bit.ly/mcn3102
 
 # Organización oficial (SEO de marca y metadatos de publicación)
 organization_url: https://github.com/micuentanauta
 
 # Metadatos del archivo que distribuye windows_link (se muestran junto al botón).
 # download_sha256 debe coincidir con el archivo que sirve el enlace corto.
-download_date: 2026.08.11
+download_date: 2026.08.20
 download_size_mb: 5.2
-download_sha256: CCE1B6E9782E9DD3C93FAFD7F18AFA783127E60CCC60108CB9D92770D00A6DE9
+download_sha256: 32B8111F0DA5152CA73D3F09D5D501BEDF0BEE1AFA9ACD48DEA8FBC7057933DF
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
@@ -27,7 +27,7 @@ contact_form: https://formspree.io/f/mnndkyaw
 
 app_icon: assets/mcn-icon.svg # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: Mi Cuenta Nauta # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_version: v3.1.0.1
+app_version: v3.1.0.2
 app_description: Mi Cuenta Nauta facilita la interacción con ETECSA y te permite un entorno seguro a la hora de conectarse a internet
 
 enable_smart_app_banner: false # Set to true to show a smart app banner at top of page on mobile devices.

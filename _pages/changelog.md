@@ -7,8 +7,17 @@ layout: page
 
 ## Registro de cambios
 
+### **Versión 3.1.0.2** (`Última versión disponible`)
 
-### **Versión 3.1.0.1** (01.08.2026) (`Última versión disponible`)
+**Cambios**
+
+Multiplataforma
+* El proyecto está optimizado para consumir menos memoria en dispositivos actuales.
+
+Bugs corregidos
+* Corregido el problema de que el botón de iniciar sesión no se ajustaba correctamente al validar los campos de inicio de sesión.
+
+### **Versión 3.1.0.1** (01.08.2026)
 
 **Cambios**
 
