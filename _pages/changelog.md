@@ -7,7 +7,14 @@ layout: page
 
 ## Registro de cambios
 
-### **Versión 3.1.0.2** (`Última versión disponible`)
+### **Versión 3.1.0.3** (`Última versión disponible`)
+
+**Cambios**
+
+Bugs corregidos
+* Corregido un problema que provocaba que la sesión no se cerrara al agotarse el temporizador.
+
+### **Versión 3.1.0.2**
 
 **Cambios**
 

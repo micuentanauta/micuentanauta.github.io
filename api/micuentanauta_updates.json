@@ -1,15 +1,24 @@
 {
     "is_activated": true,
     "last_build": {
-        "changelog": "Multiplataforma\r\n* El proyecto está optimizado para consumir menos memoria en dispositivos actuales.\r\nBugs corregidos\r\n* Corregido el problema de que el botón de iniciar sesión no se ajustaba correctamente al validar los campos de inicio de sesión.",
-        "version": "3.1.0.2",
-        "download_url": "bit.ly/mcn3102",
-        "sha256": "32B8111F0DA5152CA73D3F09D5D501BEDF0BEE1AFA9ACD48DEA8FBC7057933DF",
+        "changelog": "Bugs corregidos\r\n* Corregido un problema que provocaba que la sesión no se cerrara al agotarse el temporizador.",
+        "version": "3.1.0.3",
+        "download_url": "bit.ly/mcn3103",
+        "sha256": "3412FF510C4C9D4C46440ED7CE580240FA9129998B4F899D94F93C5666D96DF0",
         "size_mb": 5.2,
-        "updated_date": "2026.08.20",
+        "updated_date": "2026.08.22",
         "kind": "1"
     },
     "older_builds": [
+        {
+            "changelog": "Multiplataforma\r\n* El proyecto está optimizado para consumir menos memoria en dispositivos actuales.\r\nBugs corregidos\r\n* Corregido el problema de que el botón de iniciar sesión no se ajustaba correctamente al validar los campos de inicio de sesión.",
+            "version": "3.1.0.2",
+            "download_url": "bit.ly/mcn3102",
+            "sha256": "32B8111F0DA5152CA73D3F09D5D501BEDF0BEE1AFA9ACD48DEA8FBC7057933DF",
+            "size_mb": 5.2,
+            "updated_date": "2026.08.20",
+            "kind": "1"
+        },
         {
             "changelog": "Configuración\r\n+ Los ajustes de versiones anteriores se convierten automáticamente al nuevo formato de guardado al abrir la aplicación, sin perder tus datos.\r\n+ Nuevo modo silencioso: la aplicación puede iniciarse sin mostrar notificaciones.\r\n* Corregido un error que hacía que los ajustes se restablecieran.\r\n\r\nSeguridad\r\n+ Se reforzó la protección de los datos con un cifrado más robusto.\r\n* Corregido un error de seguridad que no liberaba correctamente los recursos del cifrado.\r\n\r\nVentana principal\r\n+ La aplicación ahora muestra su propio icono en las ventanas.\r\n* Corregido un bug visual: al cambiar de tema, el ícono de la pestaña seleccionada solo cambiaba de color.\r\n* Corregido un error por el que no se mostraba el ícono de estado de la ventana maximizada al arrastrarla hacia los bordes.\r\n\r\nCuenta cautiva\r\n+ Ahora puedes cancelar la espera al consultar las cuentas móviles y de telefonía fija.\r\n* Corregido un error por el que la cuenta cautiva no actualizaba su estado al terminar el temporizador.\r\n* Corregido un error falso al consultar el estado del correo.\r\n\r\nNotificaciones\r\n* Corregido un error al calcular el progreso de una donación sin meta establecida.\r\n\r\nCompatibilidad\r\n+ La aplicación ahora se distribuye también para las versiones más recientes de Windows (.NET 8 y .NET 9), con mejor rendimiento y menor consumo de memoria.\r\n* Corregido un error en .NET 9 por el que se guardaba la dirección del ensamblado en lugar de la del ejecutable.\r\n\r\nBugs corregidos\r\n* Resuelto un error con las cuentas favoritas.\r\n* Corregido un error que provocaba un fallo al validar los datos introducidos.\r\n* Corregido un error que impedía reiniciar la aplicación correctamente.\r\n* Corregido un error visual de opacidad en el fondo de la ventana.",
             "version": "3.1.0.1",
