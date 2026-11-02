@@ -11,30 +11,33 @@ layout: page
 
 **Cambios**
 
-Conectividad
-+ Nuevo indicador de estado en el icono de la barra de sistema: un punto de color muestra si hay internet, solo portal cautivo, red nacional o sin conexión (se puede desactivar en Opciones).
-+ Nueva monitorización de red en segundo plano que detecta caídas de internet, el portal cautivo y la red nacional, con frecuencia y umbral configurables.
-+ Re-inicio de sesión automático configurable: si la sesión se cierra sola, al detectar el portal Nauta o por intervalos de segundos.
-+ Nuevo botón Reconectar en la ventana de sesión cuando se agotan los intentos automáticos.
+[Conectividad]
+	+ Nuevo indicador de estado en el icono de la barra de sistema: un punto de color muestra si hay internet, solo portal cautivo, red nacional o sin conexión (se puede desactivar en Opciones).
+	+ Nueva monitorización de red en segundo plano que detecta caídas de internet, el portal cautivo y la red nacional, con frecuencia y umbral configurables.
+	+ Re-inicio de sesión automático configurable: si la sesión se cierra sola, al detectar el portal Nauta o por intervalos de segundos.
+	+ Nuevo botón Reconectar en la ventana de sesión cuando se agotan los intentos automáticos.
 
-Sesión
-+ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes restaurarla, cerrarla o ignorarla; al restaurarla va directo a la ventana de sesión y consulta el tiempo real disponible.
-* Corregido un error por el que cerrar la sesión decía "no hay ninguna sesión abierta" después de una reconexión fallida.
-* Corregido un error que hacía una consulta innecesaria al portal tras cada inicio de sesión.
+	[Sesión]
+	+ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes restaurarla, cerrarla o ignorarla; al restaurarla va directo a la ventana de sesión y consulta el tiempo real disponible.
+	* Corregido un error por el que cerrar la sesión decía "no hay ninguna sesión abierta" después de una reconexión fallida.
+	* Corregido un error que hacía una consulta innecesaria al portal tras cada inicio de sesión.
 
-Ventana principal
-+ Nuevo botón junto a Conectar para configurar el re-inicio de sesión automático.
-+ Nueva pestaña Ayuda en Opciones, con explicaciones visuales del indicador de la bandeja y de las funciones de reconexión.
-* Corregido un error que cortaba los textos de la ayuda si la ventana no era lo bastante ancha.
+	[Ventana principal]
+	+ Nuevo botón junto a Conectar para configurar el re-inicio de sesión automático.
+	+ Nueva pestaña Ayuda en Opciones, con explicaciones visuales del indicador de la bandeja y de las funciones de reconexión.
+	* Corregido un error que cortaba los textos de la ayuda si la ventana no era lo bastante ancha.
 
-Seguridad
-+ Las contraseñas de las cuentas se cifran ahora con la protección del sistema operativo (DPAPI en Windows, llavero en Linux), manteniendo compatibilidad con el cifrado anterior.
-+ Las cuentas cifradas con métodos antiguos se migran automáticamente al nuevo cifrado.
-* Corregido un error en la lectura de contraseñas con el cifrado antiguo que podía impedir cargar las cuentas.
+	[Seguridad]
+	+ Las contraseñas de las cuentas se cifran ahora con la protección del sistema operativo (DPAPI en Windows, llavero en Linux), manteniendo compatibilidad con el cifrado anterior.
+	+ Las cuentas cifradas con métodos antiguos se migran automáticamente al nuevo cifrado.
+	* Corregido un error en la lectura de contraseñas con el cifrado antiguo que podía impedir cargar las cuentas.
 
-Configuración
-* Corregido un error por el que los ajustes de la sección Internet no se guardaban al aceptar las opciones.
-+ Las opciones de conectividad y re-login se aplican en caliente, sin reiniciar la aplicación.
+	[Configuración]
+	* Corregido un error por el que los ajustes de la sección Internet no se guardaban al aceptar las opciones.
+	+ Las opciones de conectividad y re-login se aplican en caliente, sin reiniciar la aplicación.
+
+	[Depuración]
+	+ Nuevo modo de pruebas (--simulate) que simula estados de red para comprobar la monitorización, el auto-login y el indicador.
 
 ### **Versión 3.1.0.3**
 

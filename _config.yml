@@ -5,7 +5,7 @@ url: https://micuentanauta.github.io # Required for canonical URLs, sitemap and 
 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
-windows_link: downloads/windows/mcn-3.2.0.0.zip
+windows_link: https://bit.ly/mcn3200
 
 # Organización oficial (SEO de marca y metadatos de publicación)
 organization_url: https://github.com/micuentanauta
@@ -14,7 +14,7 @@ organization_url: https://github.com/micuentanauta
 # download_sha256 debe coincidir con el archivo que sirve el enlace corto.
 download_date: 2026.11.02
 download_size_mb: 5.3
-download_sha256: 9E7EA1AF7CDCEE7DFE72306B7C5E8E0A97561BEDE6CD4E1B71F2ACB71EE757F6
+download_sha256: A792884589940C9FFBC7A311E3FC73447AF5E0B1023A708F60696270ED246F94
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
