@@ -6,7 +6,7 @@ url: https://micuentanauta.github.io # Required for canonical URLs, sitemap and 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
 # Las releases se publican en el repo público de GitHub; /releases/latest siempre apunta a la última.
-windows_link: https://github.com/micuentanauta/Mi-Cuenta-Nauta/releases/latest
+windows_link: https://bit.ly/mcn3201
 
 # Organización oficial (SEO de marca y metadatos de publicación)
 organization_url: https://github.com/micuentanauta
