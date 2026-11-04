@@ -6,7 +6,17 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Versión 3.2.0.1** (`Última versión disponible`)
+### **Versión 3.2.0.2** (`Última versión disponible`)
+
+**Cambios**
+
+Conectividad
+* Corregido un error por el que el indicador de estado de la bandeja tardaba varios minutos en mostrar el estado real de la red al iniciar la aplicación.
+
+Ventana principal
+* La ayuda del indicador de estado incluye ahora el punto gris (aún sin detectar) y enumera todos los colores en el texto de ayuda.
+
+### **Versión 3.2.0.1**
 
 **Cambios**
 
