@@ -12,9 +12,9 @@ organization_url: https://github.com/micuentanauta
 
 # Metadatos del archivo que distribuye windows_link (se muestran junto al botón).
 # download_sha256 debe coincidir con el archivo que sirve el enlace corto.
-download_date: 2026.11.02
-download_size_mb: 5.3
-download_sha256: A792884589940C9FFBC7A311E3FC73447AF5E0B1023A708F60696270ED246F94
+download_date: 2026.11.04
+download_size_mb: 5.4
+download_sha256: 87BFF7CB0BB9EE41AC2BF2813916C0CAA5633EEC4CC475C4F79CB42A519A8152
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2

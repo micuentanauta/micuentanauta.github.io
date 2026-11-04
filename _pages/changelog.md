@@ -14,11 +14,15 @@ layout: page
 [Conectividad]
 	+ Nuevo indicador de estado en el icono de la barra de sistema: un punto de color muestra si hay internet, solo portal cautivo, red nacional o sin conexión (se puede desactivar en Opciones).
 	+ Nueva monitorización de red en segundo plano que detecta caídas de internet, el portal cautivo y la red nacional, con frecuencia y umbral configurables.
-	+ Re-inicio de sesión automático configurable: si la sesión se cierra sola, al detectar el portal Nauta o por intervalos de segundos.
-	+ Nuevo botón Reconectar en la ventana de sesión cuando se agotan los intentos automáticos.
+	+ Sesión persistente configurable: si ETECSA devuelve la conexión al portal cautivo, la sesión se re-autentica sola sin cerrar la ventana de sesión, que solo actualiza sus datos.
+	+ Conectar al detectar portal: sin sesión abierta, inicia sesión automáticamente con la cuenta favorita al aparecer el portal Nauta.
+	+ La ventana de sesión muestra en su barra de título el estado de conexión, la recuperación en curso y la última verificación del tiempo.
+	+ Verificación periódica del tiempo restante con la sesión abierta, para detectar cierres aunque el estado de red no cambie.
 
 	[Sesión]
-	+ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes restaurarla, cerrarla o ignorarla; al restaurarla va directo a la ventana de sesión y consulta el tiempo real disponible.
+	+ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes elegir entre restaurarla, cerrarla y reconectar, solo cerrarla o ignorarla; la acción también puede fijarse por defecto en Opciones para que no pregunte.
+	+ Al cerrar una sesión anterior, se comprueba que el cierre surtió efecto antes de reconectar.
+	+ Edad máxima para restaurar una sesión anterior configurable en Opciones (1-72 horas).
 	* Corregido un error por el que cerrar la sesión decía "no hay ninguna sesión abierta" después de una reconexión fallida.
 	* Corregido un error que hacía una consulta innecesaria al portal tras cada inicio de sesión.
 
