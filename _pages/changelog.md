@@ -2,7 +2,6 @@
 layout: page
 title: Registro de cambios
 include_in_header: true
-layout: page
 ---
 
 ## Registro de cambios
@@ -11,37 +10,43 @@ layout: page
 
 **Cambios**
 
-[Conectividad]
-	+ Nuevo indicador de estado en el icono de la barra de sistema: un punto de color muestra si hay internet, solo portal cautivo, red nacional o sin conexión (se puede desactivar en Opciones).
-	+ Nueva monitorización de red en segundo plano que detecta caídas de internet, el portal cautivo y la red nacional, con frecuencia y umbral configurables.
-	+ Sesión persistente configurable: si ETECSA devuelve la conexión al portal cautivo, la sesión se re-autentica sola sin cerrar la ventana de sesión, que solo actualiza sus datos.
-	+ Conectar al detectar portal: sin sesión abierta, inicia sesión automáticamente con la cuenta favorita al aparecer el portal Nauta.
-	+ La ventana de sesión muestra en su barra de título el estado de conexión, la recuperación en curso y la última verificación del tiempo.
-	+ Verificación periódica del tiempo restante con la sesión abierta, para detectar cierres aunque el estado de red no cambie.
+Conectividad
 
-	[Sesión]
-	+ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes elegir entre restaurarla, cerrarla y reconectar, solo cerrarla o ignorarla; la acción también puede fijarse por defecto en Opciones para que no pregunte.
-	+ Al cerrar una sesión anterior, se comprueba que el cierre surtió efecto antes de reconectar.
-	+ Edad máxima para restaurar una sesión anterior configurable en Opciones (1-72 horas).
-	* Corregido un error por el que cerrar la sesión decía "no hay ninguna sesión abierta" después de una reconexión fallida.
-	* Corregido un error que hacía una consulta innecesaria al portal tras cada inicio de sesión.
++ Nuevo indicador de estado en el icono de la barra de sistema: un punto de color muestra si hay internet, solo portal cautivo, red nacional o sin conexión (se puede desactivar en Opciones).
++ Nueva monitorización de red en segundo plano que detecta caídas de internet, el portal cautivo y la red nacional, con frecuencia y umbral configurables.
++ Sesión persistente configurable: si ETECSA devuelve la conexión al portal cautivo, la sesión se re-autentica sola sin cerrar la ventana de sesión, que solo actualiza sus datos.
++ Conectar al detectar portal: sin sesión abierta, inicia sesión automáticamente con la cuenta favorita al aparecer el portal Nauta.
++ La ventana de sesión muestra en su barra de título el estado de conexión, la recuperación en curso y la última verificación del tiempo.
++ Verificación periódica del tiempo restante con la sesión abierta, para detectar cierres aunque el estado de red no cambie.
 
-	[Ventana principal]
-	+ Nuevo botón junto a Conectar para configurar el re-inicio de sesión automático.
-	+ Nueva pestaña Ayuda en Opciones, con explicaciones visuales del indicador de la bandeja y de las funciones de reconexión.
-	* Corregido un error que cortaba los textos de la ayuda si la ventana no era lo bastante ancha.
+Sesión
 
-	[Seguridad]
-	+ Las contraseñas de las cuentas se cifran ahora con la protección del sistema operativo (DPAPI en Windows, llavero en Linux), manteniendo compatibilidad con el cifrado anterior.
-	+ Las cuentas cifradas con métodos antiguos se migran automáticamente al nuevo cifrado.
-	* Corregido un error en la lectura de contraseñas con el cifrado antiguo que podía impedir cargar las cuentas.
++ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes elegir entre restaurarla, cerrarla y reconectar, solo cerrarla o ignorarla; la acción también puede fijarse por defecto en Opciones para que no pregunte.
++ Al cerrar una sesión anterior, se comprueba que el cierre surtió efecto antes de reconectar.
++ Edad máxima para restaurar una sesión anterior configurable en Opciones (1-72 horas).
+* Corregido un error por el que cerrar la sesión decía "no hay ninguna sesión abierta" después de una reconexión fallida.
+* Corregido un error que hacía una consulta innecesaria al portal tras cada inicio de sesión.
 
-	[Configuración]
-	* Corregido un error por el que los ajustes de la sección Internet no se guardaban al aceptar las opciones.
-	+ Las opciones de conectividad y re-login se aplican en caliente, sin reiniciar la aplicación.
+Ventana principal
 
-	[Depuración]
-	+ Nuevo modo de pruebas (--simulate) que simula estados de red para comprobar la monitorización, el auto-login y el indicador.
++ Nuevo botón junto a Conectar para configurar el re-inicio de sesión automático.
++ Nueva pestaña Ayuda en Opciones, con explicaciones visuales del indicador de la bandeja y de las funciones de reconexión.
+* Corregido un error que cortaba los textos de la ayuda si la ventana no era lo bastante ancha.
+
+Seguridad
+
++ Las contraseñas de las cuentas se cifran ahora con la protección del sistema operativo (DPAPI en Windows, llavero en Linux), manteniendo compatibilidad con el cifrado anterior.
++ Las cuentas cifradas con métodos antiguos se migran automáticamente al nuevo cifrado.
+* Corregido un error en la lectura de contraseñas con el cifrado antiguo que podía impedir cargar las cuentas.
+
+Configuración
+
+* Corregido un error por el que los ajustes de la sección Internet no se guardaban al aceptar las opciones.
++ Las opciones de conectividad y re-login se aplican en caliente, sin reiniciar la aplicación.
+
+Depuración
+
++ Nuevo modo de pruebas (--simulate) que simula estados de red para comprobar la monitorización, el auto-login y el indicador.
 
 ### **Versión 3.1.0.3**
 

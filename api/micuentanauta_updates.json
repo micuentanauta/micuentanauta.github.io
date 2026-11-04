@@ -3,9 +3,9 @@
     "last_build": {
         "changelog": "Conectividad\r\n+ Nuevo indicador de estado en el icono de la barra de sistema: un punto de color muestra si hay internet, solo portal cautivo, red nacional o sin conexión (se puede desactivar en Opciones).\r\n+ Nueva monitorización de red en segundo plano que detecta caídas de internet, el portal cautivo y la red nacional, con frecuencia y umbral configurables.\r\n+ Sesión persistente configurable: si ETECSA devuelve la conexión al portal cautivo, la sesión se re-autentica sola sin cerrar la ventana de sesión, que solo actualiza sus datos.\r\n+ Conectar al detectar portal: sin sesión abierta, inicia sesión automáticamente con la cuenta favorita al aparecer el portal Nauta.\r\n+ La ventana de sesión muestra en su barra de título el estado de conexión, la recuperación en curso y la última verificación del tiempo.\r\n+ Verificación periódica del tiempo restante con la sesión abierta, para detectar cierres aunque el estado de red no cambie.\r\n\r\nSesión\r\n+ Si la aplicación se cerró con una sesión abierta, al iniciarla puedes elegir entre restaurarla, cerrarla y reconectar, solo cerrarla o ignorarla; la acción también puede fijarse por defecto en Opciones para que no pregunte.\r\n+ Al cerrar una sesión anterior, se comprueba que el cierre surtió efecto antes de reconectar.\r\n+ Edad máxima para restaurar una sesión anterior configurable en Opciones (1-72 horas).\r\n* Corregido un error por el que cerrar la sesión decía \"no hay ninguna sesión abierta\" después de una reconexión fallida.\r\n* Corregido un error que hacía una consulta innecesaria al portal tras cada inicio de sesión.\r\n\r\nVentana principal\r\n+ Nuevo botón junto a Conectar para configurar el re-inicio de sesión automático.\r\n+ Nueva pestaña Ayuda en Opciones, con explicaciones visuales del indicador de la bandeja y de las funciones de reconexión.\r\n* Corregido un error que cortaba los textos de la ayuda si la ventana no era lo bastante ancha.\r\n\r\nSeguridad\r\n+ Las contraseñas de las cuentas se cifran ahora con la protección del sistema operativo (DPAPI en Windows, llavero en Linux), manteniendo compatibilidad con el cifrado anterior.\r\n+ Las cuentas cifradas con métodos antiguos se migran automáticamente al nuevo cifrado.\r\n* Corregido un error en la lectura de contraseñas con el cifrado antiguo que podía impedir cargar las cuentas.\r\n\r\nConfiguración\r\n* Corregido un error por el que los ajustes de la sección Internet no se guardaban al aceptar las opciones.\r\n+ Las opciones de conectividad y re-login se aplican en caliente, sin reiniciar la aplicación.\r\n\r\nDepuración\r\n+ Nuevo modo de pruebas (--simulate) que simula estados de red para comprobar la monitorización, el auto-login y el indicador.",
         "version": "3.2.0.0",
-        "download_url": "bit.ly/mcn3200",
-        "sha256": "87BFF7CB0BB9EE41AC2BF2813916C0CAA5633EEC4CC475C4F79CB42A519A8152",
-        "size_mb": 5.4,
+        "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/latest",
+        "sha256": "115833CDA905847D229315598CEB64BD3943B78FFF78FA02E65135307DA70125",
+        "size_mb": 5.9,
         "updated_date": "2026.11.04",
         "kind": "1"
     },
@@ -13,34 +13,34 @@
         {
             "changelog": "Bugs corregidos\r\n* Corregido un problema que provocaba que la sesión no se cerrara al agotarse el temporizador.",
             "version": "3.1.0.3",
-            "download_url": "bit.ly/mcn3103",
-            "sha256": "3412FF510C4C9D4C46440ED7CE580240FA9129998B4F899D94F93C5666D96DF0",
-            "size_mb": 5.2,
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.1.0.3",
+            "sha256": "FA7BAB70C5B9881836997E10809171A1153FAE7DA0033D7E287DFD49D8C1BBF5",
+            "size_mb": 5.7,
             "updated_date": "2026.08.22",
             "kind": "1"
         },
         {
             "changelog": "Multiplataforma\r\n* El proyecto está optimizado para consumir menos memoria en dispositivos actuales.\r\nBugs corregidos\r\n* Corregido el problema de que el botón de iniciar sesión no se ajustaba correctamente al validar los campos de inicio de sesión.",
             "version": "3.1.0.2",
-            "download_url": "bit.ly/mcn3102",
-            "sha256": "32B8111F0DA5152CA73D3F09D5D501BEDF0BEE1AFA9ACD48DEA8FBC7057933DF",
-            "size_mb": 5.2,
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.1.0.2",
+            "sha256": "ED53E7F1087D783F0CDCF8C61AD75E8B1C98AE402FBFC17A3534B1B2BB4347CC",
+            "size_mb": 5.7,
             "updated_date": "2026.08.20",
             "kind": "1"
         },
         {
             "changelog": "Configuración\r\n+ Los ajustes de versiones anteriores se convierten automáticamente al nuevo formato de guardado al abrir la aplicación, sin perder tus datos.\r\n+ Nuevo modo silencioso: la aplicación puede iniciarse sin mostrar notificaciones.\r\n* Corregido un error que hacía que los ajustes se restablecieran.\r\n\r\nSeguridad\r\n+ Se reforzó la protección de los datos con un cifrado más robusto.\r\n* Corregido un error de seguridad que no liberaba correctamente los recursos del cifrado.\r\n\r\nVentana principal\r\n+ La aplicación ahora muestra su propio icono en las ventanas.\r\n* Corregido un bug visual: al cambiar de tema, el ícono de la pestaña seleccionada solo cambiaba de color.\r\n* Corregido un error por el que no se mostraba el ícono de estado de la ventana maximizada al arrastrarla hacia los bordes.\r\n\r\nCuenta cautiva\r\n+ Ahora puedes cancelar la espera al consultar las cuentas móviles y de telefonía fija.\r\n* Corregido un error por el que la cuenta cautiva no actualizaba su estado al terminar el temporizador.\r\n* Corregido un error falso al consultar el estado del correo.\r\n\r\nNotificaciones\r\n* Corregido un error al calcular el progreso de una donación sin meta establecida.\r\n\r\nCompatibilidad\r\n+ La aplicación ahora se distribuye también para las versiones más recientes de Windows (.NET 8 y .NET 9), con mejor rendimiento y menor consumo de memoria.\r\n* Corregido un error en .NET 9 por el que se guardaba la dirección del ensamblado en lugar de la del ejecutable.\r\n\r\nBugs corregidos\r\n* Resuelto un error con las cuentas favoritas.\r\n* Corregido un error que provocaba un fallo al validar los datos introducidos.\r\n* Corregido un error que impedía reiniciar la aplicación correctamente.\r\n* Corregido un error visual de opacidad en el fondo de la ventana.",
             "version": "3.1.0.1",
-            "download_url": "bit.ly/mcn3101",
-            "sha256": "CCE1B6E9782E9DD3C93FAFD7F18AFA783127E60CCC60108CB9D92770D00A6DE9",
-            "size_mb": 5.2,
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.1.0.1",
+            "sha256": "EAA501C1B8DDDA56795CFBB6834573A569F2ED25829C8F98DD857EF651D2A655",
+            "size_mb": 5.7,
             "updated_date": "2026.08.11",
             "kind": "1"
         },
         {
             "changelog": "Interfaz general\n\n+ Se añadieron validaciones y un control más granular de los parámetros de cada campo.\n+ Ajustes menores en la iconografía de la aplicación.\n\nVentana de sesión abierta\n\n+ Ahora se puede actualizar la cantidad de tiempo restante.\n\nAjustes\n\n+ El sistema de gestión de ajustes guardados ha sido reconstruido para permitir migraciones de versiones pasadas y estabilidad en versiones futuras.\n+ Ahora se puede iniciar con windows la aplicación directamente a la barra de notificaciones.\n\nEnrutador de ventanas\n\n+ Ahora se presenta un control más conciso de las ventanas abiertas para evitar comportamientos inesperados.\n\nEnrutador de peticiones\n\n+ Ahora se presenta un control más conciso de las peticiones url para evitar interacciones repetidas entre distintos orígenes.\n\nÍcono en la barra de notificaciones\n\n+ Ahora la aplicación se mantiene de forma persistente en la barra de notificaciones lo que permite iniciar sesión y cerrar sesión de forma más cómoda.\n\nRefactorización\n\n+ Se ha realizado una gran refactorización de la aplicación para mejor mantenibilidad en versiones futuras.\n\nBugs corregidos\n\n* Mejoras en el control del tiempo.\n* Corrección de bugs menores.",
             "version": "3.1.0.0",
-            "download_url": "bit.ly/mcn3100",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.1.0.0",
             "sha256": "BF4492DEA949A0A3DB71EBF6BB6F773A5E29F6E0AB4F5B4FEB2432F5D631A621",
             "size_mb": 5.1,
             "updated_date": "2026.01.12",
@@ -49,57 +49,181 @@
         {
             "changelog": "Bugs corregidos\n\n* Corrección de bug con el temporizador finalizado que no cierra la sesión.",
             "version": "3.0.1.2",
-            "download_url": "bit.ly/mcn3012beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.0.1.2",
             "updated_date": "2025.07.27",
-            "kind": "1"
+            "kind": "1",
+            "sha256": "15D5ACC01645F7B72EF4AFCAB90F2F2BD8B4B47A5A10C2014E228815A0C1D41B",
+            "size_mb": 4.5
         },
         {
             "changelog": "Bugs corregidos\n\n* Corrección de bug al cargar el tiempo restante de la cuenta.",
             "version": "3.0.1.1",
-            "download_url": "bit.ly/mcn3011beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.0.1.1",
             "updated_date": "2025.07.27",
-            "kind": "1"
+            "kind": "1",
+            "sha256": "7314770524A6F76E82FF2315880859783DA97BE7E465B589FCEA8527C9722D08",
+            "size_mb": 5.1
         },
         {
             "changelog": "Ventana Principal\n\n+ Añadida opción para minimizar ventana.\n\nVentana de sesión abierta\n\n+ Permite alternar en la ventana de sesión el tiempo restante del tiempo consumido y desactivar la animación del tiempo.\n+ Ahora es posible colapsar la ventana para ahorrar espacio en pantalla.\n+ Añadida opción de alternar animación.\n\nVentana de opciones\n\n+ Rediseño de la interfaz para coincidir con la nueva estética de la aplicación.\n+ Nuevas opciones de configuración.\n\n Bugs corregidos\n\n* El cierre de sesión presentaba fallos con el reinicio de la sesión.\n* La ventana de sesión abierta se podía cerrar accidentalmente con alt+f4, lo que podría ser un comportamiento inesperado.\n* El cambio de tema no se activaba correctamente al cierre de la ventana de opciones sin guardar.\n* La carga del tiempo del temporizador desde los ajustes no se hacía apropiadamente.\n* Corrección de bugs menores.",
             "version": "3.0.1.0",
-            "download_url": "bit.ly/mcn3010beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.0.1.0",
             "updated_date": "2025.07.27",
-            "kind": "0"
+            "kind": "0",
+            "sha256": "A83B5C061A3F0AC2EA2D6B7393925858EFACCE7548F4AFABF260B1135028E857",
+            "size_mb": 5.1
         },
         {
             "changelog": "Versionado\n\n* El versionado cambia del formato v{major}.{minor}.{year}.{month-day} a v{major}.{minor}.{build}.{revision}.\n\n Bugs corregidos\n\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
             "version": "3.0.0.1",
-            "download_url": "bit.ly/mcn3001beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/3.0.0.1",
             "updated_date": "2025.05.31",
-            "kind": "0"
+            "kind": "0",
+            "sha256": "4090AF8173CBF51FA99B2383C03D1C0631A84A66C08BA023B0C7DC3AA1C47702",
+            "size_mb": 5.0
         },
         {
             "changelog": "*Corrección de bugs.\n* La ventana de sesión abierta no se cerraba luego de cerrar sesión.\n* El temporizador no guardaba los ajustes en caso de querer reiniciarlo a 0.",
             "version": "2.99.2025.431",
-            "download_url": "bit.ly/mcn29920250431beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.99.2025.431",
             "updated_date": "2025.04.30",
-            "kind": "0"
+            "kind": "0",
+            "sha256": "8CC93325C73453273DF5A7B0A194A6A308F2968BD18DB2AAA5EBA8A3490837B4",
+            "size_mb": 5.0
         },
         {
             "changelog": "*Corrección de bugs.\n* El control de tiempo de la sesión no convertía apropiadamente las horas.\n*En entornos de conectividad limitada, la comprobación de actualizaciones fallaba con un mensaje genérico.",
             "version": "2.99.2025.430",
-            "download_url": "bit.ly/mcn29920250430beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.99.2025.430",
             "updated_date": "2025.04.30",
-            "kind": "0"
+            "kind": "0",
+            "sha256": "38524FBE705CA65C919DE62191CC842D5BAF53AF213A9DC3575B110D73044B01",
+            "size_mb": 5.0
         },
         {
             "changelog": "Preparativos para la versión 3.0.\n+ Se ha deshabilitado el acceso al portal antiguo para trabajar en el nuevo.\n+ Total rediseño de la interfaz.\n+ Mejoras en el servicio de notificación de actualizaciones.\n+ Nueva ventana totalmente reescalable y adaptable de sesión abierta.\n* Sistema de guardado de ajustes mejorado.\n* Corrección de bugs.\n+ Eliminación del límite local de vencimiento de las versiones beta.",
             "version": "2.99.2025.416",
-            "download_url": "bit.ly/mcn29920250416beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.99.2025.416",
             "updated_date": "2025.04.16",
-            "kind": "1"
+            "kind": "1",
+            "sha256": "CFDB4E6EB4DF5D50250ADE58E91357EDD1A7C8F2FCA893430B31D81D6F6D8B9A",
+            "size_mb": 5.0
         },
         {
             "changelog": "Añadido un nuevo certificado de seguridad para las cuentas.\n+ Servicio de notificación de actualizaciones habilitado.",
             "version": "2.0.2024.923",
-            "download_url": "bit.ly/mcn2020240923beta",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2024.923",
             "updated_date": "2024.09.23",
+            "kind": "1",
+            "sha256": "A9E1FA0B172BEEE453F5F3794416E7F0D541FF53C78DD4C77F9E2A393061FD06",
+            "size_mb": 6.1
+        },
+        {
+            "changelog": "2.0.2024.0623 (23.06.2024):\n\t+ Mejoras en el cálculo del tiempo restante.\n\t* Corrección de errores y optimización del código.",
+            "version": "2.0.2024.623",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2024.623",
+            "sha256": "7C011902C80AA4CFDE2C0CEF30450C2212654949344CF6019E5A8445AC140A47",
+            "size_mb": 6.2,
+            "updated_date": "2024.06.23",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2024.0423 (23.04.2023):\n\t+ Actualización de las librerías internas (preparación para nuevos servicios)\n\t* Corrección de errores y optimización del código.",
+            "version": "2.0.2024.423",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2024.423",
+            "sha256": "5CBBDAACE8D4D69BEFDBD0F00297B5BF25D46CADE545D6C57CB5FF12C3DD2537",
+            "size_mb": 6.2,
+            "updated_date": "2023.04.23",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2023.0425 (25.04.2023):\n\t+ Añadida la compatibilidad con cuentas nautaplus\n\t* Cambios necesarios en la infraestructura relacionados con los nuevos servidores de ETECSA.\n\t* Corrección de errores y optimización del código.",
+            "version": "2.0.2023.425",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2023.425",
+            "sha256": "849DA51C5304D65866A70CD14A5E161545D43117A32F0861D009245028DA1CB5",
+            "size_mb": 6.2,
+            "updated_date": "2023.04.25",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2022.0418 (18.04.2022):\n\t+ Añadidas animaciones de entrada de ventanas.\n\t+ Añadido un botón de donaciones a la ventana principal.\n\t* Mejoras en la detección de los servicios de ETECSA.\n\t* Mayor compatibilidad con nuevas versiones de Windows 11.\n\t* Cambios necesarios en la infraestructura de detección de actualizaciones de la aplicación.\n\t* Corrección de errores y optimización del código.\t\n\n\t* Corrección de un bug que cerraba de forma inesperada la aplicación al comprobar actualizaciones.",
+            "version": "2.0.2022.418",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2022.418",
+            "sha256": "12DE7EAACB06182BDEAF92099E0F08C82D0EB91BA971DFA046BAE77490C28179",
+            "size_mb": 6.2,
+            "updated_date": "2022.04.18",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.1006 beta (06.10.2021):\n\t* Solución de un bug que no dejaba iniciar sesión y no mostraba el tiempo restante.",
+            "version": "2.0.2021.1006",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.1006",
+            "sha256": "224CF84ADA10B10F03202A0B6FD18A2E1C5960038274B45E3A66CA6F76F427EF",
+            "size_mb": 6.2,
+            "updated_date": "2021.10.06",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.1005 beta (05.10.2021):\n\t+ Agregada una opción para omitir la verificación de los certificados.\n\t+ Agregada la sección de donaciones en la ventana \"Acerca de...\".\n\t+ Agregado el nuevo vínculo de contacto del sitio oficial.\n\t* Ajustes mínimos en la interfaz gráfica.",
+            "version": "2.0.2021.1005",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.1005",
+            "sha256": "0FBB87241C607A94493499F912DAB9FC6DE91ECB30342FB8EA7695660E8C8E01",
+            "size_mb": 6.2,
+            "updated_date": "2021.10.05",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.0819 beta (19.08.2021)a:\n\t+ Implementada una función para detectar la existencia de nuevas versiones de la aplicación.\n\t+ Mejoras en la interfaz gráfica.\n\t* Corrección de un bug que no permitía cerrar apropiadamente la aplicación en el primer inicio.\n\t* Modificación de íconos para una señalización más apropiada de la funcionalidad de cada sección.\n\t* Corrección de un bug que asignaba de forma no apropiada los temas al inicio de la aplicación.",
+            "version": "2.0.2021.819",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.819",
+            "sha256": "3089F42E4C3E3C68F6276F852C9FC5768B8DA0B7407CB2D69B9560AA2AF0C467",
+            "size_mb": 6.2,
+            "updated_date": "2021.08.19",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.0718 beta (18.07.2021):\n\t+ Primeras pruebas para implementar un instalador automatizado.\n\t* Corrección de un bug que no permitía usar cuentas cuyo nombre de usuario y/o contraseña tuvieran caracteres no válidos para peticiones web.\n\t* Mejora en la detección de errores relacionados con los archivos de configuración.",
+            "version": "2.0.2021.718",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.718",
+            "sha256": "010F516CFD8383247D22EC331B949C1D61B4DDD3A4AC13362255076949486B96",
+            "size_mb": 6.2,
+            "updated_date": "2021.07.18",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.0715 beta (15.07.2021):\n\t+ Implementación de diálogos personalizados preparados para combinar con el tema actual de la aplicación.\n\t+ Implementación de conexiones a través de proxy y posibilidad de configurar sus ajustes. \n\t+ Ahora la aplicación carga automáticamente los ajustes de versiones antiguas.\n\t+ Implementación de detección de certificados de ETECSA (Se evita iniciar sesión en portales cautivos falsos y relacionados con el robo de cuentas)\n\t* Mejorados los diálogos de respuesta ante errores, algunos se les añadió la posibilidad de reintentar la operación.\n\t* Corrección de bugs relacionados con la forma que se mostraba el tiempo restante. (Aun en pruebas)\n\t* Deprecación del comando ping.\n\t* Cambios en el EULA, por favor releer.\n\t* Refactorización de los últimos componentes.\n\t* Corrección de bugs con la animación de ocultar la ventana de sesión.\n\t* Fase beta del proyecto.",
+            "version": "2.0.2021.715",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.715",
+            "sha256": "440EFC6737AA8A3840330A2359E5CD4D75D4D391B0C2B9B99AEEA6F90354ABBC",
+            "size_mb": 4.5,
+            "updated_date": "2021.07.15",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.0708 alpha (08.07.2021):\n\t*Solución de un bug al calcular el saldo diponible en la cuenta luego de recargar.\n\t*Solución de un bug relacionado con el cierre la ventana de sesión abierta.",
+            "version": "2.0.2021.708",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.708",
+            "sha256": "4E9CE30A3DA4134FAEADC0E067E2EEF47C4DA8C81F6E088C63F093D843D6E029",
+            "size_mb": 4.5,
+            "updated_date": "2021.07.08",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.0707 alpha (07.07.2021):\n\t*Solución de varios bugs relacionados con el inicio de sesión.",
+            "version": "2.0.2021.707",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.707",
+            "sha256": "90B7885FF1A42C4B45AACD90BF9211D58C45F6F99B7E88BABA39A513E6364ABA",
+            "size_mb": 4.5,
+            "updated_date": "2021.07.07",
+            "kind": "1"
+        },
+        {
+            "changelog": "2.0.2021.0705 alpha (05.07.2021):\n\t\n\t[General]\n\t+ ¡Nuevo logo! (Posible evento futuro sobre diseño gráfico en nuestro grupo oficial de Telegram https://t.me/@micuentanauta)\n\t+ Completa transformación de la interfaz gráfica.\n\t\t* Se dividió la acción de modificar el temporizador y las opciones en botones diferentes.\n\t\t* El botón de abrir los ajustes del temporizador se movió para el lado izquierdo del botón\n\t\t  de iniciar sesión para mayor visibilidad.\n\t\t* Se rediseñó la sección de captura del \"Captcha\".\n\t\t* Se agregó un nuevo algoritmo para detectar cuando la ventana de sesión está fuera de la pantalla\n\t\t  y así evitar que se pierda.\n\t+ Mejora sustancial en los algoritmos de seguridad.\n\t\n\t[Sección: Ventana principal]\n\t+ Agregada una opción para autocompletar cuentas previamente guardadas.\n\t+ Agregada una opción para mostrar todas las cuentas guardadas directamente desde la ventana principal.\n\t+ Agregado un botón para limpiar los ajustes del temporizador directamente desde la ventana principal.\n\t\n\t[Sección: Cuenta abierta]\n\t+ Se rediseñó la interfaz para hacerla escalable.\n\t+ Ahora es posible redimensionar la ventana.\n\t+ Ahora se muestra una etiqueta cuando hay un temporizador activo.\n\t+ Ahora es posible arrastrar la ventana.\n\t+ Ahora es posible cambiar la transparencia de la ventana.\n\t+ Ahora es posible alternar la visibilidad de la ventana para permitir que esté siempre visible o no.\n\t+ Se mejoró el algoritmo para cerrar cuentas haciéndolo más estable y funcional ante distintos posibles\n\t  errores de red.\n\t* 2 bugs potenciales corregidos (Véase sección de bugs)\n\t\n\t\n\t[Sección: Opciones]\n\t+ Se creó una nueva sección: Opciones \n\t\t+ Opciones generales como cambiar el tema, guardar la posición y opacidad de la ventana de sesión.\n\t\t+ Se reconstruyó la sección de cuentas para incluirse como categoría.\n\t\n\t\t[Sección: Gestión de cuentas]\n\t\t+ Rediseñada la interfaz de agregar cuentas.\n\t\t\n\t\t+ Se agregó una opción para editar cuentas previamente guardadas.\n\t\t\n\t\t[Opciones: Sección de ajustes generales]\n\t\t+ Ahora puedes escoger entre dos temas (Oscuro y claro)\n\t\t+ Agregada una opción para detectar automáticamente el tema del sistema operativo y cambiarlo\n\t\t  automáticamente (Solo Windows 10 o superior).\n\t\t  \n\t\t  \n\t\t[Opciones: Sección de ajustes de red]\n\t\t+ Ahora puedes cambiar el tiempo de espera por una respuesta http.\n\t\t\n\t[Sección: Portal Nauta]\n\t\n\t+ Se agregó una nueva función para actualizar dinámicamente los datos del portal Nauta.\n\t* Rediseño de la interfaz gráfica.\n\t* Mejoras al detectar el precio de las horas.\n\t\n\t[Sección: Acerca de.../EULA]\n\t+ Se unificaron ambas ventanas en una que cumple la misma función de forma más efectiva.\n\t* Cambios pequeños en la interfaz.\n\t\n\t\n\t[Bugs solucionados]\n\t\n\t[Sección: Sesión abierta]\n\t* Se corrigió el siguiente bug:\n\t\tAl iniciar sesión la aplicación necesita obtener la variable del tiempo restante de \n\t\tla cuenta para que así la ventana se cierre cuando el tiempo se acabe, cuando el tiempo \n\t\tdel temporizador se acabe o cuando se cierre manualmente la cuenta desde el botón. \n\n\t\tSin embargo, si en el momento en el cual la aplicación intenta obtener el tiempo restante \n\t\tel servidor no responde u ocurre un problema en la red, pues la ventana de sesión enviará \n\t\tun error y posiblemente la cuenta permanecería abierta.\n\t\t\n\t* Se corrigió el siguiente bug:\n\t\tHabian ocasiones en que la ventana de sesión desaparecía de la pantalla, gracias al nuevo\n\t\talgoritmo es posible que este bug quede solucionado.",
+            "version": "2.0.2021.705",
+            "download_url": "github.com/micuentanauta/Mi-Cuenta-Nauta/releases/tag/2.0.2021.705",
+            "sha256": "B3385E7FFC9809A4E235FCC36712EF4C277955104313B68F087A565E1C244E64",
+            "size_mb": 4.5,
+            "updated_date": "2021.07.05",
             "kind": "1"
         }
     ]

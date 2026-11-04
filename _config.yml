@@ -5,16 +5,17 @@ url: https://micuentanauta.github.io # Required for canonical URLs, sitemap and 
 
 # windows_link                              : downloads/windows/mcn-2.0.2021.1005beta.rar
 # windows_link                              : https://bit.ly/mcn2020211006betasetup
-windows_link: https://bit.ly/mcn3200
+# Las releases se publican en el repo público de GitHub; /releases/latest siempre apunta a la última.
+windows_link: https://github.com/micuentanauta/Mi-Cuenta-Nauta/releases/latest
 
 # Organización oficial (SEO de marca y metadatos de publicación)
 organization_url: https://github.com/micuentanauta
 
-# Metadatos del archivo que distribuye windows_link (se muestran junto al botón).
-# download_sha256 debe coincidir con el archivo que sirve el enlace corto.
+# Metadatos del instalador principal (net48) que distribuye windows_link desde GitHub Releases.
+# download_sha256 corresponde a Mi.Cuenta.Nauta.v<versión>.Setup.exe (net48) del último release.
 download_date: 2026.11.04
-download_size_mb: 5.4
-download_sha256: 87BFF7CB0BB9EE41AC2BF2813916C0CAA5633EEC4CC475C4F79CB42A519A8152
+download_size_mb: 5.9
+download_sha256: 115833CDA905847D229315598CEB64BD3943B78FFF78FA02E65135307DA70125
 # App Info
 ios_app_id: # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country: # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
