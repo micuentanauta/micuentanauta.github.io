@@ -6,7 +6,7 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Versión 3.2.0.0** (`Última versión disponible`)
+### **Versión 3.2.0.1** (`Última versión disponible`)
 
 **Cambios**
 
