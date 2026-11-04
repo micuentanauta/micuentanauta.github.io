@@ -6,7 +6,29 @@ include_in_header: true
 
 ## Registro de cambios
 
-### **Versión 3.2.0.2** (`Última versión disponible`)
+### **Versión 3.2.0.3** (`Última versión disponible`)
+
+**Cambios**
+
+Conectividad
+* Corregido un error por el que la sesión no se recuperaba automáticamente cuando la red volvía al portal cautivo tras una caída (el temporizador seguía andando pero sin internet).
+* Las sondas de conectividad ahora respetan el proxy configurado; antes podían marcar «sin conexión» en redes que exigen proxy aunque el portal funcionara.
+* Corregido un error por el que la reconexión automática quedaba desactivada para siempre tras agotar los reintentos; ahora se reactiva sola mientras el portal siga detectándose.
+* Corregido un error por el que el estado no avanzaba al portal cautivo cuando la red alternaba rápidamente entre «sin conexión» y «portal».
+* Las sondas ahora detectan cuándo la red desvía las comprobaciones de internet hacia el portal cautivo (antes podía mostrar «internet» sin haberlo).
+* Nueva comprobación alternativa por HTTP plano cuando falla la vía segura pero el portal sí responde.
+
+Sesión
+* La ventana de sesión muestra claramente cuándo el portal Nauta está detectado y la cuenta se está reconectando, con número de intento y cuenta regresiva al próximo reintento automático.
+* La ventana de sesión confirma visualmente cada comprobación («Sesión verificada» / «Sesión recuperada»).
+* Los textos largos de estado se desplazan automáticamente cuando no caben en la barra de título, a velocidad ajustable.
+* La reconexión automática funciona también cuando la cuenta no está guardada en las opciones (la sesión la conserva en memoria).
+* La ventana de sesión minimalista muestra ahora el estado de recuperación junto al temporizador.
+
+Depuración
+* El modo de pruebas simula ahora la alcanzabilidad del portal (sin conexión, el portal no responde) y reacciona a los cambios de estado en un segundo.
+
+### **Versión 3.2.0.2**
 
 **Cambios**
 
