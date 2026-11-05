@@ -7,7 +7,7 @@
       }
 
       .n {
-        fill: #ffffff;
+        fill: #222221;
       }
 
       .n, .o {
