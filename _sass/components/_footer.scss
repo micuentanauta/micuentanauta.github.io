@@ -76,6 +76,49 @@ footer {
   }
 }
 
+.brandCredit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.brandCredit a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: $footer-text-color;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.brandCredit a:hover {
+  color: $accent-color;
+}
+
+.brandCredit a strong {
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.brandCredit a:hover strong {
+  color: $accent-color;
+}
+
+.brandCreditLogo {
+  height: 26px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.brandCredit a:hover .brandCreditLogo {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
 .footerCopyright {
   color: $footer-text-color;
   text-align: center;

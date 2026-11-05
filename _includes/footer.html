@@ -87,5 +87,14 @@
 		{% endif %}
 	</div>
 
+	{% if site.author_site %}
+	<div class="brandCredit">
+		<a href="{{ site.author_site.url }}" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de {{ site.author_site.name }}">
+			<img class="brandCreditLogo" src="{{ site.author_site.logo | relative_url }}" alt="{{ site.author_site.name }}" loading="lazy" draggable="false">
+			<span>Desarrollado por <strong>{{ site.author_site.name }}</strong></span>
+		</a>
+	</div>
+	{% endif %}
+
 	<p class="footerCopyright">© {{ site.current_year }} {{ site.app_name }}. Todos los derechos reservados.</p>
 </footer>

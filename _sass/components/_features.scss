@@ -23,6 +23,11 @@
   padding-left: 15px;
   padding-right: 15px;
   width: calc(100% / 3);
+  transition: transform $transition-normal;
+}
+
+.feature:hover {
+  transform: translateY(-3px);
 }
 
 .feature:nth-child(-n + 3) {

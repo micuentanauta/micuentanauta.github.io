@@ -1,0 +1,22 @@
+{% if site.projects %}
+<section class="projects" id="otros-proyectos">
+    <h3 class="projectsTitle">Otros proyectos del autor</h3>
+    <p class="projectsSubtitle">Más herramientas de {{ site.author_site.name }}, gratis y de código abierto.</p>
+    <div class="projectsGrid">
+        {% for project in site.projects %}
+        <a class="projectCard" href="{{ project.url }}" target="_blank" rel="noopener noreferrer" aria-label="Visitar {{ project.title }}">
+            <img class="projectLogo{% if project.logo_invert %} projectLogo--invert{% endif %}" src="{{ project.logo | relative_url }}" alt="{{ project.title }}" loading="lazy" draggable="false">
+            <span class="projectName">{{ project.title }}</span>
+            <span class="projectTagline">{{ project.tagline }}</span>
+        </a>
+        {% endfor %}
+        {% if site.author_site %}
+        <a class="projectCard projectCard--author" href="{{ site.author_site.url }}" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web del autor">
+            <img class="projectLogo" src="{{ site.author_site.logo | relative_url }}" alt="{{ site.author_site.name }}" loading="lazy" draggable="false">
+            <span class="projectName">barnesinside.is-a.dev</span>
+            <span class="projectTagline">Portafolio completo: diseño gráfico y programación.</span>
+        </a>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
