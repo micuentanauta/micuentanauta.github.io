@@ -91,7 +91,7 @@ sponsors:
 author_site:
   name: barnesinside
   url: https://barnesinside.is-a.dev
-  logo: assets/barnesinside-isotipo-blanco.svg
+  logo: assets/barnesinside-imagotipo-blanco.svg
 
 # Otros proyectos del autor (se muestran en la portada)
 projects:
@@ -99,7 +99,6 @@ projects:
     tagline: Monitorea el estado de tus servidores en tiempo real.
     url: https://barnesinside.is-a.dev/pingmaster/
     logo: assets/pingmaster-wordmark.svg
-    logo_invert: true
   - title: MathUtils Studio
     tagline: Computación matemática avanzada con interfaz visual.
     url: https://barnesinside.is-a.dev/mathutils-studio/

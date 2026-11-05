@@ -97,18 +97,8 @@ footer {
   color: $accent-color;
 }
 
-.brandCredit a strong {
-  color: #ffffff;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-.brandCredit a:hover strong {
-  color: $accent-color;
-}
-
 .brandCreditLogo {
-  height: 26px;
+  height: 28px;
   width: auto;
   opacity: 0.85;
   transition: opacity 0.2s ease, transform 0.2s ease;

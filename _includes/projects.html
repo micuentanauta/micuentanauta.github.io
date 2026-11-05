@@ -5,7 +5,7 @@
     <div class="projectsGrid">
         {% for project in site.projects %}
         <a class="projectCard" href="{{ project.url }}" target="_blank" rel="noopener noreferrer" aria-label="Visitar {{ project.title }}">
-            <img class="projectLogo{% if project.logo_invert %} projectLogo--invert{% endif %}" src="{{ project.logo | relative_url }}" alt="{{ project.title }}" loading="lazy" draggable="false">
+            <img class="projectLogo" src="{{ project.logo | relative_url }}" alt="{{ project.title }}" loading="lazy" draggable="false">
             <span class="projectName">{{ project.title }}</span>
             <span class="projectTagline">{{ project.tagline }}</span>
         </a>

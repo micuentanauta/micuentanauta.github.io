@@ -64,10 +64,11 @@
   max-width: 190px;
 }
 
-.projectLogo--invert {
-  filter: invert(1);
+.projectLogo {
+  height: 46px;
+  width: auto;
+  max-width: 190px;
 }
-
 .projectName {
   color: #ffffff;
   font-size: 1.7rem;
