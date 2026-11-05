@@ -12,7 +12,7 @@
 @media only screen and (max-width: 992px) {
   .container {
     grid-column-gap: 0px;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: 115px auto auto auto auto;
     grid-template-areas:
       "h h h h h h h h h h h h"
@@ -20,6 +20,7 @@
       "p p p p p p p p p p p p"
       "c c c c c c c c c c c c"
       "s s s s s s s s s s s s"
+      "j j j j j j j j j j j j"
       "f f f f f f f f f f f f";
   }
 }
